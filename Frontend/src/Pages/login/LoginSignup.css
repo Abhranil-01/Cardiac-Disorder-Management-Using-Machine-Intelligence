@@ -41,7 +41,7 @@
   transition: 0.8s ease-in-out;
 }
 
-form {
+.form {
   max-width: 360px;
   width: 100%;
   margin: 0 auto;
@@ -54,7 +54,7 @@ form {
   transition: opacity 0.02s 0.4s;
 }
 
-form.sign-up-form {
+.form.sign-up-form {
   opacity: 0;
   pointer-events: none;
 }
@@ -114,7 +114,15 @@ i {
   right: 0;
   cursor: pointer;
 }
+.notmatched{
+  color: red;
+  font-weight: bold;
+}
+.matched{
+  color: green;
+  font-weight: bold;
 
+}
 .input-field.normal {
   border-bottom-color: #bbb;
 }
@@ -133,7 +141,7 @@ i {
   right: 8%;
 }
 .login-valid {
-  top: 68%;
+  top: 65%;
 }
 .valid.strong {
   color: green;
@@ -145,7 +153,7 @@ i {
   color: red;
 }
 .signup-valid {
-  top: 70%;
+  top: 65%;
 }
 
 .sign-btn {
@@ -180,12 +188,12 @@ i {
   color: #8371fd;
 }
 
-.main.sign-up-mode form.sign-in-form {
+.main.sign-up-mode .form.sign-in-form {
   opacity: 0;
   pointer-events: none;
 }
 
-.main.sign-up-mode form.sign-up-form {
+.main.sign-up-mode .form.sign-up-form {
   opacity: 1;
   pointer-events: all;
 }
@@ -261,7 +269,7 @@ i {
     height: auto;
   }
 
-  form {
+  .form {
     max-width: revert;
     padding: 1.5rem 2.5rem 2rem;
     transition: transform 0.8s ease-in-out, opacity 0.45s linear;
@@ -271,15 +279,15 @@ i {
     margin: 2rem 0;
   }
 
-  form.sign-up-form {
+  .form.sign-up-form {
     transform: translateX(100%);
   }
 
-  .main.sign-up-mode form.sign-in-form {
+  .main.sign-up-mode .form.sign-in-form {
     transform: translateX(-100%);
   }
 
-  .main.sign-up-mode form.sign-up-form {
+  .main.sign-up-mode .form.sign-up-form {
     transform: translateX(0%);
   }
 
@@ -336,7 +344,7 @@ i {
     font-size: 1.2rem;
   }
 
-  form {
+  .form {
     padding: 1rem 2rem 1.5rem;
   }
   .login-valid{

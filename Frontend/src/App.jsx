@@ -1,13 +1,13 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Login from './Pages/login/Login';
+import LoginSignup from './Pages/login/LoginSignup';
 
 
 
 function App() {
   return (
     <>
-      <Login/>
+      <LoginSignup/>
     </>
   )
 }
