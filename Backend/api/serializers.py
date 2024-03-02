@@ -33,10 +33,16 @@ class UserLoginSerializer(serializers.ModelSerializer):
     model = User
     fields = ['email', 'password']
 
+class ProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Profile
+        fields = ['registered_email', 'blood_group', 'image', 'location']
+
 class UserProfileSerializer(serializers.ModelSerializer):
+  profile = ProfileSerializer()
   class Meta:
     model = User
-    fields = ['id', 'email', 'name']
+    fields = ['id', 'email', 'name','profile']
 
 # class UserChangePasswordSerializer(serializers.Serializer):
 #   password = serializers.CharField(max_length=255, style={'input_type':'password'}, write_only=True)
@@ -56,10 +62,6 @@ class UserProfileSerializer(serializers.ModelSerializer):
 
 
 
-class ProfileSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Profile
-        fields = ['registered_email', 'blood_group', 'image', 'location','url']
 
 # class RegisterSerializer(serializers.ModelSerializer):
 #     class Meta:

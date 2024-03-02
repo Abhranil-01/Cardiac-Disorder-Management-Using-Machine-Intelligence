@@ -66,9 +66,9 @@ class UserProfileView(APIView):
 #         headers = self.get_success_headers(serializer.data)
 #         return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
 
-class ProfileViewSet(viewsets.ModelViewSet):
-	queryset = Profile.objects.all()
-	serializer_class = ProfileSerializer
+# class ProfileViewSet(viewsets.ModelViewSet):
+# 	queryset = Profile.objects.all()
+# 	serializer_class = ProfileSerializer
 class MedicineViewSet(viewsets.ModelViewSet):
     queryset = Medicine.objects.all()
     serializer_class = MedicineSerializer
