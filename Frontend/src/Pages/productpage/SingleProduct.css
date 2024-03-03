@@ -1,0 +1,31 @@
+.wrap{
+    width: 98vw;
+    height: auto;
+}
+
+.single-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.single-image{
+    margin-left: 10px;
+    width: 60vw;
+    height: 60vh;
+
+}
+.single-image img{
+    width: 60vw;
+    height: 60vh;
+    object-fit: contain;
+}
+.single-content{
+    width: 60vw;
+    height: 100vh;
+}
+.para{
+    text-align: justify;
+}

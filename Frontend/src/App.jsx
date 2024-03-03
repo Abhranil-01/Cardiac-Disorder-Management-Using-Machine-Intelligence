@@ -4,6 +4,7 @@ import Layout from './Pages/Layout/Layout.jsx'
 import {Home,MedicineStore,TestBooking,About} from './Pages/index.js'
 import LoginSignup from './Pages/login/LoginSignup.jsx'
 import { useSelector } from "react-redux";
+import SingleProduct from "./Pages/productpage/SingleProduct.jsx";
 function App() {
   const { access_token } = useSelector(state => state.auth)
   return (
@@ -14,6 +15,7 @@ function App() {
        <Route path='Home' element={<Home/>}/>
        <Route path='BookTest' element={<TestBooking/>}/>
        <Route path='OrderMedichine' element={<MedicineStore/>}/>
+       <Route path='/:product/:id' element={<SingleProduct/>}/>
        <Route path='AboutUs' element={<About/>}/>
        <Route path='login' element={<LoginSignup/>}/>
      </Route>

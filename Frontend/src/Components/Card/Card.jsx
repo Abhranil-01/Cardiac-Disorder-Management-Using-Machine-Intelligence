@@ -1,18 +1,17 @@
-import React from 'react'
-
-function Card() {
+import React from 'react';
+import {NavLink} from 'react-router-dom'
+function Card({ id, name, price, image,description }) {
+ 
   return (
     <>
-      <div class="content">
-    <img class="con-img" src="\src\Images\m1.avif"/>
-    <h3>Medicine 1</h3>
-    <p>This is the medicine for this specific disease</p>
-    <h6>₹ 199</h6>
-    <strike class="price">₹ 249.00</strike>
-    <button class="buy-1" >View More</button>
-</div>
+      <div className="content" key={id}>
+        <img className="con-img" src={`${image}`} alt={name} />
+        <p>{name}</p>
+        <h5>{price}</h5>
+        <NavLink to={`/${name}/${id}`} className="buy-1"   >View More</NavLink>
+      </div>
     </>
-  )
+  );
 }
 
-export default Card
+export default Card;

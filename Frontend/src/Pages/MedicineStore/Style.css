@@ -8,10 +8,14 @@
 }
 
 .content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 20%;
+	height: 70vh;
 	margin: 15px;
 	box-sizing: border-box;
-	float: left;
+	
 	text-align: center;
 	border-radius: 20px;
 	cursor: pointer;
@@ -33,13 +37,17 @@
 	margin: 0 auto;
 	display: block;
 }
+.con-img img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+}
 a{
     text-decoration: none;
 }
 p{
 	text-align: center;
 	color: black;
-	padding-top: 0 8px;
 }
 
 h6{
