@@ -66,8 +66,8 @@ class MedicineAdmin(admin.ModelAdmin):
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'phone_number', 'email')
-    search_fields = ('name', 'phone_number', 'email')
+    list_display = ('id', 'name',  'email')
+    search_fields = ('name','email')
 
 @admin.register(TestBook)
 class TestBookAdmin(admin.ModelAdmin):

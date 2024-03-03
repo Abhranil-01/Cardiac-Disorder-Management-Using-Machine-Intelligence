@@ -1,10 +1,13 @@
 import React from 'react'
+import './Style.css'
+import Card from '../../Components/Card/Card'
 
 export default function MedicineStore() {
   return (
-    <div>
-      <h1>Medicine Store</h1>
-    </div>
+    <>
+      <div class="gallery">
+        <Card/>
+      </div>
+    </>
   )
 }
-a

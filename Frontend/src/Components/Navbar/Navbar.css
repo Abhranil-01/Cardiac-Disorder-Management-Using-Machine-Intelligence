@@ -1,0 +1,29 @@
+nav{
+    background-color: #ccccd8;
+}
+.navbar-brand
+{
+    font-weight: 500;
+    color: #009970;
+    font-size: 24px;
+}
+
+.login-button
+{
+    text-decoration: none;
+    color: white;
+    background-color: #009970;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 5px 5px;
+    padding: 11px 21px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-link
+{
+    color: #666777;
+    position: relative;
+    font-weight: 500;
+}

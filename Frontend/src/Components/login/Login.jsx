@@ -1,17 +1,52 @@
 import React, { useState, useEffect } from "react";
-import getData from "../../Pages/login/getData";
+import { useDispatch } from 'react-redux';
+import { NavLink, useNavigate } from 'react-router-dom';
+import { setUserToken } from '../../Features/authSlice';
+import { getToken, storeToken } from '../../Service/LocalStorageService';
+import { useLoginUserMutation } from '../../Service/UserAuthApi';
+
 
 function Login() {
   const [type, setType] = useState("password");
   const [update, setUpdate] = useState("fa-solid fa-eye");
-  const [emailone, setEmailOne] = useState("");
-  const [pwdone, setPwdOne] = useState("");
-  const [email, setEmail] = useState("");
+  const [server_error, setServerError] = useState({})
+  const navigate = useNavigate();
+  const [loginUser, { isLoading }] = useLoginUserMutation()
+  const dispatch = useDispatch()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const actualData = {
+      email: data.get('email'),
+      password: data.get('password'),
+    }
+    const res = await loginUser(actualData)
+    if (res.error) {
+      // console.log(typeof (res.error.data.errors))
+      // console.log(res.error.data.errors)
+      setServerError(res.error.data.errors)
+    }
+    if (res.data) {
+      // console.log(typeof (res.data))
+      // console.log(res.data)
+      storeToken(res.data.token)
+      let { access_token } = getToken()
+      dispatch(setUserToken({ access_token: access_token }))
+      navigate('/Home')
+    }
+  }
+  let { access_token } = getToken()
+  useEffect(() => {
+    dispatch(setUserToken({ access_token: access_token }))
+  }, [access_token, dispatch])
 
- 
+
+
+  
+
   return (
     <>
-      <form action="" autoComplete="off" onSubmit={submit}>
+      <form action="" autoComplete="off" onSubmit={handleSubmit}>
         <div className="actual-form">
           <div className="input-wrap">
             <i className="fa-solid fa-envelope"></i>
@@ -21,8 +56,7 @@ function Login() {
               className="input-field"
               autoComplete="off"
               placeholder="Email"
-              value={emailone}
-              onChange={(e) => setEmailOne(e.target.value)}
+              name="email"
             />
           </div>
 
@@ -34,8 +68,7 @@ function Login() {
               className={`input-field `}
               autoComplete="off"
               placeholder="Password"
-              value={pwdone}
-              onChange={(e) => setPwdOne(e.target.value)}
+              name="password"
             />
             <i
               className={`${update}`}

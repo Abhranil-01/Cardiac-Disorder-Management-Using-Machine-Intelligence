@@ -76,7 +76,7 @@ class MedicineSerializer(serializers.ModelSerializer):
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
-        fields = ['id', 'name', 'phone_number', 'email', 'query','url']
+        fields = ['id', 'name', 'email', 'query','url']
 
 class TestBookSerializer(serializers.ModelSerializer):
     class Meta:
