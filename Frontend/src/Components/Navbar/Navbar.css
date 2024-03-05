@@ -1,5 +1,5 @@
 nav{
-    background-color: #ccccd8;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .navbar-brand
 {
@@ -23,7 +23,7 @@ nav{
 
 .nav-link
 {
-    color: #666777;
+    color: #0ddd6b;
     position: relative;
-    font-weight: 500;
+    font-weight: bold;
 }
