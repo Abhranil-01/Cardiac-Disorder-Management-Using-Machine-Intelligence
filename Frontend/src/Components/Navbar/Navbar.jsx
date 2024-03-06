@@ -48,20 +48,20 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg  border border-danger">
+      <nav className="navbar navbar-expand-lg ">
         <div className="container-fluid">
-            <a className="navbar-brand me-auto" href="#">Heart</a>
+            <NavLink className="navbar-brand me-auto " >HEART</NavLink>
 
-            <div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            <div className="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div className="offcanvas-header">
-                    <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Heart</h5>
+                    <h5 className="offcanvas-title text-white" id="offcanvasNavbarLabel">Heart</h5>
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
                     <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li className="nav-item">
-                            <NavLink to='/Home' className={({isActive})=>`nav-link ${isActive? 'active':'nav-link'} `} aria-current="page" href="#">Home</NavLink>
+                            <NavLink to='/' className={({isActive})=>`${isActive ? 'nav-link active':'nav-link '}  `} aria-current="page" href="#">Home</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to='/BookTest' className={({isActive})=>`${isActive? 'nav-link active':'nav-link'} mx-lg-2`} href="#">Book Test</NavLink>
@@ -76,7 +76,7 @@ function Navbar() {
                 </div>
             </div>
 
-            {access_token ?(<NavLink to='/Home' className="login-button" onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
+            {access_token ?(<NavLink to='/' className="login-button" onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
             
             
             <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">

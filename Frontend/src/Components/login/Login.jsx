@@ -32,7 +32,7 @@ function Login() {
       storeToken(res.data.token)
       let { access_token } = getToken()
       dispatch(setUserToken({ access_token: access_token }))
-      navigate('/Home')
+      navigate('/')
     }
   }
   let { access_token } = getToken()

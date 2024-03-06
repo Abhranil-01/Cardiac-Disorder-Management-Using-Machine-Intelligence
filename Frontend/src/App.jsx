@@ -12,14 +12,14 @@ function App() {
       <BrowserRouter>
         <Routes>
         <Route path='/' element={<Layout/>} >
-       <Route path='Home' element={<Home/>}/>
+       <Route path='' element={<Home/>}/>
        <Route path='BookTest' element={<TestBooking/>}/>
        <Route path='OrderMedichine' element={<MedicineStore/>}/>
        <Route path='/:product/:id' element={<SingleProduct/>}/>
        <Route path='AboutUs' element={<About/>}/>
        <Route path='login' element={<LoginSignup/>}/>
      </Route>
-          <Route path="/Home" element={access_token ? <Home/> : <Navigate to="/login" />} />
+          <Route path="/" element={access_token ? <Home/> : <Navigate to="/login" />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>

@@ -37,7 +37,7 @@ function Register() {
       console.log(typeof (res.data))
       console.log(res.data)
       storeToken(res.data.token)
-      navigate('/Home')
+      navigate('/')
     }
   }
 
