@@ -103,9 +103,9 @@ function Form() {
                 </div>
                 <div>
                     Exercise Induced Angina :
-                    <input id="yes" type="radio" name="induced-angina"  value={exerciseInduced} onChange={(e)=>setExerciseInduced(e.target.value)}/>
+                    <input id="yes" type="radio" name="induced-angina"  value={1} onChange={(e)=>setExerciseInduced(e.target.value)}/>
                     <label for="yes">Yes</label>
-                    <input id="no" type="radio" name="induced-angina" value={exerciseInduced} onChange={(e)=>setExerciseInduced(e.target.value)} />
+                    <input id="no" type="radio" name="induced-angina" value={0} onChange={(e)=>setExerciseInduced(e.target.value)} />
                     <label for="no">No</label>
                 </div>
                 <div>
