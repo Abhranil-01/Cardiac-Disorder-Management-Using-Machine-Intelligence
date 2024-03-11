@@ -57,19 +57,19 @@ function Form() {
                     <select id="sex" class="form-select form-select-sm" aria-label="small select example" value={sex} onChange={(e)=>setSex(e.target.value)} >
                         Sex:
                         <option selected>Open this select menu</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Others</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        /* <option value="3">Others</option> */
                     </select>
                 </div>
                 <div>
                     <label for="chest-pain-type">Chest pain type :</label>
                     <select id="chest-pain-type" class="form-select form-select-sm" aria-label="Small select example" value={pain} onChange={(e)=>setPain(e.target.value)}>
                         <option selected>Open this select menu</option>
-                        <option value="1">Typical Angina</option>
-                        <option value="2">Atypical Angina</option>
-                        <option value="3">Non-Anginal pain</option>
-                        <option value="4">Asymptomatic</option>
+                        <option value="typical angina">Typical Angina</option>
+                        <option value="atypical angina">Atypical Angina</option>
+                        <option value="non-anginal pain">Non-Anginal pain</option>
+                        <option value="asymptomatic">Asymptomatic</option>
                       </select>
                 </div>
                 <div>
@@ -84,17 +84,17 @@ function Form() {
                     <label for="sugar-level">Fasting Blood Sugar Level :</label>
                     <select id="sugar-level" class="form-select form-select-sm" aria-label="Small select example" value={bloodSuger} onChange={(e)=>setbloodSuger(e.target.value)}>
                         <option selected>Open this select menu</option>
-                        <option value="1">Lower than 120 mg/dl</option>
-                        <option value="2">Greater than or equal to 120 mg/dl</option>
+                        <option value="0">Lower than 120 mg/dl</option>
+                        <option value="1">Greater than or equal to 120 mg/dl</option>
                       </select>
                 </div>
                 <div>
                     <label for="ecg">Rest ECG :</label>
                     <select id="ecg" class="form-select form-select-sm" aria-label="Small select example" value={ecg} onChange={(e)=>setECG(e.target.value)}>
                         <option selected>Open this select menu</option>
-                        <option value="1">Normal</option>
-                        <option value="2">ST-T Wave Abnormality</option>
-                        <option value="3">Left Ventricular Hypertrophy</option>
+                        <option value="normal">Normal</option>
+                        <option value="ST-T wave abnormality">ST-T Wave Abnormality</option>
+                        <option value="left ventricular hypertrophy">Left Ventricular Hypertrophy</option>
                       </select>
                 </div>
                 <div>
@@ -116,9 +116,9 @@ function Form() {
                     <label for="st-slope">ST SLope</label>
                     <select id="st-slope" class="form-select form-select-sm" aria-label="Small select example" value={stSLope} onChange={(e)=>setSTSLope(e.target.value)}>
                         <option selected>Open this select menu</option>
-                        <option value="1">Upsloping</option>
-                        <option value="2">Flat</option>
-                        <option value="3">Downsloping</option>
+                        <option value="upsloping">Upsloping</option>
+                        <option value="flat">Flat</option>
+                        <option value="downsloping">Downsloping</option>
                       </select>
                 </div>
                 <div className="modal-footer">

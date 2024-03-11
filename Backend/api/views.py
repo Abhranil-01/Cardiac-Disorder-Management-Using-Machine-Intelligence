@@ -97,6 +97,7 @@ class TestBookViewSet(viewsets.ModelViewSet):
 def predict(request):
 	try:
 		mydata = request.data
+		print(mydata)
 		ml = joblib.load('api/rf_model.pkl')
 		df1 = pd.read_csv('api/data.csv')
 		df1 = df1.drop(['target'],axis=1)
