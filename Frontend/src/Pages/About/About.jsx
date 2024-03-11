@@ -44,7 +44,7 @@ export default function About() {
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div className="col d-flex align-items-start">
         <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <i className="fa-solid fa-user-doctor fa-2x" width></i>
+          {/* <i className="fa-solid fa-user-doctor fa-2x" width></i> */}
         </div>
         <div>
           <h3 className="fs-2 text-body-emphasis">Doctor You Choose</h3>
@@ -53,7 +53,7 @@ export default function About() {
       </div>
       <div className="col d-flex align-items-start">
         <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          <i className="fa-solid fa-suitcase-medical fa-2x"></i>
+          {/* <i className="fa-solid fa-suitcase-medical fa-2x"></i> */}
         </div>
         <div>
           <h3 className="fs-2 text-body-emphasis">Always There For You</h3>
@@ -62,7 +62,7 @@ export default function About() {
       </div>
       <div className="col d-flex align-items-start">
         <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-         <i className="fa-solid fa-heart-pulse fa-2x"></i>
+         {/* <i className="fa-solid fa-heart-pulse fa-2x"></i> */}
         </div>
         <div>
           <h3 className="fs-2 text-body-emphasis">Your Health Care</h3>
@@ -159,7 +159,7 @@ export default function About() {
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div className="feature col">
         <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
-          <i className="fa-solid fa-location-dot fa-2x"></i>
+          {/* <i className="fa-solid fa-location-dot fa-2x"></i> */}
         </div>
         <h3 className="fs-2 text-body-emphasis">Location</h3>
         <p>66 Ruby EM Bypass</p>
@@ -168,7 +168,7 @@ export default function About() {
 
       <div className="feature col">
         <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          <i className="fa-solid fa-phone fa-2x"></i>
+          {/* <i className="fa-solid fa-phone fa-2x"></i> */}
         </div>
         <h3 className="fs-2 text-body-emphasis">Phone</h3>
         <p>9889765439</p>
@@ -177,7 +177,7 @@ export default function About() {
 
       <div className="feature col">
         <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 mb-3">
-          <i className="fa-regular fa-envelope fa-2x"></i>
+          {/* <i className="fa-regular fa-envelope fa-2x"></i> */}
         </div>
         <h3 className="fs-2 text-body-emphasis">Email</h3>
         <p>heartcare@gmail.com</p>

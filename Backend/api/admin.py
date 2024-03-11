@@ -60,7 +60,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Medicine)
 class MedicineAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'price', 'qty', 'type')
+    list_display = ('id', 'name', 'price', 'qty', 'type','featured')
     search_fields = ('name', 'type')
     list_filter = ('type',)
 

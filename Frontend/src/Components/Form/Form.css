@@ -1,0 +1,16 @@
+
+.modal-content
+{
+    width: 130%;
+} 
+.modal-body form div
+{
+    margin-top: 12px;
+    margin-bottom: 12px;
+    /* box-shadow: 3px 3px rgba(0, 0, 0, 0.308) 4px; */
+}
+.modal-body form select
+{
+    display: inline-block;
+    width: auto;
+}
