@@ -17,7 +17,7 @@ const PostandGetData = async ({ age, sex,pain,bloodPressure,cholestrol,bloodSuge
           rest_ecg:`${ecg}`,
           max_heart_rate_achieved:parseInt(`${maxHeartRate}`),
           exercise_induced_angina:parseInt(`${exerciseInduced}`),
-          st_depression: parseInt(`${stDepression}`),
+          st_depression: parseFloat(`${stDepression}`),
           st_slope:`${stSLope}`,
         }),
       };

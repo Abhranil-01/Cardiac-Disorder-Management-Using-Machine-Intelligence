@@ -1,7 +1,12 @@
-
+.modal-dialog{
+    position: relative;
+    background-color: green;
+}
 .modal-content
 {
     width: 130%;
+    position: absolute;
+    
 } 
 .modal-body form div
 {
@@ -13,4 +18,15 @@
 {
     display: inline-block;
     width: auto;
+}
+.predict-result{
+    width: 130%;
+    position: absolute;
+    border: 2px solid red;
+    padding: 20px;
+ 
+}
+.signal{
+    width: 20vw;
+    height: 5vh;
 }

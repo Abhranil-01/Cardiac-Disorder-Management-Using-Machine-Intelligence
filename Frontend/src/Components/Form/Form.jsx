@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './Form.css'
-import PostandGetData from './PostandGet'
+
 
 function Form() {
   const [age,setAge]=useState('')
@@ -14,34 +14,89 @@ function Form() {
   const[exerciseInduced ,setExerciseInduced]=useState('')
   const [stDepression,setSTDepression]=useState('')
   const[stSLope,setSTSLope]=useState('')
-    
+  const [addClass,setAddClass]=useState('d-none') 
+  const [addClassOne,setAddClassOne]=useState('d-block')
+  const [Data,setData]=useState('')
+  const [color,setColor]=useState('')
+  const [textHead,setTextHead]=useState('')
+  const [text,setText]=useState('')
+
+  const handelSubmit = async (e) => {
+    e.preventDefault();
   
-      const handelSubmit = async (e) => {
-        e.preventDefault();
-    
-         const {data}=await PostandGetData({ age, sex,pain,bloodPressure,cholestrol,bloodSuger,ecg,maxHeartRate,exerciseInduced,stDepression,stSLope });
-          setAge('')
-          setSex('')
-          setPain('')
-          setbloodPressure('')
-          setCholestrol('')
-          setbloodSuger('')
-          setECG('')
-          setMaxHeartRate('')
-          setExerciseInduced('')
-          setSTDepression('')
-          setSTSLope('')
-          console.log(data);
-          console.log('hello');
-      };
+    const url = 'http://127.0.0.1:8000/api/predict/';
+  
+    const options = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        age: parseInt(`${age}`),
+        sex: `${sex}`,
+        chest_pain_type: `${pain}`,
+        resting_blood_pressure: parseInt(`${bloodPressure}`),
+        cholesterol: parseInt(`${cholestrol}`),
+        fasting_blood_sugar: parseInt(`${bloodSuger}`),
+        rest_ecg: `${ecg}`,
+        max_heart_rate_achieved: parseInt(`${maxHeartRate}`),
+        exercise_induced_angina: parseInt(`${exerciseInduced}`),
+        st_depression: parseFloat(`${stDepression}`),
+        st_slope: `${stSLope}`,
+      }),
+    };
+  
+    try {
+      const response = await fetch(url, options);
+      const data = await response.json();
+      setData(data[0])
+      console.log('wfewrf',Data);
+     if(Data==='T'){
+      console.log('hello');
+      setColor('bg-success')
+      setTextHead('You Are Safe')
+      setText('You are safe now although if you have some problem then you consult with the doctors do not take any risk Thank You.')
+     }else if(Data==='F'){
+      console.log('ergferg');
+      setColor('bg-danger')
+      setTextHead('You Are In Danger')
+      setText('You are in danger immediately consult with the doctors')
+     }
+  
+  
+      // Update the state with the fetched data
       
+  
+      setAddClass('d-block');
+      setAddClassOne('d-none');
+      setAge('');
+      setSex('');
+      setPain('');
+      setbloodPressure('');
+      setCholestrol('');
+      setbloodSuger('');
+      setECG('');
+      setMaxHeartRate('');
+      setExerciseInduced('');
+      setSTDepression('');
+      setSTSLope('');
+    } catch (error) {
+      console.error('Error submitting data:', error);
+      // Handle error appropriately (e.g., show an error message)
+    }
+  };
+  
+    
 
   return (
     <>
       
-      <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div className="modal-dialog">
-          <div className="modal-content">
+      <div className="modal fade border border-danger" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onClick={()=>{
+                     setAddClassOne('d-block')
+               setAddClass('d-none')
+              }}>
+        <div className="modal-dialog bg-success ">
+          <div className={`modal-content ${addClassOne}`} >
             <div className="modal-header">
               <h1 className="modal-title fs-5" id="exampleModalLabel">Check prediction by filling the details</h1>
               <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -59,7 +114,6 @@ function Form() {
                         <option selected>Open this select menu</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
-                        /* <option value="3">Others</option> */
                     </select>
                 </div>
                 <div>
@@ -127,9 +181,23 @@ function Form() {
             </div>
               </form>
             </div>
-          
+         
           </div>
+          <div className={`bg-white modal-content predict-result ${addClass}`}>
+            <div className="modal-header">
+              <h1 className="modal-title fs-5" id="exampleModalLabel">Predict Result</h1>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" onClick={()=>{
+                     setAddClassOne('d-block')
+               setAddClass('d-none')
+              }}></button>
+            </div>
+            <div className='predict-content mt-4'>
+                <div className={`signal m-auto ${color} text-white fw-bold d-flex  align-items-center justify-content-center `}>{textHead}</div>
+                <div className='fw-bold'>{text}</div>
+            </div>
         </div>
+        </div>
+        
       </div>
     </>
   )
