@@ -59,7 +59,6 @@ function Form() {
                         <option selected>Open this select menu</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
-                        /* <option value="3">Others</option> */
                     </select>
                 </div>
                 <div>
