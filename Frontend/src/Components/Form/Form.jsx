@@ -55,12 +55,12 @@ function Form() {
 	  console.log(data[0].predict)
 	  console.log("Hello");
       console.log(Data);
-     if(data[0].predict === 1){
+     if(data[0].predict === 0){
       console.log('hello');
       setColor('bg-success')
       setTextHead('You Are Safe')
       setText('You are safe now although if you have some problem then you consult with the doctors do not take any risk Thank You.')
-     }else if(data[0].predict === 0){
+     }else if(data[0].predict === 1){
       console.log('ergferg');
       setColor('bg-danger')
       setTextHead('You Are In Danger')
