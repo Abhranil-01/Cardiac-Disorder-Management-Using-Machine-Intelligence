@@ -100,7 +100,6 @@ class Contact(models.Model):
 	name = models.CharField(max_length=255)
 	email = models.EmailField()
 	query = models.TextField()
-
 	def __str__(self):
 		return self.name
 
@@ -114,7 +113,7 @@ class TestBook(models.Model):
 		return self.name
 
 class AddtoCart(models.Model):
-	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True)
 	medicine_id = models.ForeignKey(Medicine, on_delete=models.CASCADE)
 	qty = models.IntegerField()
 

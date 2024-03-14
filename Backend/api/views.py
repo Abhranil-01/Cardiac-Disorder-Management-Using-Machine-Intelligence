@@ -109,7 +109,7 @@ class AddtoCartAPIView(APIView):
 		serializer = AddtoCartSerializer(data=request.data)
 		if serializer.is_valid():
 			# Check if medicine exists and has enough quantity
-			medicine_id = request.data.get('medicine')
+			medicine_id = request.data.get('medicine_id')
 			qty = request.data.get('qty')
 			medicine = Medicine.objects.get(pk=medicine_id)
 			if medicine.qty < qty:
@@ -121,7 +121,8 @@ class AddtoCartAPIView(APIView):
 
 	def put(self, request):  
 		try:
-			cart_item = AddtoCart.objects.get(user=request.user)
+			cart_id = request.data.get("cart_id")
+			cart_item = AddtoCart.objects.get(id=cart_id, user=request.user)
 		except AddtoCart.DoesNotExist:
 			return Response({'error': 'Cart item not found'}, status=status.HTTP_404_NOT_FOUND)
 
@@ -155,16 +156,19 @@ class OrderListAPIView(APIView):
 		return Response(serializer.data)
 
 	def post(self, request):
+		cart_id = request.data.get('cart_id')
 		serializer = OrderSerializer(data=request.data)
 		if serializer.is_valid():
 			serializer.save(user=request.user)
-			AddtoCart.objects.filter(user=request.user).delete()
+			if cart_id:
+				AddtoCart.objects.filter(id = cart_id, user=request.user).delete()
+				
 			return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 	def put(self, request):
 		try:
-			order_id = request.data.get('id')
+			order_id = request.data.get('order_id')
 			order = OrderList.objects.get(id = order_id ,user=request.user)
 		except OrderList.DoesNotExist:
 			return Response({'error': 'Order not found'}, status=status.HTTP_404_NOT_FOUND)
