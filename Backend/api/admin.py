@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.utils.safestring import mark_safe
-from .models import Medicine, Contact, TestBook, Profile
+from .models import Medicine, Contact, TestBook, Profile, AddtoCart, OrderList
 from .models import User
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 
@@ -74,3 +74,11 @@ class TestBookAdmin(admin.ModelAdmin):
     list_display = ('id', 'name', 'type', 'price', 'time')
     search_fields = ('name', 'type')
     list_filter = ('type',)
+
+@admin.register(OrderList)
+class OrderLIstAdmin(admin.ModelAdmin):
+	list_display = ('user', 'medicine_id', 'qty','status', 'price')
+
+@admin.register(AddtoCart)
+class AddtoCard(admin.ModelAdmin):
+	list_display = ('user', 'medicine_id', 'qty')
