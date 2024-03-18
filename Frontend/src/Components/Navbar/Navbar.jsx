@@ -6,8 +6,7 @@ import { unSetUserToken } from '../../Features/authSlice';
 import { getToken, removeToken } from '../../Service/LocalStorageService';
 import { setUserInfo, unsetUserInfo } from '../../Features/userSlice';
 import {useGetLoggedUserQuery} from'../../Service/UserAuthApi'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCart} from '@fortawesome/free-solid-svg-icons';
+
 
 function Navbar() {
     const navigate = useNavigate()
