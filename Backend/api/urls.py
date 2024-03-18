@@ -14,5 +14,7 @@ urlpatterns =[
 	path('register/',views.UserRegistrationView.as_view(), name='register'),
     path('login/', views.UserLoginView.as_view(), name='login'),
     path('profile/', views.UserProfileView.as_view(), name='profile'),
-	path('predict/',views.predict, name='predict' )
+	path('addtocart/', views.AddtoCartAPIView.as_view(), name='addtocart'),
+	path('orderlist/', views.OrderListAPIView.as_view(), name='orderlist'),
+	path('predict/',views.predict, name='predict' ),
 ]
