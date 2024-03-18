@@ -47,9 +47,23 @@ export const userAuthApi = createApi({
         }
       }
     }),
+    addToCart: builder.mutation({
+      query: (addData,access_token) => {
+        return {
+          url: 'addtocart/',
+          method: 'POST',
+          body: addData,
+          headers: {
+           
+            'authorization': `Bearer ${access_token}`
+          }
+        }
+      }
+    }),
+    
    
    
   }),
 })
 
-export const { useRegisterUserMutation, useLoginUserMutation,useGetLoggedUserQuery,} = userAuthApi
+export const { useRegisterUserMutation, useLoginUserMutation,useGetLoggedUserQuery,useAddToCartMutation} = userAuthApi
