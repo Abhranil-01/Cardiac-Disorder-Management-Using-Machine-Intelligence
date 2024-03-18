@@ -85,16 +85,16 @@ class UserProfileView(APIView):
 
 
 
-# class MedicineViewSet(viewsets.ModelViewSet):
-# 	queryset = Medicine.objects.all()
-# 	serializer_class = MedicineSerializer
+class MedicineViewSet(viewsets.ModelViewSet):
+	queryset = Medicine.objects.all()
+	serializer_class = MedicineSerializer
 
 
-class MedicineListAPIView(APIView):
-	def get(self, request):
-		medicines = Medicine.objects.all()
-		serializer = MedicineSerializer(medicines, many=True)
-		return Response(serializer.data)
+# class MedicineListAPIView(APIView):
+# 	def get(self, request):
+# 		medicines = Medicine.objects.all()
+# 		serializer = MedicineSerializer(medicines, many=True)
+# 		return Response(serializer.data)
 
 class AddtoCartAPIView(APIView):
 	permission_classes = [IsAuthenticated]
@@ -138,9 +138,10 @@ class AddtoCartAPIView(APIView):
 			return Response(serializer.data, status=status.HTTP_200_OK)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
-	def delete(self, request, pk):
+	def delete(self, request):
 		try:
-			cart_item = AddtoCart.objects.get(pk=pk, user=request.user)
+			cart_id = request.data.get("cart_id")
+			cart_item = AddtoCart.objects.get(id=cart_id, user=request.user)
 		except AddtoCart.DoesNotExist:
 			return Response({'error': 'Cart item not found'}, status=status.HTTP_404_NOT_FOUND)
 
