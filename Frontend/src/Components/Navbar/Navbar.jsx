@@ -6,6 +6,8 @@ import { unSetUserToken } from '../../Features/authSlice';
 import { getToken, removeToken } from '../../Service/LocalStorageService';
 import { setUserInfo, unsetUserInfo } from '../../Features/userSlice';
 import {useGetLoggedUserQuery} from'../../Service/UserAuthApi'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCart} from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
     const navigate = useNavigate()
@@ -75,7 +77,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
-
+                  <div>add</div>
             {access_token ?(<NavLink to='/' className="login-button" onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
             
             

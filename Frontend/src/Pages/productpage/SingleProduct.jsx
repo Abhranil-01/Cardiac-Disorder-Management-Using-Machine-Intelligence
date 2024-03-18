@@ -31,6 +31,27 @@ function SingleProduct() {
   }
 
   const { image, name, price, qty, description } = product;
+  //!data submit for add to cart page
+  // const handelSubmit = async (e) => {
+  //   e.preventDefault();
+  
+  //   const url = 'http://127.0.0.1:8000/api/addtocart/';
+  
+  //   const options = {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({
+  //       Medicine_id:id,
+  //       qty:qty
+  //     }),
+  //   };
+  //   const response = await fetch(url, options);
+  //     const data = await response.json();
+  //     console.log(data);
+  
+  // };
 
   return (
     <div style={{ overflowX: "hidden" }}>
@@ -72,9 +93,7 @@ function SingleProduct() {
 
             <button
               className="btn btn-primary mb-5"
-              onClick={() => {
-                /* Handle Add to Cart functionality */
-              }}
+              
             >
               {/* <NavLink to='/c
               
