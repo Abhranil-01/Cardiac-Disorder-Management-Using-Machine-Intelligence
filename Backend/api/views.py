@@ -3,8 +3,8 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import authenticate
 from rest_framework import generics
-from .models import  Medicine, Contact, TestBook, Profile
-from .serializers import MedicineSerializer, ContactSerializer, TestBookSerializer
+from .models import  Medicine, Contact, TestBook, Profile, AddtoCart, OrderList
+from .serializers import MedicineSerializer, ContactSerializer, TestBookSerializer, AddtoCartSerializer, OrderSerializer
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated, AllowAny
@@ -66,6 +66,7 @@ class UserProfileView(APIView):
 		return Response(serializer.data, status=status.HTTP_200_OK)
 
 
+
 # class RegisterViewSet(viewsets.ModelViewSet):
 #     queryset = Register.objects.all()
 #     serializer_class = RegisterSerializer
@@ -81,10 +82,103 @@ class UserProfileView(APIView):
 # class ProfileViewSet(viewsets.ModelViewSet):
 # 	queryset = Profile.objects.all()
 # 	serializer_class = ProfileSerializer
-class MedicineViewSet(viewsets.ModelViewSet):
-	queryset = Medicine.objects.all()
-	serializer_class = MedicineSerializer
 
+
+
+# class MedicineViewSet(viewsets.ModelViewSet):
+# 	queryset = Medicine.objects.all()
+# 	serializer_class = MedicineSerializer
+
+
+class MedicineListAPIView(APIView):
+	def get(self, request):
+		medicines = Medicine.objects.all()
+		serializer = MedicineSerializer(medicines, many=True)
+		return Response(serializer.data)
+
+class AddtoCartAPIView(APIView):
+	permission_classes = [IsAuthenticated]
+
+	def get(self, request):
+		user = request.user
+		cart_items = AddtoCart.objects.filter(user=user)
+		serializer = AddtoCartSerializer(cart_items, many=True)
+		return Response(serializer.data)
+
+	def post(self, request):
+		serializer = AddtoCartSerializer(data=request.data)
+		if serializer.is_valid():
+			# Check if medicine exists and has enough quantity
+			medicine_id = request.data.get('medicine_id')
+			qty = request.data.get('qty')
+			medicine = Medicine.objects.get(pk=medicine_id)
+			if medicine.qty < qty:
+				return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
+
+			serializer.save(user=request.user)  # Use authenticated user
+			return Response(serializer.data, status=status.HTTP_201_CREATED)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+	def put(self, request):  
+		try:
+			cart_id = request.data.get("cart_id")
+			cart_item = AddtoCart.objects.get(id=cart_id, user=request.user)
+		except AddtoCart.DoesNotExist:
+			return Response({'error': 'Cart item not found'}, status=status.HTTP_404_NOT_FOUND)
+
+		serializer = AddtoCartSerializer(cart_item, data=request.data, partial=True)
+		if serializer.is_valid():
+			# Check if medicine exists and has enough quantity
+			qty = request.data.get('qty', cart_item.qty)
+			medicine = cart_item.medicine_id
+			if medicine.qty < qty:
+				return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
+
+			serializer.save()
+			return Response(serializer.data, status=status.HTTP_200_OK)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+	def delete(self, request, pk):
+		try:
+			cart_item = AddtoCart.objects.get(pk=pk, user=request.user)
+		except AddtoCart.DoesNotExist:
+			return Response({'error': 'Cart item not found'}, status=status.HTTP_404_NOT_FOUND)
+
+		cart_item.delete()
+		return Response(status=status.HTTP_204_NO_CONTENT)
+
+class OrderListAPIView(APIView):
+	permission_classes = [IsAuthenticated]
+
+	def get(self, request):
+		orders =OrderList.objects.filter(user=request.user)
+		serializer = OrderSerializer(orders, many=True)
+		return Response(serializer.data)
+
+	def post(self, request):
+		cart_id = request.data.get('cart_id')
+		serializer = OrderSerializer(data=request.data)
+		if serializer.is_valid():
+			serializer.save(user=request.user)
+			if cart_id:
+				AddtoCart.objects.filter(id = cart_id, user=request.user).delete()
+				
+			return Response(serializer.data, status=status.HTTP_201_CREATED)
+		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+	def put(self, request):
+		try:
+			order_id = request.data.get('order_id')
+			order = OrderList.objects.get(id = order_id ,user=request.user)
+		except OrderList.DoesNotExist:
+			return Response({'error': 'Order not found'}, status=status.HTTP_404_NOT_FOUND)
+
+		# Update order status to canceled
+		order.status = 'Cancelled'
+		order.save()
+
+		return Response({'msg': 'Order canceled'}, status=status.HTTP_200_OK)
+		
 class ContactViewSet(viewsets.ModelViewSet):
 	queryset = Contact.objects.all()
 	serializer_class = ContactSerializer

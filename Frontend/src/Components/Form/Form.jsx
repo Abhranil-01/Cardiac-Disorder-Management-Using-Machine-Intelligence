@@ -95,7 +95,7 @@ function Form() {
   return (
     <>
       
-      <div className="modal fade border border-danger" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onClick={()=>{
+      <div className="modal fade " id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" onClick={()=>{
                      setAddClassOne('d-block')
                setAddClass('d-none')
               }}>

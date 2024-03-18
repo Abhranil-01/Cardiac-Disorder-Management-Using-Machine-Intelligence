@@ -8,6 +8,7 @@ class UserManager(BaseUserManager):
 	  """
 	  Creates and saves a User with the given email, name,phone_number and password.
 	  """
+	
 	  if not email:
 		  raise ValueError('User must have an email address')
 
@@ -99,7 +100,6 @@ class Contact(models.Model):
 	name = models.CharField(max_length=255)
 	email = models.EmailField()
 	query = models.TextField()
-
 	def __str__(self):
 		return self.name
 
@@ -111,3 +111,30 @@ class TestBook(models.Model):
 
 	def __str__(self):
 		return self.name
+
+class AddtoCart(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True)
+	medicine_id = models.ForeignKey(Medicine, on_delete=models.CASCADE)
+	qty = models.IntegerField()
+
+	def __str__(self):
+		return f"{self.user.name}'s cart item: {self.medicine_id.name}"
+
+
+class OrderList(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE, blank=True)
+	medicine_id  = models.ForeignKey(Medicine, on_delete=models.CASCADE)
+	qty =  models.IntegerField()
+	status = models.CharField(max_length=20, choices={
+		'Pending':'Pending',
+		'Accepted' : 'Accepted',
+		'Shiping' : 'Shiping',
+		'Out for delivery' : 'Out for delivery',
+		'Delivered' : "Delivered",
+		'Cancelled' : 'Cancelled'
+	},default='Pending')
+	price = models.DecimalField(max_digits=10, decimal_places=2,blank=True)
+
+	def __str__(self):
+		return f"{self.user.name}'s order: {self.medicine_id.name} ({self.status})"
+	
