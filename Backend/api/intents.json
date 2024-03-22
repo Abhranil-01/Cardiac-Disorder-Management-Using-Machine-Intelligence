@@ -1818,6 +1818,706 @@
 			"context": [
 				""
 			]
+		},
+		{
+			"tag": "chest_pain_situation_1",
+			"patterns": [
+				"My chest hurts when I breathe deeply, what could be the cause?",
+				"I have chest pain that gets worse when I take a deep breath, what should I do?",
+				"Is chest pain when breathing deeply a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens with deep breathing can be caused by several conditions, including pleurisy, rib injury, or a lung infection. It's important to seek medical advice to determine the cause."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_2",
+			"patterns": [
+				"My chest hurts when I cough, what should I do?",
+				"I have chest pain when I cough or sneeze, is it serious?",
+				"What could be causing chest pain when coughing?"
+			],
+			"responses": [
+				"Chest pain when coughing can be caused by various conditions, such as a respiratory infection, bronchitis, or even muscle strain. If you're experiencing chest pain when coughing, it's advisable to seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_3",
+			"patterns": [
+				"I have a sharp pain in my chest that comes and goes, what could it be?",
+				"What does it mean if I have sharp chest pain that comes and goes?",
+				"Is occasional sharp chest pain something to worry about?"
+			],
+			"responses": [
+				"Occasional sharp chest pain that comes and goes can have various causes, including muscle strain, acid reflux, or even stress. However, it's important to seek medical advice to rule out more serious conditions, such as angina or a heart attack."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_4",
+			"patterns": [
+				"I have chest pain that feels like a tight band around my chest, what could be causing it?",
+				"What does it mean if I feel like there's a tight band around my chest?",
+				"Is tightness in the chest a sign of heart problems?"
+			],
+			"responses": [
+				"Tightness in the chest can be caused by various conditions, including anxiety, muscle strain, or even heart-related issues such as angina. If you're experiencing chest tightness, especially if it's accompanied by other symptoms like shortness of breath, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_5",
+			"patterns": [
+				"I have chest pain that radiates to my arm, is it a sign of a heart attack?",
+				"What does it mean if my chest pain spreads to my arm?",
+				"Is arm pain related to chest pain a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that radiates to the arm can be a symptom of a heart attack, especially if it's accompanied by other symptoms like shortness of breath, nausea, or dizziness. It's important to seek immediate medical attention if you're experiencing these symptoms."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_6",
+			"patterns": [
+				"My chest hurts when I swallow, what could be causing it?",
+				"I have chest pain when I swallow food or liquids, what should I do?",
+				"Is chest pain when swallowing a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain when swallowing can be caused by various conditions, including esophageal disorders, such as GERD or esophagitis. If you're experiencing chest pain when swallowing, it's advisable to seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_7",
+			"patterns": [
+				"I have chest pain that gets worse when I lie down, what could be causing it?",
+				"What does it mean if my chest pain worsens when lying down?",
+				"Is chest pain when lying down a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens when lying down can be caused by various conditions, including acid reflux, heartburn, or even pericarditis. If you're experiencing chest pain that worsens when lying down, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_8",
+			"patterns": [
+				"I have chest pain that improves with rest, what could be causing it?",
+				"What does it mean if my chest pain gets better with rest?",
+				"Is chest pain that improves with rest a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that improves with rest can have various causes, including muscle strain, inflammation, or even angina. It's important to seek medical advice to determine the cause."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_9",
+			"patterns": [
+				"I have chest pain that is worse after eating, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating?",
+				"Is chest pain after eating a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after eating can be caused by various conditions, including acid reflux, esophageal disorders, or even heart-related issues such as angina. If you're experiencing chest pain after eating, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_10",
+			"patterns": [
+				"My chest hurts when I bend over, what could be causing it?",
+				"I have chest pain when I bend forward or lean over, what should I do?",
+				"Is chest pain when bending over a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain when bending over can be caused by various conditions, including muscle strain, rib injury, or even heart-related issues such as pericarditis. If you're experiencing chest pain when bending over, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_11",
+			"patterns": [
+				"I have chest pain that is worse with exertion, what could be causing it?",
+				"What does it mean if my chest pain worsens with physical activity?",
+				"Is chest pain that worsens with exertion a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens with exertion can be a sign of angina or coronary artery disease. It's important to seek medical advice if you're experiencing chest pain that worsens with physical activity."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_12",
+			"patterns": [
+				"I have chest pain that is worse when I'm stressed, what could be causing it?",
+				"What does it mean if my chest pain worsens with stress?",
+				"Is chest pain that worsens with stress a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens with stress can be caused by various factors, including anxiety, muscle tension, or even coronary artery disease. If you're experiencing chest pain that worsens with stress, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_13",
+			"patterns": [
+				"I have chest pain that wakes me up at night, what could be causing it?",
+				"What does it mean if my chest pain wakes me up from sleep?",
+				"Is chest pain that wakes me up at night a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that wakes you up at night can have various causes, including acid reflux, angina, or even anxiety. If you're experiencing chest pain that wakes you up at night, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_14",
+			"patterns": [
+				"My chest hurts when I'm anxious, what could be causing it?",
+				"I have chest pain when I'm anxious or stressed, what should I do?",
+				"Is chest pain when anxious a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain when anxious can be caused by various factors, including muscle tension, anxiety attacks, or even heart-related issues such as angina. If you're experiencing chest pain when anxious, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_15",
+			"patterns": [
+				"I have chest pain that is worse after a meal, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating a meal?",
+				"Is chest pain after a meal a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a meal can be caused by various conditions, including acid reflux, gastritis, or even heart-related issues such as angina. If you're experiencing chest pain after a meal, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_16",
+			"patterns": [
+				"My chest hurts when I'm stressed, what could be causing it?",
+				"I have chest pain when I'm under stress, what should I do?",
+				"Is chest pain when stressed a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain when stressed can be caused by various factors, including muscle tension, anxiety, or even heart-related issues such as angina. If you're experiencing chest pain when stressed, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_17",
+			"patterns": [
+				"I have chest pain that comes and goes, what could be causing it?",
+				"What does it mean if my chest pain is intermittent?",
+				"Is occasional chest pain something to worry about?"
+			],
+			"responses": [
+				"Intermittent chest pain can have various causes, including muscle strain, acid reflux, or even heart-related issues such as angina. However, it's important to seek medical advice to rule out more serious conditions, such as a heart attack."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_18",
+			"patterns": [
+				"I have chest pain that is worse after exercise, what could be causing it?",
+				"What does it mean if my chest pain worsens after physical activity?",
+				"Is chest pain after exercise a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after exercise can be a sign of angina or coronary artery disease. It's important to seek medical advice if you're experiencing chest pain after exercise."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_19",
+			"patterns": [
+				"I have chest pain that is worse when I'm in a certain position, what could be causing it?",
+				"What does it mean if my chest pain worsens with certain movements or positions?",
+				"Is chest pain that worsens with certain positions a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens with certain positions or movements can be caused by various factors, including muscle strain, rib injury, or even heart-related issues such as pericarditis. If you're experiencing chest pain with certain positions, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_20",
+			"patterns": [
+				"I have chest pain that feels like a burning sensation, what could be causing it?",
+				"What does it mean if my chest pain feels like burning?",
+				"Is chest pain with a burning sensation a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain with a burning sensation can be caused by various conditions, including acid reflux, gastritis, or even heart-related issues such as angina. If you're experiencing chest pain with a burning sensation, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_21",
+			"patterns": [
+				"I have chest pain that feels like pressure, what could be causing it?",
+				"What does it mean if my chest pain feels like pressure or tightness?",
+				"Is chest pain with pressure a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that feels like pressure or tightness can be caused by various conditions, including angina, heart attack, or even aortic dissection. If you're experiencing chest pain with pressure, seek immediate medical attention."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_22",
+			"patterns": [
+				"I have chest pain that is worse when I'm anxious, what could be causing it?",
+				"What does it mean if my chest pain worsens with anxiety?",
+				"Is chest pain that worsens with anxiety a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens with anxiety can be caused by various factors, including muscle tension, anxiety attacks, or even heart-related issues such as angina. If you're experiencing chest pain that worsens with anxiety, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_23",
+			"patterns": [
+				"I have chest pain that is worse after eating a large meal, what could be causing it?",
+				"What does it mean if my chest pain worsens after a big meal?",
+				"Is chest pain after a large meal a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after eating a large meal can be caused by various conditions, including acid reflux, gastritis, or even heart-related issues such as angina. If you're experiencing chest pain after eating a large meal, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_24",
+			"patterns": [
+				"I have chest pain that is worse in the morning, what could be causing it?",
+				"What does it mean if my chest pain is worse in the morning?",
+				"Is chest pain worse in the morning a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that is worse in the morning can have various causes, including acid reflux, musculoskeletal issues, or even heart-related issues such as angina. If you're experiencing chest pain that is worse in the morning, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_25",
+			"patterns": [
+				"I have chest pain that feels like a stabbing sensation, what could be causing it?",
+				"What does it mean if my chest pain feels like stabbing pain?",
+				"Is chest pain with stabbing sensation a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain with a stabbing sensation can have various causes, including muscle strain, rib injury, or even heart-related issues such as pericarditis. If you're experiencing chest pain with a stabbing sensation, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_26",
+			"patterns": [
+				"I have chest pain that comes and goes with breathing, what could be causing it?",
+				"What does it mean if my chest pain is related to breathing?",
+				"Is chest pain with breathing a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that comes and goes with breathing can be caused by various conditions, including pleurisy, rib injury, or even a lung infection. If you're experiencing chest pain with breathing, especially if it's severe or persistent, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_27",
+			"patterns": [
+				"I have chest pain that is worse when I'm lying down, what could be causing it?",
+				"What does it mean if my chest pain worsens when lying down?",
+				"Is chest pain worse when lying down a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that is worse when lying down can have various causes, including acid reflux, heartburn, or even pericarditis. If you're experiencing chest pain that is worse when lying down, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_28",
+			"patterns": [
+				"I have chest pain that feels like a crushing sensation, what could be causing it?",
+				"What does it mean if my chest pain feels like crushing pressure?",
+				"Is chest pain with crushing sensation a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain with a crushing sensation can be a sign of a heart attack or angina. If you're experiencing chest pain with a crushing sensation, especially if it's accompanied by other symptoms like shortness of breath, seek immediate medical attention."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_29",
+			"patterns": [
+				"I have chest pain that is worse after a stressful event, what could be causing it?",
+				"What does it mean if my chest pain worsens after stress?",
+				"Is chest pain after a stressful event a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that is worse after a stressful event can be caused by various factors, including anxiety, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after a stressful event, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_30",
+			"patterns": [
+				"I have chest pain that is worse in cold weather, what could be causing it?",
+				"What does it mean if my chest pain worsens in cold weather?",
+				"Is chest pain worse in cold weather a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that is worse in cold weather can be caused by various factors, including muscle tension, reduced blood flow, or even heart-related issues such as angina. If you're experiencing chest pain that is worse in cold weather, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_31",
+			"patterns": [
+				"I have chest pain that is worse in hot weather, what could be causing it?",
+				"What does it mean if my chest pain worsens in hot weather?",
+				"Is chest pain worse in hot weather a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that is worse in hot weather can be caused by various factors, including dehydration, increased heart rate, or even heart-related issues such as angina. If you're experiencing chest pain that is worse in hot weather, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_32",
+			"patterns": [
+				"I have chest pain that is worse after drinking alcohol, what could be causing it?",
+				"What does it mean if my chest pain worsens after drinking alcohol?",
+				"Is chest pain after drinking alcohol a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after drinking alcohol can be caused by various factors, including acid reflux, esophageal spasms, or even heart-related issues such as angina. If you're experiencing chest pain after drinking alcohol, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_33",
+			"patterns": [
+				"I have chest pain that is worse after smoking, what could be causing it?",
+				"What does it mean if my chest pain worsens after smoking?",
+				"Is chest pain after smoking a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after smoking can be caused by various factors, including reduced oxygen flow to the heart, increased heart rate, or even heart-related issues such as angina. If you're experiencing chest pain after smoking, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_34",
+			"patterns": [
+				"I have chest pain that is worse after eating spicy foods, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating spicy foods?",
+				"Is chest pain after eating spicy foods a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after eating spicy foods can be caused by various factors, including acid reflux, esophageal spasms, or even heart-related issues such as angina. If you're experiencing chest pain after eating spicy foods, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_35",
+			"patterns": [
+				"I have chest pain that is worse after eating fatty foods, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating fatty foods?",
+				"Is chest pain after eating fatty foods a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after eating fatty foods can be caused by various factors, including acid reflux, gallbladder issues, or even heart-related issues such as angina. If you're experiencing chest pain after eating fatty foods, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_36",
+			"patterns": [
+				"I have chest pain that is worse after consuming caffeine, what could be causing it?",
+				"What does it mean if my chest pain worsens after consuming caffeine?",
+				"Is chest pain after consuming caffeine a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after consuming caffeine can be caused by various factors, including increased heart rate, acid reflux, or even heart-related issues such as angina. If you're experiencing chest pain after consuming caffeine, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_37",
+			"patterns": [
+				"I have chest pain that is worse after a long period of sitting, what could be causing it?",
+				"What does it mean if my chest pain worsens after sitting for a long time?",
+				"Is chest pain after sitting for a long time a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a long period of sitting can be caused by various factors, including poor posture, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after sitting for a long time, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_38",
+			"patterns": [
+				"I have chest pain that is worse after lifting heavy objects, what could be causing it?",
+				"What does it mean if my chest pain worsens after lifting heavy objects?",
+				"Is chest pain after lifting heavy objects a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after lifting heavy objects can be caused by various factors, including muscle strain, rib injury, or even heart-related issues such as angina. If you're experiencing chest pain after lifting heavy objects, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_39",
+			"patterns": [
+				"I have chest pain that is worse after a long period of standing, what could be causing it?",
+				"What does it mean if my chest pain worsens after standing for a long time?",
+				"Is chest pain after standing for a long time a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a long period of standing can be caused by various factors, including poor circulation, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after standing for a long time, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_40",
+			"patterns": [
+				"I have chest pain that is worse after emotional stress, what could be causing it?",
+				"What does it mean if my chest pain worsens after emotional stress?",
+				"Is chest pain after emotional stress a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after emotional stress can be caused by various factors, including increased heart rate, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after emotional stress, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_41",
+			"patterns": [
+				"I have chest pain that is worse after a meal, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating a meal?",
+				"Is chest pain after a meal a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a meal can be caused by various conditions, including acid reflux, gastritis, or even heart-related issues such as angina. If you're experiencing chest pain after a meal, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_42",
+			"patterns": [
+				"I have chest pain that is worse after lying down, what could be causing it?",
+				"What does it mean if my chest pain worsens after lying down?",
+				"Is chest pain after lying down a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after lying down can be caused by various conditions, including acid reflux, heartburn, or even pericarditis. If you're experiencing chest pain that worsens after lying down, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_43",
+			"patterns": [
+				"I have chest pain that is worse after physical activity, what could be causing it?",
+				"What does it mean if my chest pain worsens after exercise?",
+				"Is chest pain after physical activity a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after physical activity can be a sign of angina or coronary artery disease. It's important to seek medical advice if you're experiencing chest pain after physical activity."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_44",
+			"patterns": [
+				"I have chest pain that is worse after a long day at work, what could be causing it?",
+				"What does it mean if my chest pain worsens after a long day?",
+				"Is chest pain after a long day a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a long day at work can be caused by various factors, including stress, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after a long day at work, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_45",
+			"patterns": [
+				"I have chest pain that is worse after a hot shower, what could be causing it?",
+				"What does it mean if my chest pain worsens after a hot shower?",
+				"Is chest pain after a hot shower a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a hot shower can be caused by various factors, including dehydration, increased heart rate, or even heart-related issues such as angina. If you're experiencing chest pain after a hot shower, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_46",
+			"patterns": [
+				"I have chest pain that is worse after emotional upset, what could be causing it?",
+				"What does it mean if my chest pain worsens after emotional stress?",
+				"Is chest pain after emotional upset a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after emotional upset can be caused by various factors, including increased heart rate, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after emotional upset, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_47",
+			"patterns": [
+				"I have chest pain that is worse after a fight or argument, what could be causing it?",
+				"What does it mean if my chest pain worsens after a confrontation?",
+				"Is chest pain after a fight a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a fight or argument can be caused by various factors, including increased heart rate, stress, or even heart-related issues such as angina. If you're experiencing chest pain after a fight or argument, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_48",
+			"patterns": [
+				"I have chest pain that is worse after a big meal, what could be causing it?",
+				"What does it mean if my chest pain worsens after eating too much?",
+				"Is chest pain after a big meal a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a big meal can be caused by various conditions, including acid reflux, gastritis, or even heart-related issues such as angina. If you're experiencing chest pain after a big meal, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_49",
+			"patterns": [
+				"I have chest pain that is worse after a period of inactivity, what could be causing it?",
+				"What does it mean if my chest pain worsens after sitting still for a long time?",
+				"Is chest pain after inactivity a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a period of inactivity can be caused by various factors, including poor circulation, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after a period of inactivity, seek medical advice."
+			],
+			"context": [
+				""
+			]
+		},
+		{
+			"tag": "chest_pain_situation_50",
+			"patterns": [
+				"I have chest pain that is worse after a stressful day, what could be causing it?",
+				"What does it mean if my chest pain worsens after a stressful day?",
+				"Is chest pain after a stressful day a sign of heart problems?"
+			],
+			"responses": [
+				"Chest pain that worsens after a stressful day can be caused by various factors, including increased heart rate, muscle tension, or even heart-related issues such as angina. If you're experiencing chest pain after a stressful day, seek medical advice."
+			],
+			"context": [
+				""
+			]
 		}
 	]
 }

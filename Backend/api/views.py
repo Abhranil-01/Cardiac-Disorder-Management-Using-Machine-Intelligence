@@ -25,7 +25,7 @@ import numpy as np
 from sklearn import preprocessing
 import pandas as pd
 from django.http import JsonResponse
-
+from .chatbot import chatbotres
 
 
 def get_tokens_for_user(user):
@@ -233,5 +233,13 @@ def predict(request):
 		return JsonResponse(newdf.to_dict(orient='records' ), safe = False)
 	except ValueError as e:
 		return Response(e.args[0], status.HTTP_400_BAD_REQUEST)
+@api_view(["POST"])
+def bot(request):
+	try:
+		msg = request.data.get('msg')
+		res = chatbotres(msg)
+		return JsonResponse({"response": res}, safe = False, status=status.HTTP_200_OK)
+	except Exception as e:
+		return Response(str(e), status=status.HTTP_400_BAD_REQUEST)
 
 
