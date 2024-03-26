@@ -8,11 +8,11 @@ from nltk.stem import WordNetLemmatizer
 from keras.models import load_model
 
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('intents.json').read())
+intents = json.loads(open('api/intents.json').read())
 
-words = pickle.load(open('words.pkl', 'rb'))
-classes = pickle.load(open('classes.pkl', 'rb'))
-model = load_model('chatbot_model.h5')
+words = pickle.load(open('api/words.pkl', 'rb'))
+classes = pickle.load(open('api/classes.pkl', 'rb'))
+model = load_model('api/chatbot_model.h5')
 
 
 def clean_up_sentence(sentence):
@@ -50,11 +50,12 @@ def get_response(intents_list, intents_json):
             break
     return result
 
-print("GO! Bot is running!")
+# print("GO! Bot is running!")
 
-while True:
-    message = input("")
-    ints = predict_class (message)
-    res = get_response (ints, intents)
-    print (res)
+
+def chatbotres(message):
+    # message = input("")
+    ints = predict_class(message)
+    res = get_response(ints, intents)
+    return res
     

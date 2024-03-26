@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import { useAddToCartMutation } from "../../Service/UserAuthApi";
 import "./SingleProduct.css";
 
 function SingleProduct() {
   const { id } = useParams();
-
+  const [addToCart] = useAddToCartMutation()
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
@@ -32,26 +33,14 @@ function SingleProduct() {
 
   const { image, name, price, qty, description } = product;
   //!data submit for add to cart page
-  // const handelSubmit = async (e) => {
-  //   e.preventDefault();
-  
-  //   const url = 'http://127.0.0.1:8000/api/addtocart/';
-  
-  //   const options = {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //     },
-  //     body: JSON.stringify({
-  //       Medicine_id:id,
-  //       qty:qty
-  //     }),
-  //   };
-  //   const response = await fetch(url, options);
-  //     const data = await response.json();
-  //     console.log(data);
-  
-  // };
+  const handleSubmit = async (e) => {
+    const actualData = {
+      Medicine_id: id,
+      qty:qty
+    }
+    const res = await addToCart(actualData)
+    console.log(res);
+  }
 
   return (
     <div style={{ overflowX: "hidden" }}>
@@ -93,7 +82,7 @@ function SingleProduct() {
 
             <button
               className="btn btn-primary mb-5"
-              
+              onClick={handleSubmit}
             >
               {/* <NavLink to='/c
               
