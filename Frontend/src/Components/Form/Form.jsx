@@ -49,15 +49,15 @@ function Form() {
     try {
       const response = await fetch(url, options);
       const data = await response.json();
-      setData(data[0])
+      setData(data[0]) 
      if(data[0].predict === 0){
       setColor('bg-success')
-      setTextHead('You Are Safe')
-      setText('You are safe now although if you have some problem then you consult with the doctors do not take any risk Thank You.')
+      setTextHead('Green Assures Tranquility')
+      setText('Your heart beats strong, free from worry, continue thriving.')
      }else if(data[0].predict === 1){
       setColor('bg-danger')
-      setTextHead('You Are In Danger')
-      setText('You are in danger immediately consult with the doctors')
+      setTextHead('Red Signifies Urgency')
+      setText('Heed the call, consult a doctor without delay; Green assures tranquility—your heart beats strong, free from worry, continue thriving.')
      }
       // Update the state with the fetched data
       setAddClass('d-block');

@@ -39,6 +39,7 @@ function Cart() {
       });
       const orderResponses = await Promise.all(orderPromises);
       console.log(orderResponses);
+	  window.location.reload()
     } catch (error) {
       console.error("Error while placing orders:", error);
     }
@@ -69,14 +70,14 @@ function Cart() {
             </div>
             <div className="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
               <div className="right_side p-3 shadow bg-white">
-                <div className="price_indiv d-flex justify-content-between">
+                {/* <div className="price_indiv d-flex justify-content-between">
                   <p>Total Product</p>
-                  <p>{currentData.length}</p>
+                  <p></p>
                 </div>
                 <div className="price_indiv d-flex justify-content-between">
                   <p>Total Amount</p>
-                  <p>₹<span>{totalAmount.toFixed(2)}</span></p>
-                </div>
+                  <p>₹<span></span></p>
+                </div> */}
                 <button className="btn btn-primary text-uppercase" onClick={handleOrder}>Order</button>
               </div>
             </div>
