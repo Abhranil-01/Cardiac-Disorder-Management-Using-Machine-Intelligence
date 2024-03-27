@@ -1,5 +1,8 @@
 import React from 'react'
 import Slider from '../../Components/Slider/Slider'
+import ContactForm from '../../Components/ContactForm/ContactForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faPhone,faLocation,faUserDoctor,faSuitcaseMedical,faHeartPulse} from '@fortawesome/free-solid-svg-icons';
 export default function About() {
   return (
     <>      
@@ -13,7 +16,7 @@ export default function About() {
         </div>
 
         <div className="col-md-5">
-            <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="\src\Images\img13.jpg"/>
+            <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="\src\Images\heart3.jpg"/>
         </div>
     </div>
 
@@ -31,7 +34,7 @@ export default function About() {
         </div>
 
         <div className="col-md-5 order-md-1">
-            <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="\src\Images\img14.jpg"/>
+            <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"  src="\src\Images\your_heart.jpeg.jpg"/>
         </div>
     </div>
 
@@ -42,30 +45,30 @@ export default function About() {
     <div className="container px-4 py-5" id="hanging-icons">
     <h2 className="pb-2 border-bottom">WHY US ?</h2>
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div className="col d-flex align-items-start">
-        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          {/* <i className="fa-solid fa-user-doctor fa-2x" width></i> */}
+      <div className="col d-flex flex-column  align-items-center  ">
+        <div className="icon-square text-body-emphasis  fs-1 flex-shrink-0 me-3">
+          <FontAwesomeIcon icon={faUserDoctor}/>
         </div>
         <div>
           <h3 className="fs-2 text-body-emphasis">Doctor You Choose</h3>
           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
         </div>
       </div>
-      <div className="col d-flex align-items-start">
-        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-          {/* <i className="fa-solid fa-suitcase-medical fa-2x"></i> */}
+      <div className="col d-flex flex-column  align-items-center  ">
+        <div className="icon-square text-body-emphasis  fs-1 flex-shrink-0 me-3">
+        <FontAwesomeIcon icon={faSuitcaseMedical}/>
         </div>
         <div>
           <h3 className="fs-2 text-body-emphasis">Always There For You</h3>
           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
         </div>
       </div>
-      <div className="col d-flex align-items-start">
-        <div className="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-         {/* <i className="fa-solid fa-heart-pulse fa-2x"></i> */}
+      <div className="col d-flex flex-column  align-items-center  ">
+        <div className="icon-square text-body-emphasis  fs-1 flex-shrink-0 me-3">
+        <FontAwesomeIcon icon={faHeartPulse}/>
         </div>
         <div>
-          <h3 className="fs-2 text-body-emphasis">Your Health Care</h3>
+          <h3 className="fs-2  text-center">Your Health Care</h3>
           <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
         </div>
       </div>
@@ -130,54 +133,31 @@ export default function About() {
 
 
 
-  <div className="container mt-5">
-    <h2 style={{textAlign: 'center'}}>GET IN TOUCH </h2>
-    <p className="pb-2 border-bottom" style={{fontSize: '20px', textAlign:'center'}}>Contact us anytime you want. We are open to all suggestions from our audience.</p>
-    <div className="row">
-        <div className="col">
-          <input type="text" className="form-control" placeholder="First name" aria-label="First name"/>
-        </div>
-    <div className="col">
-        <input type="text" className="form-control" placeholder="Last name" aria-label="Last name"/>
-    </div>
-    </div>
-
-    <div className="mb-3 my-4">
-        <label for="exampleFormControlInput1" className="form-label">Email address</label>
-        <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com"/>
-    </div>
-
-<div className="mb-3">
-  <label for="exampleFormControlTextarea1" className="form-label">Enter your message</label>
-  <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
-<button className="btn btn-primary">Submit</button>
-</div>
-
+ <ContactForm/>
 
   <div className="container px-4 " id="featured-3">
     <div className="row g-4 py-5 row-cols-1 row-cols-lg-3">
-      <div className="feature col">
-        <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-success bg-gradient fs-2 mb-3">
-          {/* <i className="fa-solid fa-location-dot fa-2x"></i> */}
+      <div className="feature col  d-flex flex-column align-items-center ">
+        <div className="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+          <FontAwesomeIcon icon={faLocation}/>
         </div>
         <h3 className="fs-2 text-body-emphasis">Location</h3>
         <p>66 Ruby EM Bypass</p>
         <p>Kolkata-700074</p>
       </div>
 
-      <div className="feature col">
-        <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-          {/* <i className="fa-solid fa-phone fa-2x"></i> */}
+      <div className="feature col  d-flex flex-column align-items-center ">
+        <div className="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+         <FontAwesomeIcon icon={faPhone}/>
         </div>
         <h3 className="fs-2 text-body-emphasis">Phone</h3>
         <p>9889765439</p>
         <p>8345088643</p>
       </div>
 
-      <div className="feature col">
-        <div className="feature-icon d-inline-flex align-items-center justify-content-center text-bg-danger bg-gradient fs-2 mb-3">
-          {/* <i className="fa-regular fa-envelope fa-2x"></i> */}
+      <div className="feature col  d-flex flex-column align-items-center ">
+        <div className="feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+       <FontAwesomeIcon icon={faEnvelope}/>
         </div>
         <h3 className="fs-2 text-body-emphasis">Email</h3>
         <p>heartcare@gmail.com</p>

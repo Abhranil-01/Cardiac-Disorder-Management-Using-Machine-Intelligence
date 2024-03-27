@@ -50,27 +50,16 @@ function Form() {
       const response = await fetch(url, options);
       const data = await response.json();
       setData(data[0])
-      console.log(data);
-      console.log(data[0]);
-	  console.log(data[0].predict)
-	  console.log("Hello");
-      console.log(Data);
      if(data[0].predict === 0){
-      console.log('hello');
       setColor('bg-success')
       setTextHead('You Are Safe')
       setText('You are safe now although if you have some problem then you consult with the doctors do not take any risk Thank You.')
      }else if(data[0].predict === 1){
-      console.log('ergferg');
       setColor('bg-danger')
       setTextHead('You Are In Danger')
       setText('You are in danger immediately consult with the doctors')
      }
-  
-  
       // Update the state with the fetched data
-      
-  
       setAddClass('d-block');
       setAddClassOne('d-none');
       setAge('');

@@ -6,7 +6,8 @@ import { getToken, storeToken } from '../../Service/LocalStorageService';
 import { useLoginUserMutation } from '../../Service/UserAuthApi';
 
 
-function Login() {
+function Login({value}) {
+ console.log(value);
   const [type, setType] = useState("password");
   const [update, setUpdate] = useState("fa-solid fa-eye");
   const [server_error, setServerError] = useState({})
@@ -32,7 +33,7 @@ function Login() {
       storeToken(res.data.token)
       let { access_token } = getToken()
       dispatch(setUserToken({ access_token: access_token }))
-      navigate('/')
+      navigate(`${value}`)
     }
   }
   let { access_token } = getToken()

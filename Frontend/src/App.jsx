@@ -6,6 +6,11 @@ import LoginSignup from './Pages/login/LoginSignup.jsx'
 import { useSelector } from "react-redux";
 import SingleProduct from "./Pages/productpage/SingleProduct.jsx";
 import Cart from "./Pages/cart/Cart.jsx";
+import Order from "./Pages/Order/Order.jsx";
+import './App.css'
+import Analyzer from "./Pages/Analyzer/Analyzer.jsx";
+import LoadData from "./Pages/Analyzer/LoadData.jsx";
+import AnalyzerLogin from "./Pages/Analyzer/login/AnalyzerLogin.jsx";
 function App() {
   const { access_token } = useSelector(state => state.auth)
   return (
@@ -19,9 +24,15 @@ function App() {
        <Route path='/:product/:id' element={<SingleProduct/>}/>
        <Route path='cart' element={<Cart/>}/>
        <Route path='AboutUs' element={<About/>}/>
+       <Route path='Orders' element={<Order/>}/>
        <Route path='login' element={<LoginSignup/>}/>
+       <Route path='Analyzer' element={<Analyzer/>}/>
+       <Route path='Data' element={<LoadData/>}/>
+       <Route path='Analyzerlogin' element={<AnalyzerLogin/>}/>
      </Route>
           <Route path="/" element={access_token ? <Home/> : <Navigate to="/login" />} />
+          <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
+          <Route path="Analyzerlogin" element={access_token ? <Analyzer/> : <Navigate to="/Analyzerlogin" />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />
         </Routes>
       </BrowserRouter>

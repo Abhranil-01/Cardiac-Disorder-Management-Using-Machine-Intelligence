@@ -5,8 +5,10 @@ const AppContext=createContext();
 
 const url='http://127.0.0.1:8000/api/medicines/'
 const initialState={
+    isLoading:false,
     isError: false,
     products:[],
+    featuredProducts:[]
   
 }
 const AppProvider=({children})=>{

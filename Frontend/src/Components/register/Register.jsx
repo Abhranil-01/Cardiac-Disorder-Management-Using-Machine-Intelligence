@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useRegisterUserMutation } from '../../Service/UserAuthApi'
 import { storeToken } from '../../Service/LocalStorageService';
 
-function Register() {
+function Register({value}) {
   const [updateone, setUpdateone] = useState("fa-solid fa-eye");
   const [updatetwo, setUpdatetwo] = useState("fa-solid fa-eye");
   const [typeone, setTypeone] = useState("password");
@@ -37,7 +37,7 @@ function Register() {
       console.log(typeof (res.data))
       console.log(res.data)
       storeToken(res.data.token)
-      navigate('/')
+      navigate(`${value}`)
     }
   }
 

@@ -5,7 +5,10 @@ import Footer from '../../Components/Footer/Footer';
 const Layout = () => {
     return <>
     <ShowHideNavbar>
-    <Navbar />
+      <div style={{position:'fixed',top:'0',zIndex:"2", width:'100%',background:'white'}}>
+      <Navbar />
+      </div>
+
     </ShowHideNavbar>
       <Outlet />
       <ShowHideNavbar>

@@ -9,7 +9,7 @@ function LoginSignup() {
   
   return (
     <div className={`main ${addclass}`}>
-      <div className="box">
+      <div className="formbox">
         <div className="inner-box">
           <div className="forms-wrap">
             <div className="form sign-in-form">
@@ -24,7 +24,7 @@ function LoginSignup() {
                   Sign up
                 </a>
               </div>
-              <Login/>
+              <Login value='/'/>
             </div>
             <div className="form sign-up-form">
             <div className="heading">
@@ -34,7 +34,7 @@ function LoginSignup() {
                   Sign in
                 </a>
               </div>
-            <Register/>
+            <Register value='/'/>
             </div>
           </div>
           <div className="carousel">

@@ -6,7 +6,8 @@ import { unSetUserToken } from '../../Features/authSlice';
 import { getToken, removeToken } from '../../Service/LocalStorageService';
 import { setUserInfo, unsetUserInfo } from '../../Features/userSlice';
 import {useGetLoggedUserQuery} from'../../Service/UserAuthApi'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
     const navigate = useNavigate()
@@ -17,7 +18,7 @@ function Navbar() {
     dispatch(unsetUserInfo({ name: "", email: "" }))
     dispatch(unSetUserToken({ access_token: null }))
     removeToken()
-    navigate('/Home')
+    navigate('/')
   }
 
   const { data, isSuccess } = useGetLoggedUserQuery(access_token)
@@ -49,9 +50,9 @@ function Navbar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-lg px-2">
         <div className="container-fluid">
-            <NavLink className="navbar-brand me-auto " >HEART</NavLink>
+            <NavLink className="navbar-brand me-auto fs-2" >HEART</NavLink>
 
             <div className="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -60,7 +61,7 @@ function Navbar() {
                     <button type="button" className="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div className="offcanvas-body">
-                    <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
+                    <ul className="navbar-nav  justify-content-center flex-grow-1 pe-3">
                         <li className="nav-item">
                             <NavLink to='/' className={({isActive})=>`${isActive ? 'nav-link active':'nav-link '}  `} aria-current="page" href="#">Home</NavLink>
                         </li>
@@ -73,10 +74,13 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink to='/AboutUs' className={({isActive})=>`${isActive? 'nav-link active':'nav-link'} mx-lg-2`} href="#">About Us</NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink to='/Orders' className={({isActive})=>`${isActive? 'nav-link active':'nav-link'} mx-lg-2`} href="#">Orders</NavLink>
+                        </li>
                     </ul>
                 </div>
             </div>
-                  <div>add</div>
+              <NavLink to='cart' className='fs-4 me-2 text-success'><FontAwesomeIcon icon={faCartShopping}/></NavLink>
             {access_token ?(<NavLink to='/' className="login-button" onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
             
             

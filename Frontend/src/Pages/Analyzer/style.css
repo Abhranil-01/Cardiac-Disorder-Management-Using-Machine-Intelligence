@@ -1,0 +1,22 @@
+th{
+    border:2px solid black
+}
+td{
+    border: 2px solid black;
+}
+.table-responsive .login-button
+{
+    text-decoration: none;
+    color: white;
+    background-color: #009970;
+    border: 2px solid white;
+    border-radius: 30px;
+
+    padding: 11px 21px;
+    font-size: 18px;
+    font-weight: bold;
+ 
+}
+p{
+    text-align: justify;
+}
