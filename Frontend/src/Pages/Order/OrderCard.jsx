@@ -1,5 +1,8 @@
 import React, { useEffect } from "react";
-import { useGetmedicineDataQuery, useCancleOrderMutation } from "../../Service/UserAuthApi";
+import {
+  useGetmedicineDataQuery,
+  useCancleOrderMutation,
+} from "../../Service/UserAuthApi";
 import { useSelector } from "react-redux";
 
 function OrderCard({ value }) {
@@ -53,13 +56,16 @@ function OrderCard({ value }) {
             {/* remove item */}
             <div className="row mb-4">
               <div className="col-8 d-flex">
-                <button
-                  className="btn btn-danger"
-                  style={{ cursor: "pointer" }}
-                  onClick={handleCancel}
-                >
-                  CANCEL
-                </button>
+                {console.log(data.status)}
+                {data.status === "Cancelled" ? null : (
+                  <button
+                    className="btn btn-danger"
+                    style={{ cursor: "pointer" }}
+                    onClick={handleCancel}
+                  >
+                    CANCEL
+                  </button>
+                )}
               </div>
               <div className="col-4 d-flex justify-content-end price_money">
                 <h3>

@@ -60,7 +60,9 @@ ROOT_URLCONF = 'Backend.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+			BASE_DIR / 'templates'
+		],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,6 +119,14 @@ USE_I18N = True
 
 USE_TZ = True
 
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_FROM = 'a.i.e.c.h.t.g13@gmail.com'
+EMAIL_HOST_USER = 'a.i.e.c.h.t.g13@gmail.com'
+EMAIL_HOST_PASSWORD = 'izkbimepemrceiiy'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
@@ -148,7 +158,7 @@ REST_FRAMEWORK = {
 # }
 # JWT Settings
 SIMPLE_JWT = {
-    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=20),
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=1),
     'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
 
     'AUTH_HEADER_TYPES': ('Bearer',),

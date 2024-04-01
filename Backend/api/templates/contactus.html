@@ -1,0 +1,49 @@
+{% autoescape off %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us Response</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #333;
+        text-align: center;
+    }
+    p {
+        color: #555;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+		text-align: justify;
+    }
+    i {
+        color: #007bff;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Contact Us Response</h1>
+    <p><i>Hi {{ name }},</i></p>
+	<!-- <img src="https://img.freepik.com/free-photo/human-heart-dark-background-with-bokeh-3d-illustration_1057-36619.jpg?w=740&t=st=1712002223~exp=1712002823~hmac=986ca9688fadcb954ef2e9e90853e10674d274fb7929f522f173f623f816f247" alt=""> -->
+    <p >We appreciate your interest in our services and want to assure you that our dedicated team is actively working to address your query. Your satisfaction is our top priority, and we are committed to providing you with the information and assistance you need promptly. One of our team members will be reaching out to you very soon. If you require immediate assistance, please don't hesitate to contact our customer support team. Thank you for choosing us, and we look forward to the opportunity to serve you.</p>
+</div>
+</body>
+</html>
+{% endautoescape %}

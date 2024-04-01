@@ -11,17 +11,17 @@ class UserModelAdmin(BaseUserAdmin):
   list_display = ('id', 'email', 'name', 'phone_number', 'is_admin')
   list_filter = ('is_admin',)
   fieldsets = (
-      ('User Credentials', {'fields': ('email', 'password')}),
-      ('Personal info', {'fields': ('name', 'phone_number')}),
-      ('Permissions', {'fields': ('is_admin',)}),
+	  ('User Credentials', {'fields': ('email', 'password')}),
+	  ('Personal info', {'fields': ('name', 'phone_number')}),
+	  ('Permissions', {'fields': ('is_admin',)}),
   )
   # add_fieldsets is not a standard ModelAdmin attribute. UserModelAdmin
   # overrides get_fieldsets to use this attribute when creating a user.
   add_fieldsets = (
-      (None, {
-          'classes': ('wide',),
-          'fields': ('email', 'name', 'phone_number', 'password1', 'password2'),
-      }),
+	  (None, {
+		  'classes': ('wide',),
+		  'fields': ('email', 'name', 'phone_number', 'password1', 'password2'),
+	  }),
   )
   search_fields = ('email',)
   ordering = ('email', 'id')
@@ -35,45 +35,52 @@ admin.site.register(User, UserModelAdmin)
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    def image_preview(self, obj):
-        if obj.image:
-            return mark_safe('<img src="{url}" width="100px" />'.format(url=obj.image.url))
-        else:
-            return 'No Image'
+	def image_preview(self, obj):
+		if obj.image:
+			return mark_safe('<img src="{url}" width="100px" />'.format(url=obj.image.url))
+		else:
+			return 'No Image'
 
-    image_preview.short_description = 'Image Preview'
+	image_preview.short_description = 'Image Preview'
 
-    list_display = ('get_email', 'blood_group', 'image_preview', 'location')
-    search_fields = ('registered_email__email', 'blood_group', 'location')
+	list_display = ('get_email', 'blood_group', 'image_preview', 'location')
+	search_fields = ('registered_email__email', 'blood_group', 'location')
 
-    def get_email(self, obj):
-        return obj.registered_email.email
+	def get_email(self, obj):
+		return obj.registered_email.email
 
-    get_email.short_description = 'Email'
+	get_email.short_description = 'Email'
 
-    fieldsets = (
-        (None, {
-            'fields': ('registered_email', 'blood_group', 'image', 'location')
-        }),
-    )
+	fieldsets = (
+		(None, {
+			'fields': ('registered_email', 'blood_group', 'image', 'location')
+		}),
+	)
 
 
 @admin.register(Medicine)
 class MedicineAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'price', 'qty', 'type','featured')
-    search_fields = ('name', 'type')
-    list_filter = ('type',)
+	def preview_photo1(self, obj):
+		if obj.image:
+			return mark_safe('<img src="{url}" width="100px" />'.format(url=obj.image.url))
+		else:
+			return 'No Image'
+
+	preview_photo1.short_description = 'Image Preview'
+	list_display = ('id', 'name', 'price', 'qty', 'type','featured','preview_photo1')
+	search_fields = ('name', 'type')
+	list_filter = ('type',)
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name',  'email')
-    search_fields = ('name','email')
+	list_display = ('id', 'name',  'email')
+	search_fields = ('name','email')
 
 @admin.register(TestBook)
 class TestBookAdmin(admin.ModelAdmin):
-    list_display = ('id', 'name', 'type', 'price', 'time')
-    search_fields = ('name', 'type')
-    list_filter = ('type',)
+	list_display = ('id', 'name', 'type', 'price', 'time')
+	search_fields = ('name', 'type')
+	list_filter = ('type',)
 
 @admin.register(OrderList)
 class OrderLIstAdmin(admin.ModelAdmin):

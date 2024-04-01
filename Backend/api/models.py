@@ -93,6 +93,9 @@ class Medicine(models.Model):
 	type = models.CharField(max_length=255)
 	featured = models.BooleanField(default=False)
 	description = models.TextField()
+	key_benifits = models.TextField(blank=True)
+	Safety_Information = models.TextField(blank=True)
+	Key_Ingredients = models.TextField(blank=True)
 	def __str__(self):
 		return self.name
 
@@ -134,6 +137,11 @@ class OrderList(models.Model):
 		'Cancelled' : 'Cancelled'
 	},default='Pending')
 	price = models.DecimalField(max_digits=10, decimal_places=2,blank=True)
+	updated = models.DateTimeField(auto_now=True,blank=True)
+	created = models.DateTimeField(auto_now_add=True,blank=True)
+
+	class Meta:
+		ordering = ['-updated', '-created']
 
 	def __str__(self):
 		return f"{self.user.name}'s order: {self.medicine_id.name} ({self.status})"

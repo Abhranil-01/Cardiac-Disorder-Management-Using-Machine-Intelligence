@@ -22,11 +22,25 @@ import pickle
 import joblib
 import json
 import numpy as np
+from django.core.mail import EmailMessage
+from django.contrib import messages
+from django.template.loader import render_to_string
 from sklearn import preprocessing
 import pandas as pd
 from django.http import JsonResponse
 from .chatbot import chatbotres
 
+
+def contactEmail(request, name, to_email):
+	try:
+		mail_subject = 'Thank You for Contacting Us'
+		message = render_to_string('contactus.html', {'name': name})
+		email = EmailMessage(mail_subject, message, to=[to_email])
+		email.content_subtype = 'html'  # Set the content type to HTML
+		email.send()
+		messages.success(request, f'Mail sent successfully to {to_email}.')
+	except Exception as e:
+		messages.error(request, f'Failed to send email: {e}.')
 
 def get_tokens_for_user(user):
   refresh = RefreshToken.for_user(user)
@@ -52,9 +66,12 @@ class UserLoginView(APIView):
 		email = serializer.data.get('email')
 		password = serializer.data.get('password')
 		user = authenticate(email=email, password=password)
+		admin_stat = user.is_admin
+		# print(user.is_admin)
+		# print(admin_stat)
 		if user is not None:
 			token = get_tokens_for_user(user)
-			return Response({'token':token, 'msg':'Login Success'}, status=status.HTTP_200_OK)
+			return Response({'token':token, 'msg':'Login Success','is_admin':admin_stat}, status=status.HTTP_200_OK)
 		else:
 			return Response({'errors':{'non_field_errors':['Email or Password is not Valid']}}, status=status.HTTP_404_NOT_FOUND)
 
@@ -203,6 +220,19 @@ class OrderListAPIView(APIView):
 class ContactViewSet(viewsets.ModelViewSet):
 	queryset = Contact.objects.all()
 	serializer_class = ContactSerializer
+	def create(self, request, *args, **kwargs):
+		name = request.data.get('name')
+		email = request.data.get('email')
+		contactEmail(request, name, email)
+		# Do something with name and email, such as saving them to the database
+		serializer = self.get_serializer(data=request.data)
+		serializer.is_valid(raise_exception=True)
+		self.perform_create(serializer)
+		headers = self.get_success_headers(serializer.data)
+		return Response(serializer.data, status=status.HTTP_201_CREATED, headers=headers)
+
+	def perform_create(self, serializer):
+		serializer.save()
 
 class TestBookViewSet(viewsets.ModelViewSet):
 	queryset = TestBook.objects.all()

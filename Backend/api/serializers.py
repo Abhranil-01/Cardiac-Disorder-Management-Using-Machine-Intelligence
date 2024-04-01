@@ -70,7 +70,7 @@ class UserProfileSerializer(serializers.ModelSerializer):
 class MedicineSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Medicine
-		fields = ['id', 'name', 'price', 'image', 'qty', 'type', 'description','featured','url']
+		fields = ['id', 'name', 'price', 'image', 'qty', 'type','key_benifits','Safety_Information','Key_Ingredients', 'description','featured','url']
 
 class ContactSerializer(serializers.ModelSerializer):
 	class Meta:
