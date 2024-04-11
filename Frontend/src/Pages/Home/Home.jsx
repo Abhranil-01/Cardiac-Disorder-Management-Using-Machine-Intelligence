@@ -5,15 +5,21 @@ import Form from '../../Components/Form/Form';
 import { useProductContext } from '../../context/productContext';
 import Card from '../../Components/Card/Card';
 import Slider from '../../Components/Slider/Slider';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faRobot} from '@fortawesome/free-solid-svg-icons'
+import Chatbot from '../../Components/Chatbot/Chatbot';
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const[isChatbotOpen, setIsChatbotOpen] = useState(false);
   const {products}=useProductContext();
-  console.log(products);
+
 
   const handleButtonClick = () => {
- 
     setIsModalOpen(true);
   };
+  const handleChatBotClick = () => {
+    setIsChatbotOpen(true);
+  }
   return (
     <div>
       {/* <!-- Main content starts --> */}
@@ -21,6 +27,7 @@ export default function Home() {
 <main>
 {/* 
     <!-- home section  --> */}
+
     <section class="home" id="home">
  
  
@@ -121,6 +128,13 @@ export default function Home() {
         Heart Disease Prediction
       </button>
       {isModalOpen && <Form closeModal={() => setIsModalOpen(false)} />}
+
+      <button  type="button" class="chatbot-toggler" data-bs-toggle="modal"
+        data-bs-target="#exampleModal" onClick={handleChatBotClick}>
+      <span><FontAwesomeIcon icon={faRobot} /></span>
+    </button>
+    {isChatbotOpen && <Chatbot close={()=>setIsChatbotOpen(false)}/>}
+
     </div>
   );
 }

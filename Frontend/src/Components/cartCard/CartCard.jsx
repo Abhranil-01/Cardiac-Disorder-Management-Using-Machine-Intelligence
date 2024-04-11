@@ -15,11 +15,12 @@ function CartCard({ value }) {
   const [totalAmt, setTotalAmt] = useState(0);
   const accessToken = localStorage.getItem("access_token");
 
+
   const { data, isLoading, isError } = useGetmedicineDataQuery({
     id: value.medicine_id,
     access_token: accessToken,
   });
-
+console.log(data);
   const [deleteCartData] = useDeleteCartDataMutation();
   const [updateCartData, { res }] = useUpdateCartDataMutation();
   const dispatch = useDispatch();
@@ -168,7 +169,7 @@ function CartCard({ value }) {
                 </button>
               </div>
               <div className="col-12 fw-bold mb-4 text-end">
-                <span>Total Amount: ₹{totalAmt}</span>
+                <span>Total Amount: ₹{totalAmt.toFixed(2)}</span>
               </div>
               <div className="col-12">
                 <p className="text-danger fw-bold" style={{ fontSize: "12px" }}>

@@ -29,7 +29,8 @@ function Login({value}) {
     }
     if (res.data) {
       // console.log(typeof (res.data))
-      // console.log(res.data)
+      console.log(res.data)
+      
       storeToken(res.data.token)
       let { access_token } = getToken()
       dispatch(setUserToken({ access_token: access_token }))
