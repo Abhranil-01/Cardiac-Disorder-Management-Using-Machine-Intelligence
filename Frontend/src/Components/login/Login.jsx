@@ -29,7 +29,18 @@ function Login({value}) {
     }
     if (res.data) {
       // console.log(typeof (res.data))
-      console.log(res.data)
+      console.log('aswdsd',res.data)
+      if(value === '/Analyzer'){
+        if(res.data.is_admin === false){
+          alert('!Sorry This Page For Admin')
+          return;
+        }else{
+          storeToken(res.data.token)
+          let { access_token } = getToken()
+          dispatch(setUserToken({ access_token: access_token }))
+          navigate(`${value}`)
+        }
+      }
       
       storeToken(res.data.token)
       let { access_token } = getToken()

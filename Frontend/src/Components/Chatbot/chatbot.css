@@ -24,7 +24,7 @@
   flex-direction: column;
   position: absolute;
 }
-.chatbox ::-webkit-scrollbar{
+.chatbot ::-webkit-scrollbar{
   display: none;
 }
 

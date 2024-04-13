@@ -22,17 +22,7 @@ const AppProvider=({children})=>{
         dispatch({type:'API_ERROR',})
        }
     };
-    // second data fetch for single page
-    // const getSingleProduct=async (api)=>{
-    //     try {
-    //       const res = await axios.get(url);
-    //       const singleProduct =await res.data;
-    //       console.log(singleProduct);
-    //       dispatch({type:'API_SINGLE_PRODUCTS',payload:singleProduct})
-    //     } catch (error) {
-    //      dispatch({type:'SINGLE_API_ERROR',})
-    //     }
-    //  };
+
 
     useEffect(()=>{
         getProducts(url);

@@ -248,6 +248,15 @@ i {
   overflow: hidden;
   margin-bottom: 2.5rem;
 }
+.password-checker{
+  position: absolute;
+  top: 95%;
+
+  z-index: 3;
+  border-radius: 10px;
+  font-size: 14px;
+  
+}
 
 @media (max-width: 850px) {
   .formbox {
