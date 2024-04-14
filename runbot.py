@@ -7,10 +7,10 @@ from nltk.stem import WordNetLemmatizer
 # nltk.download('popular')
 from tensorflow.keras.models import load_model
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('api/intents.json').read())
-words = pickle.load(open('api/words.pkl', 'rb'))
-classes = pickle.load(open('api/classes.pkl', 'rb'))
-model = load_model('api/model.h5')
+intents = json.loads(open('Backend/api/intents.json').read())
+words = pickle.load(open('words.pkl', 'rb'))
+classes = pickle.load(open('classes.pkl', 'rb'))
+model = load_model('model.h5')
 
 def clean_up_sentence(sentence):
     sentence_words = nltk.word_tokenize(sentence)

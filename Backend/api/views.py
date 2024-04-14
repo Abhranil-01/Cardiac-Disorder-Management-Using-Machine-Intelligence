@@ -16,6 +16,7 @@ from rest_framework_simplejwt.tokens import RefreshToken
 from rest_framework.permissions import IsAuthenticated
 import joblib
 from rest_framework import viewsets
+from django.db import transaction
 from rest_framework.decorators import api_view
 # Generate Token Manually
 import pickle
@@ -144,13 +145,24 @@ class AddtoCartAPIView(APIView):
 			# Check if medicine exists and has enough quantity
 			medicine_id = request.data.get('medicine_id')
 			qty = request.data.get('qty')
-			medicine = Medicine.objects.get(pk=medicine_id)
-			if medicine.qty < qty:
-				return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
-
-			serializer.save(user=request.user)  # Use authenticated user
+			try:
+				# Check if the product is already in the cart
+				cart_item = AddtoCart.objects.get(user=request.user, medicine_id=medicine_id)
+				# If the product is already in the cart, update the quantity
+				new_qty = cart_item.qty + int(qty)  # Ensure qty is converted to int
+				print(new_qty >10)
+				if (cart_item.medicine_id.qty < new_qty) or (new_qty >10):
+					return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
+				cart_item.qty = new_qty
+				cart_item.save()
+			except AddtoCart.DoesNotExist:
+				# If the product is not in the cart, add it as a new entry
+				if Medicine.objects.get(pk=medicine_id).qty < int(qty):  # Ensure qty is converted to int
+					return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
+				serializer.save(user=request.user)
 			return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
 
 	def put(self, request):  
 		try:
@@ -207,13 +219,19 @@ class OrderListAPIView(APIView):
 	def put(self, request):
 		try:
 			order_id = request.data.get('order_id')
-			order = OrderList.objects.get(id = order_id ,user=request.user)
+			order = OrderList.objects.get(id=order_id, user=request.user)
 		except OrderList.DoesNotExist:
 			return Response({'error': 'Order not found'}, status=status.HTTP_404_NOT_FOUND)
 
-		# Update order status to canceled
-		order.status = 'Cancelled'
-		order.save()
+		with transaction.atomic():
+			# Update order status to canceled
+			order.status = 'Cancelled'
+			order.save()
+
+			# Update medicine quantity
+			medicine = order.medicine_id
+			medicine.qty += order.qty
+			medicine.save()
 
 		return Response({'msg': 'Order canceled'}, status=status.HTTP_200_OK)
 		
