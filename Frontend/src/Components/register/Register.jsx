@@ -4,6 +4,8 @@ import { useRegisterUserMutation } from '../../Service/UserAuthApi'
 import { storeToken } from '../../Service/LocalStorageService';
 
 function Register({value}) {
+  const [display,setDisplay]=useState('d-none')
+  const [color,setColor] = useState('text-danger'); 
   const [updateone, setUpdateone] = useState("fa-solid fa-eye");
   const [updatetwo, setUpdatetwo] = useState("fa-solid fa-eye");
   const [typeone, setTypeone] = useState("password");
@@ -48,11 +50,19 @@ function Register({value}) {
   const symbols = /[!,@,#,$,%,^,&,*,?,_,(,),-,+,=,~,/,\,|]/;
 
   const check =(e)=>{
-  
+  setDisplay('flex')
     const passwordone = e.target.value;
+    if(passwordone.length === 6){
+      setColor('text-success')
+    }else{
+      setColor('text-danger')
+    }
+    
     if (passwordone.length === 0) {
       setValidPwdone("normal");
       setTextChangeOne("");
+      setDisplay('d-none')
+      setColor('text-danger')
     } else if (
       alphabet.test(passwordone) &&
       number.test(passwordone) &&
@@ -128,6 +138,7 @@ function Register({value}) {
                     id="passwd"
                     name="passwd"
                     onChange={check}
+                    maxLength={6}
                   />
                   <i
                     className={`${updateone}`}
@@ -141,7 +152,11 @@ function Register({value}) {
                       }
                     }}
                   ></i>
+          
+                    <p className={`${color} ${display} fw-bold text-center password-checker`} >Password length is 6</p>
+                  
                 </div>
+               
                 <p className={`fw-bold signup-valid valid ${strengthOne}`}>
                   {textChangeOne}
                 </p>

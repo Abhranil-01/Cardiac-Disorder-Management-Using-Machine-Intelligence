@@ -4,14 +4,27 @@ import React, { useEffect, useState } from "react";
 import { useDispatch,useSelector } from "react-redux";
 import OrderCard from "./OrderCard";
 import { useGetorderDataQuery } from "../../Service/UserAuthApi";
-
+import { useProductContext } from "../../context/productContext";
 function Order() {
   const accessToken = localStorage.getItem('access_token');
   const dispatch = useDispatch();
   const totalAmount = useSelector((state) => state.cart.totalAmount);
   const { data, isLoading, isError } = useGetorderDataQuery(accessToken);
+  const {products}=useProductContext();
+  console.log('qwdwde',products);
 
   console.log(data);
+  useEffect(() => {
+    if (data && products) {
+      data.map((element) => {
+        if (products.some((product) => product.id === element.id)) {
+          
+        }
+      });
+    }
+  }, [data, products]);
+  
+  
 
 
   if (!accessToken) {
