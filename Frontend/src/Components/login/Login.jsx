@@ -26,6 +26,7 @@ function Login({value}) {
       // console.log(typeof (res.error.data.errors))
       // console.log(res.error.data.errors)
       setServerError(res.error.data.errors)
+      alert('Wrong Email or Password')
     }
     if (res.data) {
       // console.log(typeof (res.data))

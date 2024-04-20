@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-
+import { NavLink } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux";
 import OrderCard from "./OrderCard";
 import { useGetorderDataQuery } from "../../Service/UserAuthApi";
@@ -27,17 +27,16 @@ function Order() {
   
 
 
-  if (!accessToken) {
-    return <div>Access token not available. Please log in.</div>;
-  }
 
   if (isLoading) {
     return <div>Loading cart data...</div>;
   }
 
-  if (isError) {
-    return <div>Error fetching cart data. Please try again later.</div>;
+ 
+  if (!accessToken) {
+    return <div className="my-5  w-100   d-flex align-items-center justify-content-center "><p className="mt-5 fs-5 fw-bold ">Please <NavLink to='/login'>Login</NavLink></p></div>;
   }
+
   return (
     <div className="container-fluid mb-5">
       <div className="row">

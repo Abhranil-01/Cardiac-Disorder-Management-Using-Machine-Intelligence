@@ -32,8 +32,9 @@ function Register({value}) {
     const res = await registerUser(actualData)
     if (res.error) {
       // console.log(typeof (res.error.data.errors))
-      // console.log(res.error.data.errors)
+      console.log('dwaewf',res.error.data.errors)
       setServerError(res.error.data.errors)
+     alert(res.error.data.errors.email[0])
     }
     if (res.data) {
       console.log(typeof (res.data))
@@ -187,7 +188,7 @@ function Register({value}) {
 
                 <button type="submit"  className="sign-btn" >Register</button>
               </div>
-              {server_error.non_field_errors ? '<div class="alert alert-danger">' + server_error.non_field_errors[0] + '</div>' : ''}
+             
             </form>
     </>
   )
