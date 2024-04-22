@@ -80,7 +80,9 @@ class Profile(models.Model):
 	blood_group = models.CharField(max_length=5, blank=True, null=True)
 	location = models.CharField(max_length=100, blank=True, null=True)
 	date_of_birth = models.DateField(default=date.today,blank=True, null=True)
-
+	address = models.TextField()
+	gender = models.CharField(max_length=5)
+	phonenumber = models.DecimalField(max_digits=10, decimal_places=0)
 
 	def __str__(self):
 		return self.registered_email.email
