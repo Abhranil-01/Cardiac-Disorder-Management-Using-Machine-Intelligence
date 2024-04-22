@@ -43,8 +43,8 @@ class ProfileAdmin(admin.ModelAdmin):
 
 	image_preview.short_description = 'Image Preview'
 
-	list_display = ('get_email', 'blood_group', 'image_preview', 'location')
-	search_fields = ('registered_email__email', 'blood_group', 'location')
+	list_display = ('get_email', 'blood_group', 'image_preview')
+	search_fields = ('registered_email__email', 'blood_group')
 
 	def get_email(self, obj):
 		return obj.registered_email.email
@@ -53,7 +53,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
 	fieldsets = (
 		(None, {
-			'fields': ('registered_email', 'blood_group', 'image', 'location')
+			'fields': ('registered_email', 'blood_group', 'image','phone_number','address','gender','date_of_birth')
 		}),
 	)
 
