@@ -32,10 +32,14 @@ class UserLoginSerializer(serializers.ModelSerializer):
 		model = User
 		fields = ['email', 'password']
 
+
 class ProfileSerializer(serializers.ModelSerializer):
+	# email = serializers.EmailField(max_length=255)
+	# userdetails = UserDetailsSerializer()
 	class Meta:
 		model = Profile
-		fields = ['registered_email', 'blood_group', 'image', 'location']
+		# fields = ['registered_email_id','name','phonenumber','blood_group','address']
+		fields = '__all__'
 
 class UserProfileSerializer(serializers.ModelSerializer):
 	profile = ProfileSerializer()

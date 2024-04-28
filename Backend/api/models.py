@@ -75,12 +75,14 @@ class User(AbstractBaseUser):
 	  return self.is_admin
 
 class Profile(models.Model):
-	registered_email = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile', primary_key=True)
-	image = models.ImageField(upload_to='profile_images/', default='profile_images/default.jpg')
+	registered_email = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile', primary_key=True,blank=True)
+	name = models.CharField(max_length=50, blank = True, null=True)
+	phone_number = models.DecimalField(max_digits=10, decimal_places=0, null=True)
+	gender = models.CharField(max_length=7, null=True,choices=[('male','male'),('female','female')])
 	blood_group = models.CharField(max_length=5, blank=True, null=True)
-	location = models.CharField(max_length=100, blank=True, null=True)
 	date_of_birth = models.DateField(default=date.today,blank=True, null=True)
-
+	address = models.TextField(blank=True, null=True)
+	image = models.ImageField(upload_to='profile_images/', default='profile_images/default.jpg')
 
 	def __str__(self):
 		return self.registered_email.email
