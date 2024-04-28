@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import {
   useDeleteCartDataMutation,
   useGetmedicineDataQuery,
-  useUpdateCartDataMutation,
-  useGetCartDataQuery
+  useUpdateCartDataMutation
 } from "../../Service/UserAuthApi";
 import { useDispatch,useSelector } from "react-redux";
 import { cartQty, setPriceTotal } from "../../features/cartSlice";
