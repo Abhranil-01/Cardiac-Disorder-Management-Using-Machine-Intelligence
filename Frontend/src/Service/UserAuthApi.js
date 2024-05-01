@@ -36,6 +36,17 @@ export const userAuthApi = createApi({
         };
       },
     }),
+    getUser: builder.query({
+      query: (access_token) => {
+        return {
+          url: `register/`,
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
     getLoggedUser: builder.query({
       query: (access_token) => {
         return {
@@ -49,9 +60,10 @@ export const userAuthApi = createApi({
     }),
     postProfile: builder.mutation({
       query: ({access_token,data}) => {
+        console.log('profile',data);
         return {
           url: "profile/",
-          method: "POST",
+          method: "PUT",
           body: data,
           headers: {
             "Content-type": "application/json",
@@ -193,5 +205,6 @@ export const {
   useOrderDataMutation,
   useGetorderDataQuery,
   useCancleOrderMutation,
-  usePostProfileMutation
+  usePostProfileMutation,
+  useGetUserQuery
 } = userAuthApi;
