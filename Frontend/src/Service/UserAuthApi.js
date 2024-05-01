@@ -36,12 +36,37 @@ export const userAuthApi = createApi({
         };
       },
     }),
+    getUser: builder.query({
+      query: (access_token) => {
+        return {
+          url: `register/`,
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
     getLoggedUser: builder.query({
       query: (access_token) => {
         return {
-          url: "profile/",
+          url: `profile/`,
           method: "GET",
           headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
+    postProfile: builder.mutation({
+      query: ({access_token,data}) => {
+        console.log('profile',data);
+        return {
+          url: "profile/",
+          method: "PUT",
+          body: data,
+          headers: {
+            "Content-type": "application/json",
             authorization: `Bearer ${access_token}`,
           },
         };
@@ -109,7 +134,7 @@ export const userAuthApi = createApi({
           url: `addtocart/`,
           method: "PUT",
           body: {
-            cart_id:id,
+            id:id,
             qty: qty,
           },
           headers: {
@@ -179,5 +204,7 @@ export const {
   useUpdateCartDataMutation,
   useOrderDataMutation,
   useGetorderDataQuery,
-  useCancleOrderMutation
+  useCancleOrderMutation,
+  usePostProfileMutation,
+  useGetUserQuery
 } = userAuthApi;

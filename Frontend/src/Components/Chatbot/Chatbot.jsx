@@ -65,16 +65,12 @@
       .then((response) => {
           if(response){
             console.log(response);
-                     
-
-
-             
-        
             const response_temp = {sender: "bot",id:Date.now(),msg: response};
               setChat(chat => [...chat, response_temp]);
              // scrollBottom();
-
           }
+      }).catch((error) => {
+        console.log(error);
       }) 
   }
 chat.map((chat) =>{
@@ -97,10 +93,12 @@ chat.map((chat) =>{
             </span>
           </div>
           <div className="chatbox" id="messageArea">
-            <div className="incoming gap-2">
+          <div className="incoming gap-2">
               <span className='chat-robot bg-secondary text-white'> <FontAwesomeIcon icon={faRobot} /></span>
-              <div className="bot-chat bg-secondary   fw-bold">
-                <p className='text-white '>Hello, How can I help you?</p>
+              <div className='card bot-chat bg-secondary  '>
+              <div className=" fw-bold card-body">
+                <p className='text-white card-text  '>Hello How Can I Help You?</p>
+              </div>
               </div>
             </div>
       {
@@ -109,15 +107,20 @@ chat.map((chat) =>{
           {user.sender==='bot' ?(
               <div className="incoming gap-2">
               <span className='chat-robot bg-secondary text-white'> <FontAwesomeIcon icon={faRobot} /></span>
-              <div className="bot-chat bg-secondary   fw-bold">
-                <p className='text-white '>{user.msg.response}</p>
+              <div className='card bot-chat bg-secondary  '>
+              <div className=" fw-bold card-body">
+                <p className='text-white card-text  '>{user.msg.response}</p>
+              </div>
               </div>
             </div>
           ):(
-            <div className='out-chat gap-2' >
-            <div className='outgoing bg-primary'>
-                <p className='text-white fw-bold '>{user.msg}</p>
+            <div className='out-chat gap-2 ' >
+              <div className='card p-0 border-0 bg-primary outgoing  '>
+              <div className=' card-body'>
+                <p className=' card-text  text-white fw-bold ' >{user.msg}</p>
               </div>
+              </div>
+           
               <span className='chat-user bg-primary text-white'> <FontAwesomeIcon icon={faUser} /></span>
             </div>
           )}

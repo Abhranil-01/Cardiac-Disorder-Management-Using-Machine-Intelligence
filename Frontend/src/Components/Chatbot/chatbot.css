@@ -42,7 +42,7 @@
   width: 20vw;
   display: flex;
   border-radius: 10px 10px 10px 0px;
-  padding: 8px;
+
 }
 .bot-chat p{
   text-align: start;
@@ -55,8 +55,7 @@
   margin-top: 20px;
 }
 .outgoing {
-  width: 20vw;
-  padding: 8px;
+  width: 17rem;
   border-radius: 10px 10px 0px 10px;
 }
 .outgoing p{

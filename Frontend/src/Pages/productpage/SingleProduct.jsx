@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useAddToCartMutation } from "../../Service/UserAuthApi";
+import { useAddToCartMutation, useGetCartDataQuery } from "../../Service/UserAuthApi";
 import "./SingleProduct.css";
 
 function SingleProduct() {
@@ -11,7 +11,8 @@ function SingleProduct() {
   const [product, setProduct] = useState(null);
   const [refresh, setRefresh] = useState(false);
   const [display, setDisplay] = useState("d-none");
-
+  const accessToken = localStorage.getItem("access_token");
+const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
   const handleClose = () => {
     setDisplay("d-none");
   };
@@ -33,7 +34,7 @@ function SingleProduct() {
   }, [id]);
 
   const handleAddToCart = async () => {
-    const accessToken = localStorage.getItem("access_token");
+
 
     if (!accessToken) {
       setDisplay("d-flex");
@@ -54,11 +55,8 @@ function SingleProduct() {
       const res = await addToCart({
         access_token: accessToken,
         addData: addData,
-      });
-      setRefresh(!refresh);
-      window.location.reload(); // Reload the page
-      console.log(res);
-      console.log(addData);
+      }); // Reload the page
+    refetch()
     } catch (error) {
       console.error("Error adding product to cart:", error);
     }

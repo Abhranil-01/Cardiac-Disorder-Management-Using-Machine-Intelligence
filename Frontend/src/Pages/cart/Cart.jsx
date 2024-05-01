@@ -12,7 +12,7 @@ function Cart() {
   const accessToken = localStorage.getItem("access_token");
   const dispatch = useDispatch();
 
-  const { data, isLoading, isError } = useGetCartDataQuery(accessToken);
+  const { data, isLoading, isError,refetch } = useGetCartDataQuery(accessToken);
   const [orderData] = useOrderDataMutation();
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
@@ -73,7 +73,7 @@ console.log(totalQty);
           <div className="row mt-5 gx-3">
             <div className="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
               {currentData.map((element) => (
-                <CartCard key={element.id} value={element} />
+                <CartCard key={element.id} value={element} refetch={refetch} />
               ))}
             </div>
             <div className="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
