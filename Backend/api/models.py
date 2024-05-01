@@ -120,7 +120,8 @@ class TestBook(models.Model):
 class AddtoCart(models.Model):
 	user = models.ForeignKey(User, on_delete=models.CASCADE,blank=True)
 	medicine_id = models.ForeignKey(Medicine, on_delete=models.CASCADE)
-	qty = models.IntegerField()
+	price = models.DecimalField(max_digits=10, decimal_places=2,blank=True,null=True)
+	qty = models.IntegerField() 
 
 	def __str__(self):
 		return f"{self.user.name}'s cart item: {self.medicine_id.name}"

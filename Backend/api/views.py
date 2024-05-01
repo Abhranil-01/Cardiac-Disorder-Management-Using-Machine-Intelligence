@@ -185,6 +185,9 @@ class AddtoCartAPIView(APIView):
 				if Medicine.objects.get(pk=medicine_id).qty < int(qty):  # Ensure qty is converted to int
 					return Response({'error': 'Insufficient medicine stock'}, status=status.HTTP_400_BAD_REQUEST)
 				serializer.save(user=request.user)
+				cart_item = AddtoCart.objects.get(user=request.user, medicine_id=medicine_id)
+				cart_item.price = cart_item.medicine_id.price
+				cart_item.save()
 			return Response(serializer.data, status=status.HTTP_201_CREATED)
 		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
