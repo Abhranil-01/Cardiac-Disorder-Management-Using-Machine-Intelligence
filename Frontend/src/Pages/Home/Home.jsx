@@ -8,12 +8,19 @@ import Slider from '../../Components/Slider/Slider';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faRobot} from '@fortawesome/free-solid-svg-icons'
 import Chatbot from '../../Components/Chatbot/Chatbot';
+import { ToastContainer, toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useSelector } from 'react-redux';
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const[isChatbotOpen, setIsChatbotOpen] = useState(false);
   const {products}=useProductContext();
-
-
+  const logoutValue=useSelector((state)=>state.user_info.logout)
+useEffect(()=>{
+  if(logoutValue){
+  toast.success("Logged out successfully")
+  }
+},[logoutValue])
   const handleButtonClick = () => {
     setIsModalOpen(true);
   };
@@ -21,6 +28,7 @@ export default function Home() {
     setIsChatbotOpen(true);
   }
   return (
+    <>
     <div>
       {/* <!-- Main content starts --> */}
       <Slider/>
@@ -136,5 +144,20 @@ export default function Home() {
     {isChatbotOpen && <Chatbot close={()=>setIsChatbotOpen(false)}/>}
 
     </div>
+    <ToastContainer
+position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+transition= {Bounce}
+/>
+    </>
+    
   );
 }

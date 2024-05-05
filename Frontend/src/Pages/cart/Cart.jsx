@@ -1,51 +1,55 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { calculateTotal } from "../../features/cartSlice";
 import CartCard from "../../Components/cartCard/CartCard";
 import {
   useGetCartDataQuery,
+  useGetorderDataQuery,
   useOrderDataMutation,
 } from "../../Service/UserAuthApi";
-
+import { ToastContainer, toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 function Cart() {
   const [currentData, setCurrentData] = useState([]);
   const accessToken = localStorage.getItem("access_token");
   const dispatch = useDispatch();
 
   const { data, isLoading, isError,refetch } = useGetCartDataQuery(accessToken);
+  const {data:orderItems,refetch:refresh}=useGetorderDataQuery(accessToken);
   const [orderData] = useOrderDataMutation();
   const totalPrice = useSelector((state) => state.cart.totalPrice);
 
 console.log('fref',totalPrice);
-  useEffect(() => {
-    const refetchData = () => {
-      dispatch(calculateTotal());
-      if (data) {
-        setCurrentData(data);
-      }
-    };
-    refetchData();
-  }, [data, dispatch]);
+  // useEffect(() => {
+  //   const refetchData = () => {
+  //     dispatch(calculateTotal());
+  //     if (data) {
+  //       setCurrentData(data);
+  //     }
+  //   };
+  //   refetchData();
+  // }, [data, dispatch]);
     // Calculate total price dynamically based on currentData
-    const totalAmount = totalPrice.reduce(
-      (total, item) => total + item.qty * item.price,
-      0
-    );
-const totalQty=totalPrice.reduce((qty, item) => qty+item.qty,0)
-console.log(totalQty);
+  
 
   const handleOrder = async () => {
     try {
-      const orderPromises = currentData.map((element) =>
+      if(data){
+        const orderPromises = data.map((element) =>
         orderData({
           cart_id: element.id,
           access_token: accessToken,
           qty: element.qty,
+          price: element.price*element.qty,
           medicine_id: element.medicine_id,
         })
       );
       await Promise.all(orderPromises);
-      window.location.reload();
+      refetch()
+    refresh()
+      toast.success("Order Successfully Added")
+      }
+     
     } catch (error) {
       console.error("Error while placing orders:", error);
     }
@@ -64,7 +68,8 @@ console.log(totalQty);
   }
 
   return (
-    <div className="container-fluid my-5">
+    <>
+        <div className="container-fluid my-5">
       <h1 className="text-center" style={{ marginTop: "100px" }}>
         Cart Items
       </h1>
@@ -72,7 +77,7 @@ console.log(totalQty);
         <div className="col-md-10 col-11 mx-auto">
           <div className="row mt-5 gx-3">
             <div className="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
-              {currentData.map((element) => (
+              {data&&data.map((element) => (
                 <CartCard key={element.id} value={element} refetch={refetch} />
               ))}
             </div>
@@ -80,11 +85,14 @@ console.log(totalQty);
               <div className="right_side p-3 shadow bg-white">
                 <div className="price_indiv d-flex justify-content-between">
                   <p>Total Product</p>
-                  <p>{totalQty}</p>
+                  <p>{data.reduce((qty, item) => qty+item.qty,0)}</p>
                 </div>
                 <div className="price_indiv d-flex justify-content-between">
                   <p>Total Amount</p>
-                  <p>₹{totalAmount.toFixed(2)}</p>
+                  <p>₹{data.reduce(
+      (price, item) => price + item.qty * item.price,
+      0)
+    }</p>
                 </div>
                 <button
                   className="btn btn-primary text-uppercase"
@@ -98,6 +106,21 @@ console.log(totalQty);
         </div>
       </div>
     </div>
+    <ToastContainer
+position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+transition= {Bounce}
+/>
+    </>
+
   );
 }
 

@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate,Link,NavLink } from 'react-router-dom';
 import { unSetUserToken } from '../../Features/authSlice';
 import { getToken, removeToken } from '../../Service/LocalStorageService';
-import { setUserInfo, unsetUserInfo } from '../../Features/userSlice';
+import { setLogOut, setUserInfo, unsetUserInfo } from '../../Features/userSlice';
 import {useGetLoggedUserQuery} from'../../Service/UserAuthApi'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
@@ -17,6 +17,7 @@ function Profile() {
         dispatch(unSetUserToken({ access_token: null }))
         removeToken()
         navigate('/')
+        dispatch(setLogOut(true))
       }
 
       const navigate = useNavigate()
@@ -25,32 +26,32 @@ function Profile() {
   
    
   
-    // const { data, isSuccess } = useGetLoggedUserQuery(access_token)
+    const { data, isSuccess } = useGetLoggedUserQuery(access_token)
   
-    // const [userData, setUserData] = useState({
-    //   email: "",
-    //   name: ""
-    // })
+    const [userData, setUserData] = useState({
+      email: "",
+      name: ""
+    })
   
     // // Store User Data in Local State
-    // useEffect(() => {
-    //   if (data && isSuccess) {
-    //     setUserData({
-    //       email: data.email,
-    //       name: data.name,
-    //     })
-    //   }
-    // }, [data, isSuccess])
+    useEffect(() => {
+      if (data && isSuccess) {
+        setUserData({
+          email: data.email,
+          name: data.name,
+        })
+      }
+    }, [data, isSuccess])
   
     // // Store User Data in Redux Store
-    // useEffect(() => {
-    //   if (data && isSuccess) {
-    //     dispatch(setUserInfo({
-    //       email: data.email,
-    //       name: data.name
-    //     }))
-    //   }
-    // }, [data, isSuccess, dispatch])
+    useEffect(() => {
+      if (data && isSuccess) {
+        dispatch(setUserInfo({
+          email: data.email,
+          name: data.name
+        }))
+      }
+    }, [data, isSuccess, dispatch])
   return (
     <div class="dropdown-btn">
     <img src="/images/how_to_live_with_heart_problem.jpg" alt=""/>

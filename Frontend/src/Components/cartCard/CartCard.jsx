@@ -1,90 +1,60 @@
 import React, { useEffect, useState } from "react";
 import {
   useDeleteCartDataMutation,
-  useGetmedicineDataQuery,
+  useGetmedicineCustomDataQuery,
   useUpdateCartDataMutation,
 } from "../../Service/UserAuthApi";
-import { useDispatch, useSelector } from "react-redux";
-import { cartQty, setPriceTotal } from "../../features/cartSlice";
+import { getToken } from "../../Service/LocalStorageService";
 
 function CartCard({ value, refetch }) {
-  console.log("hg", value);
-  const [disable, setDisable] = useState(false);
-  const [disableOne, setDisableOne] = useState(false);
-  const [totalAmt, setTotalAmt] = useState(0);
-  const accessToken = localStorage.getItem("access_token");
+console.log(value.qty);
+const {access_token} =getToken()
 
-  const { data, isLoading, isError } = useGetmedicineDataQuery({
-    id: value.medicine_id,
-    access_token: accessToken,
-  });
-  console.log(data);
+  const { data, isLoading, isError } = useGetmedicineCustomDataQuery(value.medicine_id);
+  
   const [deleteCartData] = useDeleteCartDataMutation();
-  const [updateCartData] = useUpdateCartDataMutation();
-  const dispatch = useDispatch();
-  // const totalPrice = useSelector((state) => state.cart.totalPrice);
+const [updateCartData]=useUpdateCartDataMutation()
 
-  // useEffect(() => {
-  //   if (res) {
-  //     // If an update is successful, update the local state
-  //     setCount(value.qty);
-  //     setTotalAmt(parseFloat(data.price) * value.qty);
-  //   }
-  // }, [res]);
+const increment = async()=>{
+  if (value.qty < 10) {
+    // const newCount = count + 1;
+   
+    // dispatch(setPrice(parseFloat(data.data.attributes.price) * newCount));
+    await updateCartData({
+      access_token:access_token,
+      id: value.id,
+      qty: value.qty+1
+    });
+  refetch()
+  }
+}
+const decrement = async () => {
+  if (value.qty > 1) {
+    // const newCount = count - 1;
 
-  // useEffect(() => {
-  //   if (!isLoading && data) {
-  //     setTotalAmt(parseFloat(data.price) * count);
-  //   }
-  // }, [data, isLoading, count]);
+    // dispatch(setPrice(parseFloat(data.data.attributes.price) * newCount));
+    await updateCartData({
+      access_token: access_token,
+      id: value.id,
+       qty:value.qty-1 ,
+    });
+    refetch()
+  }
+};
 
-  // useEffect(() => {
-  //   if(data){
-  //     dispatch(setPriceTotal({ id: data.id, qty: count, price: data.price }));
-  //   }
-
-  // }, [count,  dispatch, value.id,data]);
   const handleRemoveItem = () => {
-    deleteCartData({ id: value.id, access_token: accessToken })
+    deleteCartData({ id: value.id, access_token:access_token })
       .then(() => {
-        // No need to reload the page, just update the state
         refetch();
       })
       .catch((error) => {
         console.error("Error removing item:", error);
-        // Handle error if needed
       });
   };
 
-  const decrement = async () => {
-    if (value.qty > 1) {
-      await updateCartData({
-        id: value.id,
-        access_token: accessToken,
-        qty: value.qty - 1,
-      });
-      refetch()
-    }
-  };
 
-  const increment = async () => {
-    if (value.qty < 10) {
-      await updateCartData({
-        id: value.id,
-        access_token: accessToken,
-        qty: value.qty + 1,
-      });
-      refetch()
-    }
-  };
 
-  // useEffect(() => {
-  //   // Disable increment button if count is 10
-  //   setDisable(count === 10);
-  //   // Disable decrement button if count is 1
-  //   setDisableOne(count === 1);
 
-  // }, [count]);
 
   if (isLoading) {
     return <div>Loading medicine data...</div>;
@@ -163,7 +133,7 @@ function CartCard({ value, refetch }) {
                 </button>
               </div>
               <div className="col-12 fw-bold mb-4 text-end">
-                <span>Total Amount: ₹{totalAmt.toFixed(2)}</span>
+                <span>Total Amount: ₹{parseFloat(value.price) * value.qty.toFixed(2)}</span>
               </div>
               <div className="col-12">
                 <p className="text-danger fw-bold" style={{ fontSize: "12px" }}>

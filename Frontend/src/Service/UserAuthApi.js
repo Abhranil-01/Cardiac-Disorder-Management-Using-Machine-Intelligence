@@ -100,14 +100,26 @@ export const userAuthApi = createApi({
       },
     }),
     getmedicineData: builder.query({
-      query: ({ id, access_token }) => {
+      query: () => {
+        return {
+          url: `medicines/`,
+          method: "GET",
+
+          // headers: {
+          //   authorization: `Bearer ${access_token}`,
+          // },
+        };
+      },
+    }),
+    getmedicineCustomData: builder.query({
+      query: (id) => {
         return {
           url: `medicines/${id}`,
           method: "GET",
 
-          headers: {
-            authorization: `Bearer ${access_token}`,
-          },
+          // headers: {
+          //   authorization: `Bearer ${access_token}`,
+          // },
         };
       },
     }),
@@ -134,7 +146,7 @@ export const userAuthApi = createApi({
           url: `addtocart/`,
           method: "PUT",
           body: {
-            id:id,
+            cart_id: id,
             qty: qty,
           },
           headers: {
@@ -206,5 +218,6 @@ export const {
   useGetorderDataQuery,
   useCancleOrderMutation,
   usePostProfileMutation,
-  useGetUserQuery
+  useGetUserQuery,
+  useGetmedicineCustomDataQuery
 } = userAuthApi;

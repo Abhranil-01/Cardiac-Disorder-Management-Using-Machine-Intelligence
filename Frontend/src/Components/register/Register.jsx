@@ -53,7 +53,7 @@ function Register({value}) {
   const check =(e)=>{
   setDisplay('flex')
     const passwordone = e.target.value;
-    if(passwordone.length === 6){
+    if(passwordone.length === 15){
       setColor('text-success')
     }else{
       setColor('text-danger')
@@ -139,7 +139,8 @@ function Register({value}) {
                     id="passwd"
                     name="passwd"
                     onChange={check}
-                    maxLength={6}
+                    minLength={6}
+                    maxLength={15}
                   />
                   <i
                     className={`${updateone}`}
@@ -154,7 +155,7 @@ function Register({value}) {
                     }}
                   ></i>
           
-                    <p className={`${color} ${display} fw-bold text-center password-checker`} >Password length is 6</p>
+                    <p className={`${color} ${display} fw-bold text-center password-checker`} >Minimum Password length is 6 </p>
                   
                 </div>
                
