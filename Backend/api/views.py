@@ -57,7 +57,7 @@ class UserRegistrationView(APIView):
 		serializer = UserRegistrationSerializer(data=request.data)
 		serializer.is_valid(raise_exception=True)
 		user = serializer.save()
-		profile = Profile(registered_email = user, phonenumber = request.data.get('phone_number'))
+		profile = Profile(registered_email = user, phone_number = request.data.get('phone_number'))
 		profile.save()
 		token = get_tokens_for_user(user)
 		return Response({'token':token, 'msg':'Registration Successful'}, status=status.HTTP_201_CREATED)
