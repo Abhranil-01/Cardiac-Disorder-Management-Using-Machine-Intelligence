@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import {
   useGetLoggedUserQuery,
-  useGetUserQuery,
   usePostProfileMutation,
 } from "../../Service/UserAuthApi";
 import { getToken } from "../../Service/LocalStorageService";
 
 function ProfileForm() {
   const { access_token } = getToken();
-  const [image, setImage] = useState(null);
+  const [image, setImage] = useState('/src/Images/icon/c7abcd3ce378191a3dddfa4cdb2be46f.jpg');
   const [bloodGroup, setBloodGroup] = useState(null);
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState(null);
@@ -17,25 +16,20 @@ function ProfileForm() {
   const [name, setName] = useState(null);
   const [phone, setPhone] = useState(null);
   const [email, setEmail] = useState(null);
-  const { data: userData } = useGetUserQuery(access_token);
-  const { data } = useGetLoggedUserQuery(access_token);
+  const { data: profile } = useGetLoggedUserQuery(access_token);
   const [postProfile] = usePostProfileMutation();
   const [disable, setDisable] = useState(true);
+  const [fileOne, setFileOne] = useState('');
 
-  useEffect(() => {
-    if (data) {
-      console.log("profile data", data);
-      setEmail(data);
-    }
-  }, [data]);
-  // console.log("dqewwe", userData);
   const handleImageChange = (e) => {
     const file = e.target.files[0];
+    setFileOne(file ? file.name : '');
     if (file) {
       setImage(URL.createObjectURL(file));
     }
   };
-  const handlesave = async (e) => {
+  
+  const handleSave = async (e) => {
     e.preventDefault();
     const addData = {
       name: name,
@@ -44,16 +38,17 @@ function ProfileForm() {
       blood_group: bloodGroup,
       date_of_birth: dob,
       address: address,
-      image: image,
+      image: fileOne,
     };
     const res = await postProfile({
       access_token: access_token,
       data: addData,
     });
 
-    console.log("qwefqewf", res);
+    console.log("Response:", res);
     setDisable(true);
   };
+
   return (
     <div className="">
       <form>
@@ -63,10 +58,7 @@ function ProfileForm() {
               <div className="contact-left">
                 <div id="image">
                   <img
-                    src={
-                      image ||
-                      "/src/Images/icon/c7abcd3ce378191a3dddfa4cdb2be46f.jpg"
-                    }
+                    src={image}
                     alt="Profile Picture"
                     id="profile-pic"
                   />
@@ -77,7 +69,7 @@ function ProfileForm() {
                     type="file"
                     name="inputfile"
                     id="input-file"
-                    onChange={handleImageChange}
+                    onChange={(e) => handleImageChange(e)}
                   />
                 </div>
               </div>
@@ -117,12 +109,9 @@ function ProfileForm() {
                       onChange={(e) => setGender(e.target.value)}
                       disabled={disable}
                     >
-                      <option value="">
-                        --select your gender--
-                      </option>
-                      <option value="Male">Male</option>
-                      <option value="Female">Female</option>
-                      <option value="Other">Other</option>
+                      <option value="">--select your gender--</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
                     </select>
                   </div>
                   <div className="input-group">
@@ -134,9 +123,7 @@ function ProfileForm() {
                       required
                       disabled={disable}
                     >
-                      <option value="" >
-                        --select your blood group--
-                      </option>
+                      <option value="">--select your blood group--</option>
                       <option value="A+">A+</option>
                       <option value="B+">B+</option>
                       <option value="O+">O+</option>
@@ -149,7 +136,7 @@ function ProfileForm() {
                     <label>Email</label>
                     <input
                       type="email"
-                      value={email}
+                      value={email} // Make sure to set the correct value for email
                       readOnly
                       disabled={disable}
                     />
@@ -166,10 +153,7 @@ function ProfileForm() {
                       required
                       disabled={disable}
                     />
-                    <span
-                      className="phoneError"
-                      style={{ color: "red" }}
-                    ></span>
+                    <span className="phoneError" style={{ color: "red" }}></span>
                   </div>
                 </div>
                 <div className="input-row">
@@ -197,12 +181,11 @@ function ProfileForm() {
                       Edit
                     </button>
                   ) : (
-                    <button className="btn btn-primary" onClick={handlesave}>
+                    <button className="btn btn-primary" onClick={(e) => handleSave(e)}>
                       Save
                     </button>
                   )}
                 </div>
-                
               </div>
             </div>
           </div>
