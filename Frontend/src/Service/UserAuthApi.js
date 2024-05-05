@@ -66,7 +66,7 @@ export const userAuthApi = createApi({
           method: "PUT",
           body: data,
           headers: {
-            "Content-type": "application/json",
+            'Content-Type': 'multipart/form-data; boundary=<calculated when request is sent>',
             authorization: `Bearer ${access_token}`,
           },
         };
