@@ -24,11 +24,11 @@ function ProfileForm() {
 
   useEffect(() => {
     if (data) {
-      console.log("dewwed", data);
+      console.log("profile data", data);
       setEmail(data);
     }
   }, [data]);
-  console.log("dqewwe", userData);
+  // console.log("dqewwe", userData);
   const handleImageChange = (e) => {
     const file = e.target.files[0];
     if (file) {
@@ -117,7 +117,7 @@ function ProfileForm() {
                       onChange={(e) => setGender(e.target.value)}
                       disabled={disable}
                     >
-                      <option value="" disabled>
+                      <option value="">
                         --select your gender--
                       </option>
                       <option value="Male">Male</option>
@@ -134,7 +134,7 @@ function ProfileForm() {
                       required
                       disabled={disable}
                     >
-                      <option value="" disabled>
+                      <option value="" >
                         --select your blood group--
                       </option>
                       <option value="A+">A+</option>

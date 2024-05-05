@@ -2,40 +2,39 @@ import React, { useEffect, useState } from "react";
 import {
   useGetmedicineDataQuery,
   useCancleOrderMutation,
+  useGetmedicineCustomDataQuery,
 } from "../../Service/UserAuthApi";
 import { useSelector } from "react-redux";
 
-function OrderCard({ value }) {
+function OrderCard({ value,refetch }) {
   const [disable,setDisable] =useState(false);
   const [cancel,setCancel] =useState('');
   const accessToken = localStorage.getItem("access_token");
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-  const { data, isLoading, isError } = useGetmedicineDataQuery({
-    id: value.medicine_id,
-    access_token: accessToken,
-  });
-  const [cancleOrder, { data: cancelData, error }] = useCancleOrderMutation();
-console.log(value);
-  useEffect(() => {
-    if (cancelData) {
-      setDisable(true)
-      setCancel('Order Cancelled')
-      console.log("Order canceled successfully:", cancelData);
-    }
-    if (error) {
-      console.error("Error canceling order:", error);
-    }
-  }, [cancelData, error]);
+  const { data, isLoading, isError } = useGetmedicineCustomDataQuery(value.medicine_id);
+  
+  const [cancleOrder] = useCancleOrderMutation();
+console.log('cfaf',value);
+
+
 useEffect(()=>{
   if(value.status === 'Cancelled') {
    
     setDisable(true)
     setCancel('Order Cancelled')
   }
-},[value])
-  const handleCancel = () => {
-    cancleOrder({ id: value.id, access_token: accessToken });
+},[])
+
+  const handleCancel = async() => {
+    const res= await cancleOrder({ id: value.id, access_token: accessToken });
+    console.log('wefwef',res);
+    if(res.data.msg==="Order canceled"){
+      setDisable(true)
+    setCancel('Order Cancelled')
+    }
+    refetch()
   };
+
 
   if (isLoading) {
     return <div>Loading medicine data...</div>;

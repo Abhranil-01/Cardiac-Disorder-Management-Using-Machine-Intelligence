@@ -2,14 +2,16 @@ import React, { useEffect, useState } from "react";
 import { useParams, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { useAddToCartMutation, useGetCartDataQuery } from "../../Service/UserAuthApi";
+import { useAddToCartMutation, useGetCartDataQuery, useGetmedicineCustomDataQuery } from "../../Service/UserAuthApi";
 import "./SingleProduct.css";
+import { ToastContainer, toast,Bounce } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function SingleProduct() {
   const { id } = useParams();
   const [addToCart] = useAddToCartMutation();
-  const [product, setProduct] = useState(null);
-  const [refresh, setRefresh] = useState(false);
+
+
   const [display, setDisplay] = useState("d-none");
   const accessToken = localStorage.getItem("access_token");
 const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
@@ -17,22 +19,8 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
     setDisplay("d-none");
   };
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          `http://127.0.0.1:8000/api/medicines/${id}`
-        );
-        const data = await response.json();
-        setProduct(data);
-      } catch (error) {
-        console.error("Error fetching product details:", error);
-      }
-    };
-
-    fetchData();
-  }, [id]);
-
+const {data,isLoading}=useGetmedicineCustomDataQuery(id)
+console.log(data);
   const handleAddToCart = async () => {
 
 
@@ -41,14 +29,12 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
       return;
     }
 
-    if (!product) {
-      console.log("Product data is not available yet.");
-      return;
-    }
+  
 
     const addData = {
       Medicine_id: id,
       qty: 1,
+      price: data.price
     };
 
     try {
@@ -57,16 +43,16 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
         addData: addData,
       }); // Reload the page
     refetch()
+    toast.success("Data added successfully")
     } catch (error) {
       console.error("Error adding product to cart:", error);
     }
   };
 
-  if (!product) {
-    return <div>Loading...</div>;
-  }
 
-  const { image, name, price, qty, description,key_benifits,Key_Ingredients,Safety_Information } = product;
+if(isLoading) {
+  return <p>Loading....</p>
+}
 
   return (
     <>
@@ -117,21 +103,21 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
               >
                 <img
                   className="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto img-fluid img-dec"
-                  src={image}
-                  alt={name}
+                  src={data.image}
+                  alt={data.name}
                 />
               </div>
             </div>
             <div className="col-md-8">
               <h2 className="featurette-heading fw-normal lh-1">
-                {name} <br />
-                <span className="fs-5 text-body-secondary">{price}</span>
+                {data.name} <br />
+                <span className="fs-5 text-body-secondary">{data.price}</span>
                 <br />
                 <span className="fs-5 text-body-secondary">In Stock</span>
               </h2>
               <br />
               <p className="lead fw-bold">Description</p>
-              <p className="lead"> {description} </p>
+              <p className="lead"> {data.description} </p>
             </div>
           </div>
 
@@ -140,8 +126,8 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
               <div className="m-image" style={{ display: "flex", justifyContent: "center" }}>
                 <img
                   className="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto img-fluid img-dec"
-                  src={image}
-                  alt={name}
+                  src={data.image}
+                  alt={data.name}
                 />
               </div>
             </div>
@@ -152,11 +138,11 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
               <p className="lead fw-bold " >
                 Benifits
               </p>
-              <p className="lead">{key_benifits}</p>
+              <p className="lead">{data.key_benifits}</p>
               <p className="lead fw-bold">Ingredients</p>
-              <p className="lead">{Key_Ingredients}</p>
+              <p className="lead">{data.Key_Ingredients}</p>
               <p className="lead fw-bold">Safty Information</p>
-              <p className="lead">{Safety_Information}</p>
+              <p className="lead">{data.Safety_Information}</p>
             </div>
           </div>
           <div className="mb-5 d-flex justify-content-center ">
@@ -164,6 +150,19 @@ const {data:cartData,refetch }=useGetCartDataQuery(accessToken)
           </div>
         </div>
       </div>
+      <ToastContainer
+position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+transition= {Bounce}
+/>
     </>
   );
 }
