@@ -82,7 +82,7 @@ class Profile(models.Model):
 	blood_group = models.CharField(max_length=5, blank=True, null=True)
 	date_of_birth = models.DateField(default=date.today,blank=True, null=True)
 	address = models.TextField(blank=True, null=True)
-	image = models.ImageField(upload_to='profile_images/', default='profile_images/default.jpg')
+	# image = models.ImageField(upload_to='profile_images/', default='profile_images/default.jpg')
 
 	def __str__(self):
 		return self.registered_email.email

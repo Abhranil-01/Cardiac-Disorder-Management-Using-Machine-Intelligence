@@ -98,7 +98,7 @@ class UserProfileView(APIView):
 			"blood_group": profile.blood_group,
 			"date_of_birth": profile.date_of_birth,
 			"address" : profile.address,
-			"image" : profile.image.url
+			# "image" : profile.image.url
 		}
 		return JsonResponse(serializer, status=status.HTTP_200_OK)
 
