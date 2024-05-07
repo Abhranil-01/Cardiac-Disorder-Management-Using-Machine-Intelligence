@@ -88,9 +88,19 @@ class UserProfileView(APIView):
 
 	def get(self, request, format=None):
 		user = request.user
-		profile = Profile.objects.filter(registered_email=request.user)
-		serializer = ProfileSerializer(profile,many=True)
-		return Response(serializer.data, status=status.HTTP_200_OK)
+		profile = Profile.objects.get(registered_email=request.user)
+		# print(profile.name)
+		serializer ={
+			"email" : profile.registered_email.email,
+			"name" : profile.name,
+			"phone_number": profile.phone_number,
+			"gender" : profile.gender,
+			"blood_group": profile.blood_group,
+			"date_of_birth": profile.date_of_birth,
+			"address" : profile.address,
+			"image" : profile.image.url
+		}
+		return JsonResponse(serializer, status=status.HTTP_200_OK)
 
 	# def post(self, request, format=None):
 	# 	serializer = UserProfileSerializer(data=request.data)
