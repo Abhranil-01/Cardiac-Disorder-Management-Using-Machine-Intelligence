@@ -7,7 +7,7 @@ import { getToken, removeToken } from '../../Service/LocalStorageService';
 import { setLogOut, setUserInfo, unsetUserInfo } from '../../Features/userSlice';
 import {useGetLoggedUserQuery} from'../../Service/UserAuthApi'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping,faUser} from '@fortawesome/free-solid-svg-icons';
 
 
 function Profile() {
@@ -54,9 +54,12 @@ function Profile() {
     }, [data, isSuccess, dispatch])
   return (
     <div class="dropdown-btn">
-    <img src="/images/how_to_live_with_heart_problem.jpg" alt=""/>
+      <span className='fs-4 text-success' style={{cursor:'pointer'}}>
+      <FontAwesomeIcon icon={faUser}/>
+      </span>
+
     <div class="dropdown-content">
-        <div class="item nav-link"><NavLink to="/profile">Profile</NavLink></div>
+        <div class="item nav-link"><NavLink to="/profile" >Profile</NavLink></div>
         <div class="item nav-link"> <NavLink to='/Orders'>Orders</NavLink></div>
         <div class="item nav-link"> {access_token ?(<NavLink to='/'  onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login'>Login</NavLink>)}</div>
     </div>

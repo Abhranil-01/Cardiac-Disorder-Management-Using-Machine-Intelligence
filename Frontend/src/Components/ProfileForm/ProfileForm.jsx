@@ -80,7 +80,7 @@ function ProfileForm() {
           <section className="query-cover">
             <div className="container">
               <div className="contact-box">
-                <div className="contact-left">
+                {/* <div className="contact-left">
                   <div id="image">
                     <img
                       src={`http://127.0.0.1:8000${image}`}
@@ -98,8 +98,9 @@ function ProfileForm() {
                       onChange={(e) => handleImageChange(e)}
                     />
                   </div>
-                </div>
+                </div> */}
                 <div className="contact-right">
+                  <h1>Edit Your Profile</h1>
                   <div className="input-row">
                     <div className="input-group">
                       <label>UserName</label>
