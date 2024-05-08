@@ -3,7 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from django.contrib.auth import authenticate
 from rest_framework import generics
-from .models import  Medicine, Contact, TestBook, Profile, AddtoCart, OrderList
+from .models import  Medicine, Contact, TestBook, Profile, AddtoCart, OrderList, Payment
 from .serializers import MedicineSerializer, ContactSerializer, TestBookSerializer, AddtoCartSerializer, OrderSerializer
 from rest_framework import viewsets, status
 from rest_framework.response import Response
@@ -30,6 +30,19 @@ from sklearn import preprocessing
 import pandas as pd
 from django.http import JsonResponse
 from .chatbot import chatbotres
+import razorpay
+from django.conf import settings
+from django.views.decorators.csrf import csrf_exempt
+from django.utils import timezone
+from django.http import JsonResponse
+from rest_framework.decorators import api_view, permission_classes
+from rest_framework.permissions import IsAuthenticated
+from rest_framework.response import Response
+from rest_framework import status
+from decimal import Decimal
+import razorpay
+client = razorpay.Client(
+	auth=(settings.RAZOR_KEY_ID, settings.RAZOR_KEY_SECRET))
 
 
 def contactEmail(request, name, to_email):
@@ -243,15 +256,25 @@ class OrderListAPIView(APIView):
 		return Response(serializer.data)
 
 	def post(self, request):
+
 		cart_id = request.data.get('cart_id')
-		serializer = OrderSerializer(data=request.data)
-		if serializer.is_valid():
-			serializer.save(user=request.user)
-			if cart_id:
-				AddtoCart.objects.filter(id = cart_id, user=request.user).delete()
-				
-			return Response(serializer.data, status=status.HTTP_201_CREATED)
-		return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+		cart = AddtoCart.objects.get(id = cart_id, user=request.user)
+		pay = Payment.Objects.get(cartid=cart)
+		checkorder = client.order.fetch(pay.rozorpay_order_id)
+		# print(checkorder)
+		# carts = Addtocart.objects.filter(rozorpay_order_id = order_id)
+		# print(carts)
+
+		if checkorder['status'] == 'paid':
+			serializer = OrderSerializer(data=request.data)
+			pay.delete()
+			if serializer.is_valid():
+				serializer.save(user=request.user)
+				if cart_id:
+					AddtoCart.objects.filter(id = cart_id, user=request.user).delete()
+					
+				return Response(serializer.data, status=status.HTTP_201_CREATED)
+			return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 	def put(self, request):
 		try:
@@ -330,3 +353,30 @@ def bot(request):
 	except Exception as e:
 		return Response(str(e), status=status.HTTP_400_BAD_REQUEST)
 
+@api_view(["GET"])
+@permission_classes([IsAuthenticated])
+def PaymentView(request):
+	try:
+		items = AddtoCart.objects.filter(user=request.user)
+		total = sum(item.price for item in items)
+		total = total * 100  # Convert to paisa
+		payment = client.order.create({
+			"amount": float(total),
+			"currency": "INR",
+			"receipt": "receipt#1",
+			"notes": {
+				"key1": "value3",
+				"key2": "value2"
+			}
+		})
+		for item in items:
+			pay = Payment(cartid=item, rozorpay_order_id=payment['id'])
+			pay.save()
+		context = {
+			"total": float(total),
+			"paymentid": payment['id']
+		}
+		print(context)
+		return JsonResponse(context, status=status.HTTP_200_OK)
+	except Exception as e:
+		return Response(str(e), status=status.HTTP_400_BAD_REQUEST)

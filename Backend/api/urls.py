@@ -12,6 +12,7 @@ router.register('testbooks', views.TestBookViewSet)
 urlpatterns =[
     path('',include(router.urls)),
 	path('register/',views.UserRegistrationView.as_view(), name='register'),
+	path('payment/',views.PaymentView, name='payment'),
     path('login/', views.UserLoginView.as_view(), name='login'),
     path('profile/', views.UserProfileView.as_view(), name='profile'),
 	path('addtocart/', views.AddtoCartAPIView.as_view(), name='addtocart'),
