@@ -10,7 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function ProfileForm() {
   const { access_token } = getToken();
-  const [image, setImage] = useState(null);
+
   const [bloodGroup, setBloodGroup] = useState(null);
   const [gender, setGender] = useState(null);
   const [address, setAddress] = useState(null);
@@ -21,7 +21,7 @@ function ProfileForm() {
   const { data: profile } = useGetLoggedUserQuery(access_token);
   const [postProfile] = usePostProfileMutation();
   const [disable, setDisable] = useState(true);
-  const [fileOne, setFileOne] = useState("");
+
 
   useEffect(() => {
     if (profile) {
@@ -32,19 +32,19 @@ function ProfileForm() {
       setDOB(profile[0].date_of_birth);
       setGender(profile[0].gender);
       setEmail(profile[0].registered_email);
-      setImage(profile[0].image);
+    
     }
   }, [profile]);
 
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
+  // const handleImageChange = (e) => {
+  //   const file = e.target.files[0];
 
-    if (file) {
-      console.log("Selected File:", file);
-      setImage(URL.createObjectURL(file));
-      setFileOne(file);
-    }
-  };
+  //   if (file) {
+  //     console.log("Selected File:", file);
+  //     setImage(URL.createObjectURL(file));
+  //     setFileOne(file);
+  //   }
+  // };
 
   const handleSave = async (e) => {
     e.preventDefault();
@@ -71,7 +71,7 @@ function ProfileForm() {
     }
   };
 
-  console.log(image);
+
   return (
     <>
       {" "}
