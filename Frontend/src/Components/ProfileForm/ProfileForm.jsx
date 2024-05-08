@@ -48,18 +48,18 @@ function ProfileForm() {
 
   const handleSave = async (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("fileOne", fileOne);
-    formData.append("name", name);
-    formData.append("phone_number", phone);
-    formData.append("gender", gender);
-    formData.append("blood_group", bloodGroup);
-    formData.append("date_of_birth", dob);
-    formData.append("address", address);
+   
   
     const res = await postProfile({
       access_token: access_token,
-      data: formData,
+      data: {
+        name:name,
+        phone_number:phone,
+        gender: gender,
+        blood_group:bloodGroup,
+        date_of_birth:dob,
+        address:address
+      },
     });
   
     console.log("Response:", res);
