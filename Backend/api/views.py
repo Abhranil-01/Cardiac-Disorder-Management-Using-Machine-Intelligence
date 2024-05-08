@@ -261,10 +261,7 @@ class OrderListAPIView(APIView):
 		cart = AddtoCart.objects.get(id = cart_id, user=request.user)
 		pay = Payment.Objects.get(cartid=cart)
 		checkorder = client.order.fetch(pay.rozorpay_order_id)
-		# print(checkorder)
-		# carts = Addtocart.objects.filter(rozorpay_order_id = order_id)
-		# print(carts)
-
+		
 		if checkorder['status'] == 'paid':
 			serializer = OrderSerializer(data=request.data)
 			pay.delete()
