@@ -158,7 +158,7 @@ export const userAuthApi = createApi({
     }),
       orderData: builder.mutation({
       query: ({ cart_id, access_token, qty,medicine_id}) => {
-
+          console.log(qty,medicine_id);
         return {
           url: `orderlist/`,
           method: "POST",

@@ -9,6 +9,8 @@ import {
 } from "../../Service/UserAuthApi";
 import { ToastContainer, toast,Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
+import useRazorpay from "react-razorpay";
 function Cart() {
   const [currentData, setCurrentData] = useState([]);
   const accessToken = localStorage.getItem("access_token");
@@ -18,7 +20,7 @@ function Cart() {
   const {data:orderItems,refetch:refresh}=useGetorderDataQuery(accessToken);
   const [orderData] = useOrderDataMutation();
   const totalPrice = useSelector((state) => state.cart.totalPrice);
-
+  const [Razorpay] = useRazorpay();
 console.log('fref',totalPrice);
   // useEffect(() => {
   //   const refetchData = () => {
@@ -30,29 +32,121 @@ console.log('fref',totalPrice);
   //   refetchData();
   // }, [data, dispatch]);
     // Calculate total price dynamically based on currentData
-  
+    function loadScript(src) {
+      return new Promise((resolve) => {
+          const script = document.createElement("script");
+          script.src = src;
+          script.onload = () => {
+              resolve(true);
+          };
+          script.onerror = () => {
+              resolve(false);
+          };
+          document.body.appendChild(script);
+      });
+}
 
   const handleOrder = async () => {
-    try {
-      if(data){
-        const orderPromises = data.map((element) =>
-        orderData({
-          cart_id: element.id,
-          access_token: accessToken,
-          qty: element.qty,
-          price: element.price*element.qty,
-          medicine_id: element.medicine_id,
-        })
-      );
-      await Promise.all(orderPromises);
-      refetch()
-    refresh()
-      toast.success("Order Successfully Added")
-      }
-     
-    } catch (error) {
-      console.error("Error while placing orders:", error);
+    console.log("Payament implement");
+  
+    const res = await loadScript(
+      "https://checkout.razorpay.com/v1/checkout.js"
+  );
+
+  if (res) {
+      console.log('uhuihpuigg',res);
+    
+  }else{
+    console.log(res);
+  }
+ // creating a new order
+
+  
+  try {
+    const configOption = {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    };
+    const result = await axios.get("http://127.0.0.1:8000/api/payment/", configOption);
+    console.log('fwwefwqe',result);
+  
+   // Getting the order details back
+
+   axios({
+    method: 'get',
+    url: 'http://127.0.0.1:8000/api/payment/',
+    data: {
+        amount: result.data.total,
+        currency: "INR"
+    }, headers: {
+      Authorization: `Bearer ${accessToken}`,
     }
+})
+.then((response)=>{
+    
+    // get order id
+    console.log('jhuhuh',response);
+    const order_id = response.data.paymentid
+    
+    // handle payment
+    const options = {
+      key: "rzp_test_NK5x7XMB4R6nGT",
+      order_id: order_id, // Replace with your actual order ID
+      handler: async function (response) {
+        console.log('grtg',response);
+        if (response) {
+          console.log(response);
+          try {
+            if (data) {
+              console.log("data",data);
+              const orderPromises = data.map((element) =>
+                orderData({
+                  cart_id: element.id,
+                  access_token: accessToken,
+                  qty: element.qty,
+                  price: element.price * element.qty,
+                  medicine_id: element.medicine_id,
+                })
+              );
+             const res= await Promise.all(orderPromises);
+              refetch();
+            console.log("res",res);
+              toast.success("Order Successfully Added");
+            }
+          } catch (error) {
+            console.error("Error while placing orders:", error);
+          }
+        }
+      },
+    };
+    
+
+    const rzp1 = new Razorpay(options);
+    rzp1.on("payment.failed", function (response) {
+        alert(response.error.code);
+        alert(response.error.description);
+        alert(response.error.source);
+        alert(response.error.step);
+        alert(response.error.reason);
+        alert(response.error.metadata.order_id);
+        alert(response.error.metadata.payment_id);
+    });
+    rzp1.open();
+})
+.catch((error)=>{
+    console.log('bii',error);
+})
+}
+  
+   catch (error) {
+    console.error("Error fetching data:", error);
+  }
+  
+
+ 
+  
+
   };
 
   if (!accessToken) {
