@@ -29,7 +29,8 @@ function Order() {
   }
 
   return (
-    <div className="container-fluid mb-5">
+    <div className="container-fluid   " >
+      <h1 className="text-center" style={{marginTop:'150px'}}>Your Orders</h1>
       <div className="row">
         <div className="col-md-10 col-11 mx-auto">
           <div className="row mt-5 gx-3">
