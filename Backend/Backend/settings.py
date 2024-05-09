@@ -174,3 +174,6 @@ SIMPLE_JWT = {
     'JTI_CLAIM': 'jti',
 
 }
+
+RAZOR_KEY_ID = 'rzp_test_NK5x7XMB4R6nGT'
+RAZOR_KEY_SECRET = 'p4PpMftajsiglUmqChaKYHA5'
