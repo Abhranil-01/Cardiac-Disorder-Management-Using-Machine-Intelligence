@@ -259,9 +259,11 @@ class OrderListAPIView(APIView):
 
 		cart_id = request.data.get('cart_id')
 		cart = AddtoCart.objects.get(id = cart_id, user=request.user)
-		pay = Payment.objects.get(cartid=cart)
-		checkorder = client.order.fetch(pay.rozorpay_order_id)
-		
+		pay = Payment.objects.filter(cartid=cart)
+		print(pay)
+		for p in pay:
+			checkorder = client.order.fetch(p.rozorpay_order_id)
+			print(checkorder)
 		if checkorder['status'] == 'paid':
 			serializer = OrderSerializer(data=request.data)
 			pay.delete()
@@ -355,7 +357,10 @@ def bot(request):
 def PaymentView(request):
 	try:
 		items = AddtoCart.objects.filter(user=request.user)
-		total = sum(item.price for item in items)
+		total = 0
+		for item in items:
+			total += (item.price * item.qty)
+		# total = sum(item.price*item.qty for item in items)
 		total = total * 100  # Convert to paisa
 		payment = client.order.create({
 			"amount": float(total),
