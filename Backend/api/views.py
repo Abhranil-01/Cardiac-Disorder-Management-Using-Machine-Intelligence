@@ -259,7 +259,7 @@ class OrderListAPIView(APIView):
 
 		cart_id = request.data.get('cart_id')
 		cart = AddtoCart.objects.get(id = cart_id, user=request.user)
-		pay = Payment.Objects.get(cartid=cart)
+		pay = Payment.objects.get(cartid=cart)
 		checkorder = client.order.fetch(pay.rozorpay_order_id)
 		
 		if checkorder['status'] == 'paid':
