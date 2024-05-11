@@ -133,7 +133,7 @@ const decrement = async () => {
                 </button>
               </div>
               <div className="col-12 fw-bold mb-4 text-end">
-                <span>Total Amount: ₹{parseFloat(value.price) * value.qty.toFixed(2)}</span>
+                <span>Total Amount: ₹{(parseFloat(value.price) * value.qty).toFixed(2)}</span>
               </div>
               <div className="col-12">
                 <p className="text-danger fw-bold" style={{ fontSize: "12px" }}>

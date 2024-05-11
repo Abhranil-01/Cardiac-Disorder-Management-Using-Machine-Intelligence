@@ -11,11 +11,12 @@ import { ToastContainer, toast,Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import useRazorpay from "react-razorpay";
+import { useNavigate } from "react-router-dom";
 function Cart() {
   const [currentData, setCurrentData] = useState([]);
   const accessToken = localStorage.getItem("access_token");
   const dispatch = useDispatch();
-
+const navigate=useNavigate()
   const { data, isLoading, isError,refetch } = useGetCartDataQuery(accessToken);
   const {data:orderItems,refetch:refresh}=useGetorderDataQuery(accessToken);
   const [orderData] = useOrderDataMutation();
@@ -105,12 +106,14 @@ console.log('fref',totalPrice);
                   cart_id: element.id,
                   access_token: accessToken,
                   qty: element.qty,
-                  price: element.price * element.qty,
+                  price: (element.price * element.qty).toFixed(2),
                   medicine_id: element.medicine_id,
                 })
               );
              const res= await Promise.all(orderPromises);
               refetch();
+              refresh()
+              // navigate("/Orders")
             console.log("res",res);
               toast.success("Order Successfully Added");
             }
@@ -185,7 +188,7 @@ console.log('fref',totalPrice);
                   <p>Total Amount</p>
                   <p>₹{data.reduce(
       (price, item) => price + item.qty * item.price,
-      0)
+      0).toFixed(2)
     }</p>
                 </div>
                 <button
