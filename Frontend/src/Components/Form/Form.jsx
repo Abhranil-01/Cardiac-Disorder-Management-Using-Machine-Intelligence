@@ -57,7 +57,7 @@ function Form() {
      }else if(data[0].predict === 1){
       setColor('bg-danger')
       setTextHead('Red Signifies Urgency')
-      setText('Heed the call, consult a doctor without delay; Green assures tranquility—your heart beats strong, free from worry, continue thriving.')
+      setText('Heed the call, consult a doctor without delay.')
      }
       // Update the state with the fetched data
       setAddClass('d-block');
