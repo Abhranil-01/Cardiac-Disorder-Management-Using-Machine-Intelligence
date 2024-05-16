@@ -61,9 +61,9 @@ function Navbar() {
                         <li className="nav-item">
                             <NavLink to='/' className={({isActive})=>`${isActive ? 'nav-link active':'nav-link '}  `} aria-current="page" href="#">Home</NavLink>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <NavLink to='/BookTest' className={({isActive})=>`${isActive? 'nav-link active':'nav-link'} mx-lg-2`} href="#">Book Test</NavLink>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <NavLink to='/OrderMedichine' className={({isActive})=>`${isActive? 'nav-link active':'nav-link'} mx-lg-2`} href="#">Order Medicine</NavLink>
                         </li>

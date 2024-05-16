@@ -29,7 +29,8 @@ useEffect(()=>{
   }
   return (
     <>
-    <div>
+    {isModalOpen &&  <Form closeModal={() => setIsModalOpen(false)} />} 
+    <div className='container-fluid p-0 '>
       {/* <!-- Main content starts --> */}
       <Slider/>
 <main>
@@ -135,7 +136,7 @@ useEffect(()=>{
       >
         Heart Disease Prediction
       </button>
-      {isModalOpen && <Form closeModal={() => setIsModalOpen(false)} />}
+    
 
       <button  type="button" class="chatbot-toggler" data-bs-toggle="modal"
         data-bs-target="#exampleModal" onClick={handleChatBotClick}>
