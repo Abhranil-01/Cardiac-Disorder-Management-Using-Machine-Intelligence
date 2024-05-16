@@ -87,11 +87,11 @@ export default function About() {
   </div>
    
     <h4>Dishani Sarkar</h4>
-    <small>No Work</small>
+    <small>Data Entry</small>
  </div>
  <div className='about-card' >
   <div>
-  <img src="\src\Images\aboutusaimage\aboutusaimage\20231019_121354.jpg" className=' img-thumbnail ' alt="" />
+  <img src="\src\Images\aboutusaimage\aboutusaimage\WhatsApp Image 2024-05-16 at 22.13.12_9751fabf.jpg" className=' img-thumbnail ' alt="" />
   </div>
 
     <h4>Arijit Nandy</h4>

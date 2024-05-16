@@ -18,8 +18,11 @@ function Footer() {
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Services</h5>
-                            <p>
+                            {/* <p>
                                 <NavLink to='/BookTest' className="text-white" style={{ textDecoration: "none" }}>Book Test</NavLink>
+                            </p> */}
+                              <p>
+                                <NavLink to='/' className="text-white" style={{ textDecoration: "none" }}>Home</NavLink>
                             </p>
                             <p>
                                 <NavLink to='/OrderMedichine' className="text-white" style={{ textDecoration: "none" }}>Order Medicine</NavLink>

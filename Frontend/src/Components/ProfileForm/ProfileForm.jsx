@@ -22,209 +22,158 @@ function ProfileForm() {
   const [postProfile] = usePostProfileMutation();
   const [disable, setDisable] = useState(true);
 
-
   useEffect(() => {
     if (profile) {
-      setName(profile[0].name);
-      setAddress(profile[0].address);
-      setBloodGroup(profile[0].blood_group);
-      setPhone(profile[0].phone_number);
-      setDOB(profile[0].date_of_birth);
-      setGender(profile[0].gender);
-      setEmail(profile[0].registered_email);
-    
+      setName(profile.name);
+      setAddress(profile.address);
+      setBloodGroup(profile.blood_group);
+      setPhone(profile.phone_number);
+      setDOB(profile.date_of_birth);
+      setGender(profile.gender);
+      setEmail(profile.email);
     }
   }, [profile]);
 
-  // const handleImageChange = (e) => {
-  //   const file = e.target.files[0];
-
-  //   if (file) {
-  //     console.log("Selected File:", file);
-  //     setImage(URL.createObjectURL(file));
-  //     setFileOne(file);
-  //   }
-  // };
-
   const handleSave = async (e) => {
     e.preventDefault();
-   
-  
+
     const res = await postProfile({
       access_token: access_token,
       data: {
-        name:name,
-        phone_number:phone,
+        name: name,
+        phone_number: phone,
         gender: gender,
-        blood_group:bloodGroup,
-        date_of_birth:dob,
-        address:address
+        blood_group: bloodGroup,
+        date_of_birth: dob,
+        address: address,
       },
     });
-  
+
     console.log("Response:", res);
     setDisable(true);
     if (res.data) {
+      console.log(res.data);
       toast.success("Successfully Saved Profile");
     } else {
       toast.error("Something Went Wrong");
     }
   };
 
-
   return (
     <>
       {" "}
-      <div className="">
-        <form encType="multipart/form-data">
-          <section className="query-cover">
-            <div className="container">
-              <div className="contact-box">
-                {/* <div className="contact-left">
-                  <div id="image">
-                    <img
-                      src={`http://127.0.0.1:8000${image}`}
-                      alt="Profile Picture"
-                      id="profile-pic"
-                    />
-                    <label htmlFor="input-file" id="update">
-                      Update Image
-                    </label>
-                    <input
-                      type="file"
-                      name="inputfile"
-                      id="input-file"
-                      accept="image/"
-                      onChange={(e) => handleImageChange(e)}
-                    />
-                  </div>
-                </div> */}
-                <div className="contact-right">
-                  <h1>Edit Your Profile</h1>
-                  <div className="input-row">
-                    <div className="input-group">
-                      <label>UserName</label>
-                      <input
-                        name="name"
-                        type="text"
-                        placeholder="Enter your name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        disabled={disable}
-                      />
-                    </div>
-                    <div className="input-group">
-                      <label>Date Of Birth</label>
-                      <input
-                        name="date_of_birth"
-                        type="date"
-                        id="dob"
-                        value={dob}
-                        onChange={(e) => setDOB(e.target.value)}
-                        required
-                        disabled={disable}
-                      />
-                    </div>
-                  </div>
-                  <div className="input-row">
-                    <div className="input-group">
-                      <label>Gender</label>
-                      <select
-                        name="gender"
-                        required
-                        value={gender}
-                        onChange={(e) => setGender(e.target.value)}
-                        disabled={disable}
-                      >
-                        <option value="">--select your gender--</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                      </select>
-                    </div>
-                    <div className="input-group">
-                      <label>Blood Group</label>
-                      <select
-                        name="blood_group"
-                        value={bloodGroup}
-                        onChange={(e) => setBloodGroup(e.target.value)}
-                        required
-                        disabled={disable}
-                      >
-                        <option value="">--select your blood group--</option>
-                        <option value="A+">A+</option>
-                        <option value="B+">B+</option>
-                        <option value="O+">O+</option>
-                        <option value="AB+">AB+</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="input-row">
-                    <div className="input-group">
-                      <label>Email</label>
-                      <input
-                        type="email"
-                        value={email} // Make sure to set the correct value for email
-                        readOnly
-                        disabled={disable}
-                      />
-                    </div>
-                    <div className="input-group">
-                      <label>Phone</label>
-                      <input
-                        type="tel"
-                        name="phonenumber"
-                        className="phone"
-                        placeholder="Type Your Phone Number"
-                        value={phone}
-                        onChange={(e) => setPhone(e.target.value)}
-                        required
-                        disabled={disable}
-                      />
-                      <span
-                        className="phoneError"
-                        style={{ color: "red" }}
-                      ></span>
-                    </div>
-                  </div>
-                  <div className="input-row">
-                    <div className="input-group">
-                      <label htmlFor="Address">Address</label>
-                      <input
-                        type="text"
-                        id="Address"
-                        placeholder="Enter your address"
-                        value={address}
-                        onChange={(e) => setAddress(e.target.value)}
-                        disabled={disable}
-                      />
-                    </div>
-                  </div>
-                  <div className="d-flex justify-content-between">
-                    {disable ? (
-                      <button
-                        className="btn btn-primary"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          setDisable(false);
-                        }}
-                      >
-                        Edit
-                      </button>
-                    ) : (
-                      <button
-                        className="btn btn-primary"
-                        onClick={(e) => handleSave(e)}
-                      >
-                        Save
-                      </button>
-                    )}
-                  </div>
+      <div className=" vw-100 vh-100  d-flex align-items-center justify-content-center  ">
+        <div className="container shadow h-75 d-flex flex-column justify-content-around  align-items-center rounded-3">
+          <h4>Profile Form</h4>
+          <form action="" onSubmit={handleSave}>
+            <div className="row justify-content-center ">
+              <div className="col-5">
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    readOnly
+                  />
+                  <label for="floatingInput">Email address</label>
                 </div>
               </div>
+              <div className="col-5">
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
+                  />
+                  <label for="floatingInput">Name</label>
+                </div>
+              </div>
+              <div className="col-5">
+                <div class="form-floating mb-3">
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                  />
+                  <label for="floatingInput">Phone Number</label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    value={gender}
+                    onChange={(e) => setGender(e.target.value)}
+                    id="floatingSelectGrid"
+                  >
+                    <option selected>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select>
+                  <label for="floatingSelectGrid">Select Gender</label>
+                </div>
+              </div>
+              <div class="col-5">
+                <div class="form-floating">
+                  <select
+                    class="form-select"
+                    id="floatingSelectGrid"
+                    value={bloodGroup}
+                    onChange={(e) => setBloodGroup(e.target.value)}
+                  >
+                    <option selected>Blood Group</option>
+                    <option value="a+">A+</option>
+                    <option value="b+">B+</option>
+                    <option value="ab+">AB+</option>
+                    <option value="o+">O+</option>
+                    <option value="a-">A-</option>
+                    <option value="ab-">AB-</option>
+                  </select>
+                  <label for="floatingSelectGrid">Select Blood Group</label>
+                </div>
+              </div>
+              <div className="col-5">
+                <div class="form-floating mb-3">
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    value={dob}
+                    onChange={(e) => setDOB(e.target.value)}
+                  />
+                  <label for="floatingInput">Date Of Birth</label>
+                </div>
+              </div>
+              <div className="col-10">
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea"
+                    style={{ height: "60px", resize: "none" }}
+                    value={address}
+                    onChange={(e=>setAddress(e.target.value))}
+                  ></textarea>
+                  <label for="floatingTextarea">Address</label>
+                </div>
+              </div>
+              <div className="col-6 mt-5">
+                <button className="btn btn-primary w-100">Submit</button>
+              </div>
             </div>
-          </section>
-        </form>
-      </div>{" "}
+          </form>
+        </div>
+      </div>
       <ToastContainer
         position="top-center"
         autoClose={3000}

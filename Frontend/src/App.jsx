@@ -1,7 +1,7 @@
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Layout from './Pages/Layout/Layout.jsx'
-import {Home,MedicineStore,TestBooking,About} from './Pages/index.js'
+import {Home,MedicineStore,About} from './Pages/index.js'
 import LoginSignup from './Pages/login/LoginSignup.jsx'
 import { useSelector } from "react-redux";
 import SingleProduct from "./Pages/productpage/SingleProduct.jsx";
@@ -21,7 +21,7 @@ function App() {
         <Routes>
         <Route path='/' element={<Layout/>} >
        <Route path='' element={<Home/>}/>
-       <Route path='BookTest' element={<TestBooking/>}/>
+
        <Route path='OrderMedichine' element={<MedicineStore/>}/>
        <Route path='/:product/:id' element={<SingleProduct/>}/>
        <Route path='cart' element={<Cart/>}/>
