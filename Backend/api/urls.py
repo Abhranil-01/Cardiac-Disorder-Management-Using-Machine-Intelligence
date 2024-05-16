@@ -18,5 +18,7 @@ urlpatterns =[
 	path('addtocart/', views.AddtoCartAPIView.as_view(), name='addtocart'),
 	path('orderlist/', views.OrderListAPIView.as_view(), name='orderlist'),
 	path('predict/',views.predict, name='predict' ),
-	path('chatbot/',views.bot, name='chatbot' )
+	path('chatbot/',views.bot, name='chatbot' ),
+	path('otp/<email>',views.otp, name='otp' ),
+	path('activate/<email>',views.activate, name='activate' )
 ]
