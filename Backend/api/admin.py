@@ -53,7 +53,7 @@ class ProfileAdmin(admin.ModelAdmin):
 
 	fieldsets = (
 		(None, {
-			'fields': ('registered_email', 'blood_group', 'image','phone_number','address','gender','date_of_birth')
+			'fields': ('registered_email', 'blood_group', 'phone_number','address','gender','date_of_birth')
 		}),
 	)
 

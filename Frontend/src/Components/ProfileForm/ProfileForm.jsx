@@ -25,13 +25,13 @@ function ProfileForm() {
 
   useEffect(() => {
     if (profile) {
-      setName(profile[0].name);
-      setAddress(profile[0].address);
-      setBloodGroup(profile[0].blood_group);
-      setPhone(profile[0].phone_number);
-      setDOB(profile[0].date_of_birth);
-      setGender(profile[0].gender);
-      setEmail(profile[0].registered_email);
+      setName(profile.name);
+      setAddress(profile.address);
+      setBloodGroup(profile.blood_group);
+      setPhone(profile.phone_number);
+      setDOB(profile.date_of_birth);
+      setGender(profile.gender);
+      setEmail(profile.registered_email);
     
     }
   }, [profile]);
