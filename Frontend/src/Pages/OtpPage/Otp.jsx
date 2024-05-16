@@ -46,10 +46,12 @@ console.log(otp);
       if(data.otp===parseInt(otpNumber)){
         console.log("pjoiji0uaedrgre");
           setActivateEmail(data.email)
-        if(activateData.msg==="Registration Successful"){
+        if(activateData.msg==="Account activation Successful"){
           console.log("uighyitgyigb",activateData.token);
            storeToken(activateData.token)
+		   console.log("before: ",name);
            if(name==="home"){
+			console.log(name);
             navigate("/")
            }
         } 
