@@ -6,15 +6,15 @@ import { storeToken } from "../../Service/LocalStorageService";
 function Otp() {
   const [otp, setOtp] = useState(new Array(6).fill(""));
   const [checkNumber, setCheckNumber] = useState();
-  const [activateEmail, setActivateEmail] = useState("")
+  const [activateEmail, setActivateEmail] = useState("");
   const inputRefs = useRef([]);
-  const {name,email}=useParams()
+  const { name, email } = useParams();
 
-  const {data}=  useGetOtpQuery(email)
-  const navigate=useNavigate()
-  const {data:activateData}=useGetActivateQuery(activateEmail)
+  const { data ,refetch:otpfetch} = useGetOtpQuery(email);
+  const navigate = useNavigate();
+  const { data: activateData,refetch } = useGetActivateQuery(activateEmail);
   console.log(data);
-  console.log(activateData);
+
   useEffect(() => {
     if (inputRefs.current[0]) {
       inputRefs.current[0].focus();
@@ -31,33 +31,34 @@ function Otp() {
       }
     }
   };
-console.log(otp);
+  console.log(otp);
   const handleKeyDown = (index, e) => {
     if (e.key === "Backspace" && index > 0 && inputRefs.current[index - 1]) {
       inputRefs.current[index - 1].focus();
     }
   };
 
-  const handleClick =  () => {
+  const handleClick = () => {
     console.log("pjohj");
-    const otpNumber =otp.join("");
+    const otpNumber = otp.join("");
 
-    if(otpNumber.length ===6){
-      if(data.otp===parseInt(otpNumber)){
-        console.log("pjoiji0uaedrgre");
-          setActivateEmail(data.email)
-        if(activateData.msg==="Account activation Successful"){
-          console.log("uighyitgyigb",activateData.token);
-           storeToken(activateData.token)
-		   console.log("before: ",name);
-           if(name==="home"){
-			console.log(name);
-            navigate("/")
-           }
-        } 
+    if (otpNumber.length === 6) {
+      if (data.otp === parseInt(otpNumber)) {
+        console.log("pjoiji0uaedrgre",data.email);
+
+        setActivateEmail(data.email);
       }
     }
   };
+  useEffect(() => {
+  
+    if (activateData && activateData.msg === "Account activation Successful") {
+      storeToken(activateData.token);
+      if (name === "home") {
+        navigate("/");
+      }
+    }
+  }, [activateData, name]);
   return (
     <div class="container-fluid vh-100  border border-danger  d-flex justify-content-center align-items-center">
       <div class="position-relative">
@@ -89,7 +90,9 @@ console.log(otp);
           </div>
           <div class="mt-4">
             {" "}
-            <button class="btn btn-primary px-4 validate" onClick={handleClick}>Validate</button>{" "}
+            <button type="submit" class="btn btn-primary px-4 validate" onClick={handleClick}>
+              Validate
+            </button>{" "}
           </div>
         </div>
       </div>
