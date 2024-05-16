@@ -12,6 +12,7 @@ import Analyzer from "./Pages/Analyzer/Analyzer.jsx";
 import LoadData from "./Pages/Analyzer/LoadData.jsx";
 import AnalyzerLogin from "./Pages/Analyzer/login/AnalyzerLogin.jsx";
 import ProfileForm from "./Components/ProfileForm/ProfileForm.jsx";
+import Otp from "./Pages/OtpPage/Otp.jsx";
 function App() {
   const { access_token } = useSelector(state => state.auth)
   return (
@@ -31,6 +32,7 @@ function App() {
        <Route path='Data' element={<LoadData/>}/>
        <Route path='Analyzerlogin' element={<AnalyzerLogin/>}/>
        <Route path='profile' element={<ProfileForm/>}/>
+       <Route path='otp-verification/:name/:email' element={<Otp/>}/>
      </Route>
           <Route path="/" element={access_token ? <Home/> : <Navigate to="/login" />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />

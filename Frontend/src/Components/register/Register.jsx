@@ -4,6 +4,7 @@ import { useRegisterUserMutation } from '../../Service/UserAuthApi'
 import { storeToken } from '../../Service/LocalStorageService';
 
 function Register({value}) {
+  console.log(value);
   const [display,setDisplay]=useState('d-none')
   const [color,setColor] = useState('text-danger'); 
   const [updateone, setUpdateone] = useState("fa-solid fa-eye");
@@ -37,10 +38,7 @@ function Register({value}) {
      alert(res.error.data.errors.email[0])
     }
     if (res.data) {
-      console.log(typeof (res.data))
-      console.log(res.data)
-      storeToken(res.data.token)
-      navigate(`${value}`)
+      navigate(`/otp-verification/home/${data.get('email')}`)
     }
   }
 

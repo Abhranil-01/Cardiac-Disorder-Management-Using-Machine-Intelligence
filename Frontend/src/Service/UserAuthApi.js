@@ -47,6 +47,35 @@ export const userAuthApi = createApi({
         };
       },
     }),
+    getUser: builder.query({
+      query: (access_token) => {
+        return {
+          url: `register/`,
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
+    getOtp: builder.query({
+      query: (email) => {
+        return {
+          url: `otp/${email}`,
+          method: "GET",
+       
+        };
+      },
+    }),
+    getActivate: builder.query({
+      query: (email) => {
+        return {
+          url: `activate/${email}`,
+          method: "GET",
+       
+        };
+      },
+    }),
     getLoggedUser: builder.query({
       query: (access_token) => {
         return {
@@ -209,6 +238,8 @@ export const {
   useRegisterUserMutation,
   useLoginUserMutation,
   useGetLoggedUserQuery,
+  useGetOtpQuery,
+  useGetActivateQuery,
   useAddToCartMutation,
   useGetCartDataQuery,
   useGetmedicineDataQuery,

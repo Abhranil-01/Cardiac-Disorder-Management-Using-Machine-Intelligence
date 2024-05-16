@@ -1,0 +1,14 @@
+.about-card{
+    height: 45vh;
+    width: 18vw;
+}
+
+.about-card div{
+    height: 35vh;
+    width: 18vw;
+}
+.about-card div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}

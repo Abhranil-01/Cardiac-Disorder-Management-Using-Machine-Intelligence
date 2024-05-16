@@ -12,6 +12,8 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 import useRazorpay from "react-razorpay";
 import { useNavigate } from "react-router-dom";
+import NotLogin from "../../Components/NotLogin/NotLogin";
+import NoItems from "../../Components/NoItems/NoItems";
 function Cart() {
   const [currentData, setCurrentData] = useState([]);
   const accessToken = localStorage.getItem("access_token");
@@ -23,6 +25,7 @@ const navigate=useNavigate()
   const totalPrice = useSelector((state) => state.cart.totalPrice);
   const [Razorpay] = useRazorpay();
 console.log('fref',totalPrice);
+
   // useEffect(() => {
   //   const refetchData = () => {
   //     dispatch(calculateTotal());
@@ -152,21 +155,17 @@ console.log('fref',totalPrice);
 
   };
 
-  if (!accessToken) {
-    return <div>Access token not available. Please log in.</div>;
-  }
 
   if (isLoading) {
     return <div>Loading cart data...</div>;
   }
 
-  if (isError) {
-    return <div>Error fetching cart data. Please try again later.</div>;
-  }
+
 
   return (
-    <>
-        <div className="container-fluid my-5">
+    <>{
+    accessToken ?(data.length!==0?(
+      <div className="container-fluid my-5">
       <h1 className="text-center" style={{ marginTop: "100px" }}>
         Cart Items
       </h1>
@@ -203,6 +202,9 @@ console.log('fref',totalPrice);
         </div>
       </div>
     </div>
+    ):(<NoItems img={"/src/Images/icon/cart-empty.a0a3f3f6aa4cd1e5.svg"} name={"NO ITEMS IN THE CART"}/>) ):(<NotLogin title={"THE MAGIC"}/>)
+    }
+       
     <ToastContainer
 position="top-center"
 autoClose={3000}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Slider from '../../Components/Slider/Slider'
+import "./About.css"
 import ContactForm from '../../Components/ContactForm/ContactForm'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faPhone,faLocation,faUserDoctor,faSuitcaseMedical,faHeartPulse} from '@fortawesome/free-solid-svg-icons';
@@ -77,58 +78,49 @@ export default function About() {
 
 
 
-  <div className="container">
-  
-
-  <div className="row">
-
-      <div className="col-md-3 ">
-            <div className="card">
-                  <img className="card-img-top" src="\src\Images\doc.jpg" alt="Card image"/>
-                  <div className="card-body">
-                        <h4 className="card-title">Dr. Pramanik Roy</h4>
-                         <p className="card-text">Heart Specialst.</p>
-                         <a href="#" className="btn btn-primary">Book</a>
-                  </div>
-            </div>
-      </div>
-
-      <div className="col-md-3 ">
-            <div className="card">
-                  <img className="card-img-top" src="\src\Images\doc2.jpg" alt="Card image"/>
-                  <div className="card-body">
-                        <h4 className="card-title">Dr. Christina Desoza</h4>
-                         <p className="card-text">Chief Surgeon</p>
-                         <a href="#" className="btn btn-primary">Book</a>
-                  </div>
-            </div>
-      </div>
-
-      <div className="col-md-3 ">
-            <div className="card">
-                  <img className="card-img-top" src="\src\Images\doc3.jpg" alt="Card image"/>
-                  <div className="card-body">
-                        <h4 className="card-title">Dr. Vijay Malakar</h4>
-                         <p className="card-text">Chief Surgoen</p>
-                         <a href="#" className="btn btn-primary">Book</a>
-                  </div>
-            </div>
-      </div>
-
-
-       <div className="col-md-3 ">
-            <div className="card">
-                  <img className="card-img-top" src="\src\Images\doc4.jpg" alt="Card image"/>
-                  <div className="card-body">
-                        <h4 className="card-title">Dr. Rosey Dey</h4>
-                         <p className="card-text">Assissant Surgeon</p>
-                         <a href="#" className="btn btn-primary">Book</a>
-                  </div>
-            </div>
-      </div>
-
+  <div className="container-fluid  ">
+  <h1>Our Team</h1>
+<div className="about-card-container d-flex justify-content-between mt-3">
+<div className='about-card' >
+  <div>
+  <img src="\src\Images\aboutusaimage\aboutusaimage\sarkar.jpg" className=' img-thumbnail ' alt="" />
   </div>
-  
+   
+    <h4>Dishani Sarkar</h4>
+    <small>No Work</small>
+ </div>
+ <div className='about-card' >
+  <div>
+  <img src="\src\Images\aboutusaimage\aboutusaimage\20231019_121354.jpg" className=' img-thumbnail ' alt="" />
+  </div>
+
+    <h4>Arijit Nandy</h4>
+    <small>Backend Developer</small>
+ </div>
+ <div className='about-card' >
+  <div>
+  <img src="\src\Images\aboutusaimage\aboutusaimage\akhiljpeg.jpeg" className=' img-thumbnail ' alt="" />
+  </div>
+
+    <h4>Akhil Kr. Gope</h4>
+    <small>Frontend Developer</small>
+ </div>
+ <div className='about-card' >
+  <div>
+  <img src="\src\Images\aboutusaimage\aboutusaimage\dipyankumar.jpeg" className=' img-thumbnail ' alt="" />
+  </div>
+  <h4>Dipayan Kr. Sarkar</h4>
+    <small>Frontend Developer</small>
+ </div>
+ <div className='about-card' >
+  <div>
+  <img src="\src\Images\aboutusaimage\aboutusaimage\DSC_0618.JPG" className=' img-thumbnail ' alt="" />
+  </div>
+  <h4>Abhranil Kundu</h4>
+    <small>Frontend Developer </small>
+ </div>
+</div>
+
 </div>
 
 
