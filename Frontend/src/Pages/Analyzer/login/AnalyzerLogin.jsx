@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./LoginSignup.css";
-import Login from '../../../Components/login/Login'
-import Register from "../../../Components/register/Register";
 import AdminLogin from "../../../Components/AdminLogin/AdminLogin";
 
 

@@ -1,30 +1,36 @@
 import React, { useEffect, useState } from 'react';
 import   './style.css'
 import Papa from 'papaparse';
-
+import {useNavigate} from 'react-router-dom'
 function LoadData() {
   const [data, setData] = useState([]);
-
+  const navigate=useNavigate()
+  const loginToken =localStorage.getItem("loginToken")
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('./data.csv');
-        console.log(response);
-        const reader = response.body.getReader();
-        const result = await reader.read();
-        const decoder = new TextDecoder("utf-8");
-        const csvData = decoder.decode(result.value);
-        const parsedData = Papa.parse(csvData, { 
-          header: true, 
-          skipEmptyLines: true 
-        }).data;
-        setData(parsedData);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData();
-  }, []);
+    if(loginToken){
+      const fetchData = async () => {
+        try {
+          const response = await fetch('./data.csv');
+          console.log(response);
+          const reader = response.body.getReader();
+          const result = await reader.read();
+          const decoder = new TextDecoder("utf-8");
+          const csvData = decoder.decode(result.value);
+          const parsedData = Papa.parse(csvData, { 
+            header: true, 
+            skipEmptyLines: true 
+          }).data;
+          setData(parsedData);
+        } catch (error) {
+          console.error('Error fetching data:', error);
+        }
+      };
+      fetchData();
+    }else{
+      navigate('/')
+    }
+
+  }, [loginToken]);
 
 
 

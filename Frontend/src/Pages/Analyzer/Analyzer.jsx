@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {NavLink, useNavigate} from 'react-router-dom'
 import { getToken, removeToken } from '../../Service/LocalStorageService';
 import { useDispatch } from 'react-redux';
@@ -6,20 +6,23 @@ import { unsetUserInfo } from '../../Features/userSlice';
 import { unSetUserToken } from '../../Features/authSlice';
 
 function Analyzer() {
-    const { access_token } = getToken()
+const loginToken=localStorage.getItem("loginToken")
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const handleLogout = () => {
-        dispatch(unsetUserInfo({ name: "", email: "" }))
-        dispatch(unSetUserToken({ access_token: null }))
-        removeToken()
+        localStorage.removeItem("loginToken")
         navigate('/')
       }
+      useEffect(()=>{
+        if(!loginToken){
+            navigate('/')
+        }
+      },[loginToken])
     return (
-        <>
-            <div className="table-responsive">
+        <>{loginToken ?(<>
+          <div className="table-responsive">
                 <div className='mt-3'>
-                {access_token ?(<NavLink to='/' className="login-button " onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
+                {loginToken ?(<NavLink to='/' className="login-button " onClick={handleLogout}>Logout</NavLink>):(<NavLink to='/login' className="login-button" >Login</NavLink>)}
                 </div>
           
                 <h1 className="text-center">DATA ANALYSIS</h1>
@@ -310,7 +313,8 @@ function Analyzer() {
                                             Each classifier has its own strengths, weaknesses, and assumptions about the data. </p>
                                     </div>
                                 </div>
-                            </div>
+                            </div></>):(<p>Not Login</p>)}
+          
                             </>
                             );
 }

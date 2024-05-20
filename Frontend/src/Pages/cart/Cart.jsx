@@ -164,7 +164,7 @@ console.log('fref',totalPrice);
 
   return (
     <>{
-    accessToken ?(data.length!==0?(
+    accessToken ?(data && data.length!==0?(
       <div className="container-fluid my-5">
       <h1 className="text-center" style={{ marginTop: "100px" }}>
         Cart Items
