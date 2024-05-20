@@ -12,7 +12,7 @@ function AdminLogin() {
   const [update, setUpdate] = useState("fa-solid fa-eye");
   const [server_error, setServerError] = useState({})
   const navigate = useNavigate();
-  const [loginUser, { isLoading }] = useLoginUserMutation()
+  const [loginUser] = useLoginUserMutation()
   const dispatch = useDispatch()
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -36,23 +36,14 @@ function AdminLogin() {
           alert('!Sorry This Page For Admin')
           return;
         }else{
-          storeToken(res.data.token)
-          let { access_token } = getToken()
-          dispatch(setUserToken({ access_token: access_token }))
-          navigate(``)
+          localStorage.setItem("loginToken",res.data.token.access)
+         const loginToken= localStorage.getItem("loginToken")
+         console.log(loginToken);
+          navigate('/Analyzer')
         }
- 
-      
-      storeToken(res.data.token)
-      let { access_token } = getToken()
-      dispatch(setUserToken({ access_token: access_token }))
-      navigate(`${value}`)
     }
   }
-  let { access_token } = getToken()
-  useEffect(() => {
-    dispatch(setUserToken({ access_token: access_token }))
-  }, [access_token, dispatch])
+
 
 
 

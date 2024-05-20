@@ -48,7 +48,7 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg px-2">
         <div className="container-fluid">
-            <NavLink className="navbar-brand me-auto fs-2" >HEART</NavLink>
+            <NavLink className="navbar-brand me-auto fs-2" >HeartFelt</NavLink>
 
             <div className="offcanvas offcanvas-end bg-success" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">

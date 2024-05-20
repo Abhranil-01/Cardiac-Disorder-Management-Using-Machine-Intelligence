@@ -11,7 +11,7 @@ function Footer() {
                 <div className="container tet-center text-md-left">
                     <div className="row text-center text-md-left">
                         <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                            <h5 className="text-uppercase mb-4 font-weight-bold text-warning">HEART</h5>
+                            <h5 className="text-uppercase mb-4 font-weight-bold text-warning">HeartFelt</h5>
                             <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt facere laboriosam unde culpa
                                 ad provident accusantium, voluptatum possimus facilis illo libero eveniet asperiores soluta
                                 harum quisquam eos, recusandae alias fugit?</p>
