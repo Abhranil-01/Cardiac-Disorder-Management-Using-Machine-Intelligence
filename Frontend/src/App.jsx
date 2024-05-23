@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import Layout from './Pages/Layout/Layout.jsx'
+import Layout from './Layout/Layout.jsx'
 import {Home,MedicineStore,About} from './Pages/index.js'
 import LoginSignup from './Pages/login/LoginSignup.jsx'
 import { useSelector } from "react-redux";
