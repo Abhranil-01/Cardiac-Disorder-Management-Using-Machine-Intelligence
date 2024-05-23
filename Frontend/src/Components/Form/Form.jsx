@@ -77,7 +77,7 @@ function Form({ closeModal }) {
   return (
     <>
       <div
-        className="container-fluid border border-danger position-fixed  vh-100 w-100 top-0 z-3  "
+        className="container-fluid  position-fixed  vh-100 w-100 top-0 z-3  "
         style={{ background: "rgba(36, 35, 35, 0.301)", zIndex: "999" }}
       >
         <div className="row">
