@@ -12,9 +12,7 @@ function Footer() {
                     <div className="row text-center text-md-left">
                         <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">HeartFelt</h5>
-                            <p className='text-white'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt facere laboriosam unde culpa
-                                ad provident accusantium, voluptatum possimus facilis illo libero eveniet asperiores soluta
-                                harum quisquam eos, recusandae alias fugit?</p>
+                            <p className='text-white'>Welcome to Heartfelt! <br /> We predict your heart health, one loving heartbeat at a time, for a happier and healthier you.</p>
                         </div>
                         <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                             <h5 className="text-uppercase mb-4 font-weight-bold text-warning">Services</h5>
