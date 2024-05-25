@@ -1,31 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   useGetmedicineDataQuery,
   useCancleOrderMutation,
+  useGetmedicineCustomDataQuery,
 } from "../../Service/UserAuthApi";
 import { useSelector } from "react-redux";
 
-function OrderCard({ value }) {
+function OrderCard({ value,refetch }) {
+  const [disable,setDisable] =useState(false);
+  const [cancel,setCancel] =useState('');
   const accessToken = localStorage.getItem("access_token");
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-  const { data, isLoading, isError } = useGetmedicineDataQuery({
-    id: value.medicine_id,
-    access_token: accessToken,
-  });
-  const [cancleOrder, { data: cancelData, error }] = useCancleOrderMutation();
+  const { data, isLoading, isError } = useGetmedicineCustomDataQuery(value.medicine_id);
+  
+  const [cancleOrder] = useCancleOrderMutation();
+console.log('cfaf',value);
 
-  useEffect(() => {
-    if (cancelData) {
-      console.log("Order canceled successfully:", cancelData);
-    }
-    if (error) {
-      console.error("Error canceling order:", error);
-    }
-  }, [cancelData, error]);
 
-  const handleCancel = () => {
-    cancleOrder({ id: value.id, access_token: accessToken });
+useEffect(()=>{
+  if(value.status === 'Cancelled') {
+   
+    setDisable(true)
+    setCancel('Order Cancelled')
+  }
+},[])
+
+  const handleCancel = async() => {
+    const res= await cancleOrder({ id: value.id, access_token: accessToken });
+    console.log('wefwef',res);
+    if(res.data.msg==="Order canceled"){
+      setDisable(true)
+    setCancel('Order Cancelled')
+    }
+    refetch()
   };
+
 
   if (isLoading) {
     return <div>Loading medicine data...</div>;
@@ -62,12 +71,15 @@ function OrderCard({ value }) {
                     className="btn btn-danger"
                     style={{ cursor: "pointer" }}
                     onClick={handleCancel}
+                    disabled={disable}
                   >
                     CANCEL
                   </button>
                 )}
+               
               </div>
               <div className="col-4 d-flex justify-content-end price_money">
+                
                 <h3>
                   ₹<span>{data.price}</span>
                 </h3>
@@ -75,10 +87,15 @@ function OrderCard({ value }) {
             </div>
             <div className="row">
               <div className="col-12 d-flex align-items-center justify-content-end mb-4">
+         
                 <span className="me-2 fw-bold">Qty: {value.qty}</span>
               </div>
               <div className="col-12 fw-bold mb-4 text-end">
+              
                 <span>Total Amount: ₹{data.price * value.qty}</span>
+              </div>
+              <div>
+              <p className="me-2 fw-bold text-danger">{cancel}</p>
               </div>
             </div>
           </div>

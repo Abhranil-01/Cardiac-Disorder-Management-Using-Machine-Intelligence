@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./LoginSignup.css";
-import Login from '../../../Components/login/Login'
-import Register from "../../../Components/register/Register";
+import AdminLogin from "../../../Components/AdminLogin/AdminLogin";
 
 
 function AnalyzerLogin() {
@@ -15,27 +14,11 @@ function AnalyzerLogin() {
             <div className="form sign-in-form">
             <div className="heading">
                 <h2>Welcome Back</h2>
-                <h6>Not registred yet?</h6>
-                <a
-                  href="#"
-                  className="toggle"
-                  onClick={() => setAddclass("sign-up-mode")}
-                >
-                  Sign up
-                </a>
+             
               </div>
-              <Login value='/Analyzer'/>
+              <AdminLogin />
             </div>
-            <div className="form sign-up-form">
-            <div className="heading">
-                <h2>Get Started</h2>
-                <h6>Already have an account?</h6>
-                <a href="#" className="toggle" onClick={() => setAddclass()}>
-                  Sign in
-                </a>
-              </div>
-            <Register value='/Analyzer  '/>
-            </div>
+          
           </div>
           <div className="carousel">
             <div className="images-wrapper">

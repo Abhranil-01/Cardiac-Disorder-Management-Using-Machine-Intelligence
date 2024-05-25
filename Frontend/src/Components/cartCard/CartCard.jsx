@@ -1,90 +1,57 @@
 import React, { useEffect, useState } from "react";
 import {
   useDeleteCartDataMutation,
-  useGetmedicineDataQuery,
+  useGetmedicineCustomDataQuery,
   useUpdateCartDataMutation,
-  useGetCartDataQuery
 } from "../../Service/UserAuthApi";
-import { useDispatch,useSelector } from "react-redux";
-import { cartQty, setPriceTotal } from "../../features/cartSlice";
+import { getToken } from "../../Service/LocalStorageService";
 
-function CartCard({ value }) {
-  const [count, setCount] = useState(value.qty);
-  const [disable, setDisable] = useState(false);
-  const [disableOne, setDisableOne] = useState(false);
-  const [totalAmt, setTotalAmt] = useState(0);
-  const accessToken = localStorage.getItem("access_token");
+function CartCard({ value, refetch }) {
+console.log(value.qty);
+const {access_token} =getToken()
 
-  const { data, isLoading, isError } = useGetmedicineDataQuery({
-    id: value.medicine_id,
-    access_token: accessToken,
-  });
-
+  const { data, isLoading, isError } = useGetmedicineCustomDataQuery(value.medicine_id);
+  
   const [deleteCartData] = useDeleteCartDataMutation();
-  const [updateCartData, { res }] = useUpdateCartDataMutation();
-  const dispatch = useDispatch();
-  const totalPrice = useSelector((state) => state.cart.totalPrice);
+const [updateCartData]=useUpdateCartDataMutation()
 
-  useEffect(() => {
-    if (res) {
-      // If an update is successful, update the local state
-      setCount(value.qty);
-      setTotalAmt(parseFloat(data.price) * value.qty);
-    }
-  }, [res]);
+const increment = async()=>{
+  if (value.qty < 10) {
+    // const newCount = count + 1;
+   
+    // dispatch(setPrice(parseFloat(data.data.attributes.price) * newCount));
+    await updateCartData({
+      access_token:access_token,
+      id: value.id,
+      qty: value.qty+1
+    });
+  refetch()
+  }
+}
+const decrement = async () => {
+  if (value.qty > 1) {
+    // const newCount = count - 1;
 
-  useEffect(() => {
-    if (!isLoading && data) {
-      setTotalAmt(parseFloat(data.price) * count);
-    }
-  }, [data, isLoading, count]);
+    // dispatch(setPrice(parseFloat(data.data.attributes.price) * newCount));
+    await updateCartData({
+      access_token: access_token,
+      id: value.id,
+       qty:value.qty-1 ,
+    });
+    refetch()
+  }
+};
 
- 
-  useEffect(() => {
-    if(data){
-      dispatch(setPriceTotal({ id: data.id, qty: count, price: data.price }));
-    }
-
-  }, [count,  dispatch, value.id,data]);
   const handleRemoveItem = () => {
-    deleteCartData({ id: value.id, access_token: accessToken })
+    deleteCartData({ id: value.id, access_token:access_token })
       .then(() => {
-        // No need to reload the page, just update the state
-        window.location.reload()
-        setCount(0);
-        setTotalAmt(0);
+        refetch();
       })
       .catch((error) => {
         console.error("Error removing item:", error);
-        // Handle error if needed
       });
   };
 
-  const increment = () => {
-    if (count < 10) {
-      const newCount = count + 1;
-      setCount(newCount);
-      updateCartData({ id: value.id, access_token: accessToken, qty: newCount });
-      window.location.reload()
-    }
-  };
-
-  const decrement = () => {
-    if (count > 1) {
-      const newCount = count - 1;
-      setCount(newCount);
-      updateCartData({ id: value.id, access_token: accessToken, qty: newCount });
-      window.location.reload()
-    }
-  };
-
-  useEffect(() => {
-    // Disable increment button if count is 10
-    setDisable(count === 10);
-    // Disable decrement button if count is 1
-    setDisableOne(count === 1);
-    
-  }, [count]);
 
 
 
@@ -143,13 +110,12 @@ function CartCard({ value }) {
                     border: "none",
                   }}
                   onClick={decrement}
-                  disabled={disableOne}
                 >
                   -
                 </button>
                 <input
                   type="text"
-                  value={count}
+                  value={value.qty}
                   readOnly
                   className="text-center"
                   style={{ outline: "none", width: "3vw", padding: "3px 10px" }}
@@ -162,13 +128,12 @@ function CartCard({ value }) {
                     border: "none",
                   }}
                   onClick={increment}
-                  disabled={disable}
                 >
                   +
                 </button>
               </div>
               <div className="col-12 fw-bold mb-4 text-end">
-                <span>Total Amount: ₹{totalAmt}</span>
+                <span>Total Amount: ₹{(parseFloat(value.price) * value.qty).toFixed(2)}</span>
               </div>
               <div className="col-12">
                 <p className="text-danger fw-bold" style={{ fontSize: "12px" }}>

@@ -4,6 +4,9 @@ import { useRegisterUserMutation } from '../../Service/UserAuthApi'
 import { storeToken } from '../../Service/LocalStorageService';
 
 function Register({value}) {
+  console.log(value);
+  const [display,setDisplay]=useState('d-none')
+  const [color,setColor] = useState('text-danger'); 
   const [updateone, setUpdateone] = useState("fa-solid fa-eye");
   const [updatetwo, setUpdatetwo] = useState("fa-solid fa-eye");
   const [typeone, setTypeone] = useState("password");
@@ -30,14 +33,12 @@ function Register({value}) {
     const res = await registerUser(actualData)
     if (res.error) {
       // console.log(typeof (res.error.data.errors))
-      // console.log(res.error.data.errors)
+      console.log('dwaewf',res.error.data.errors)
       setServerError(res.error.data.errors)
+     alert(res.error.data.errors.email[0])
     }
     if (res.data) {
-      console.log(typeof (res.data))
-      console.log(res.data)
-      storeToken(res.data.token)
-      navigate(`${value}`)
+      navigate(`/otp-verification/home/${data.get('email')}`)
     }
   }
 
@@ -48,11 +49,19 @@ function Register({value}) {
   const symbols = /[!,@,#,$,%,^,&,*,?,_,(,),-,+,=,~,/,\,|]/;
 
   const check =(e)=>{
-  
+  setDisplay('flex')
     const passwordone = e.target.value;
+    if(passwordone.length === 15){
+      setColor('text-success')
+    }else{
+      setColor('text-danger')
+    }
+    
     if (passwordone.length === 0) {
       setValidPwdone("normal");
       setTextChangeOne("");
+      setDisplay('d-none')
+      setColor('text-danger')
     } else if (
       alphabet.test(passwordone) &&
       number.test(passwordone) &&
@@ -128,6 +137,8 @@ function Register({value}) {
                     id="passwd"
                     name="passwd"
                     onChange={check}
+                    minLength={6}
+                    maxLength={15}
                   />
                   <i
                     className={`${updateone}`}
@@ -141,7 +152,11 @@ function Register({value}) {
                       }
                     }}
                   ></i>
+          
+                    <p className={`${color} ${display} fw-bold text-center password-checker`} >Minimum Password length is 6 </p>
+                  
                 </div>
+               
                 <p className={`fw-bold signup-valid valid ${strengthOne}`}>
                   {textChangeOne}
                 </p>
@@ -172,7 +187,7 @@ function Register({value}) {
 
                 <button type="submit"  className="sign-btn" >Register</button>
               </div>
-              {server_error.non_field_errors ? '<div class="alert alert-danger">' + server_error.non_field_errors[0] + '</div>' : ''}
+             
             </form>
     </>
   )

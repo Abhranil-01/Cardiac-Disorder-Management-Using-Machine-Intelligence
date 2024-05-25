@@ -1,304 +1,304 @@
 age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,rest_ecg,max_heart_rate_achieved,exercise_induced_angina,st_depression,st_slope,target
-40,male,atypical angina,140,289,0,normal,172,0,0.0,upsloping,0
-49,female,non-anginal pain,160,180,0,normal,156,0,1.0,flat,1
-37,male,atypical angina,130,283,0,ST-T wave abnormality,98,0,0.0,upsloping,0
+40,male,atypical angina,140,289,0,normal,172,0,0,upsloping,0
+49,female,non-anginal pain,160,180,0,normal,156,0,1,flat,1
+37,male,atypical angina,130,283,0,ST-T wave abnormality,98,0,0,upsloping,0
 48,female,asymptomatic,138,214,0,normal,108,1,1.5,flat,1
-54,male,non-anginal pain,150,195,0,normal,122,0,0.0,upsloping,0
-39,male,non-anginal pain,120,339,0,normal,170,0,0.0,upsloping,0
-45,female,atypical angina,130,237,0,normal,170,0,0.0,upsloping,0
-54,male,atypical angina,110,208,0,normal,142,0,0.0,upsloping,0
+54,male,non-anginal pain,150,195,0,normal,122,0,0,upsloping,0
+39,male,non-anginal pain,120,339,0,normal,170,0,0,upsloping,0
+45,female,atypical angina,130,237,0,normal,170,0,0,upsloping,0
+54,male,atypical angina,110,208,0,normal,142,0,0,upsloping,0
 37,male,asymptomatic,140,207,0,normal,130,1,1.5,flat,1
-48,female,atypical angina,120,284,0,normal,120,0,0.0,upsloping,0
-37,female,non-anginal pain,130,211,0,normal,142,0,0.0,upsloping,0
-58,male,atypical angina,136,164,0,ST-T wave abnormality,99,1,2.0,flat,1
-39,male,atypical angina,120,204,0,normal,145,0,0.0,upsloping,0
-49,male,asymptomatic,140,234,0,normal,140,1,1.0,flat,1
-42,female,non-anginal pain,115,211,0,ST-T wave abnormality,137,0,0.0,upsloping,0
+48,female,atypical angina,120,284,0,normal,120,0,0,upsloping,0
+37,female,non-anginal pain,130,211,0,normal,142,0,0,upsloping,0
+58,male,atypical angina,136,164,0,ST-T wave abnormality,99,1,2,flat,1
+39,male,atypical angina,120,204,0,normal,145,0,0,upsloping,0
+49,male,asymptomatic,140,234,0,normal,140,1,1,flat,1
+42,female,non-anginal pain,115,211,0,ST-T wave abnormality,137,0,0,upsloping,0
 54,female,atypical angina,120,273,0,normal,150,0,1.5,flat,0
-38,male,asymptomatic,110,196,0,normal,166,0,0.0,flat,1
-43,female,atypical angina,120,201,0,normal,165,0,0.0,upsloping,0
-60,male,asymptomatic,100,248,0,normal,125,0,1.0,flat,1
-36,male,atypical angina,120,267,0,normal,160,0,3.0,flat,1
-43,female,typical angina,100,223,0,normal,142,0,0.0,upsloping,0
-44,male,atypical angina,120,184,0,normal,142,0,1.0,flat,0
-49,female,atypical angina,124,201,0,normal,164,0,0.0,upsloping,0
-44,male,atypical angina,150,288,0,normal,150,1,3.0,flat,1
-40,male,non-anginal pain,130,215,0,normal,138,0,0.0,upsloping,0
-36,male,non-anginal pain,130,209,0,normal,178,0,0.0,upsloping,0
-53,male,asymptomatic,124,260,0,ST-T wave abnormality,112,1,3.0,flat,0
-52,male,atypical angina,120,284,0,normal,118,0,0.0,upsloping,0
-53,female,atypical angina,113,468,0,normal,127,0,0.0,upsloping,0
-51,male,atypical angina,125,188,0,normal,145,0,0.0,upsloping,0
-53,male,non-anginal pain,145,518,0,normal,130,0,0.0,flat,1
-56,male,non-anginal pain,130,167,0,normal,114,0,0.0,upsloping,0
-54,male,asymptomatic,125,224,0,normal,122,0,2.0,flat,1
-41,male,asymptomatic,130,172,0,ST-T wave abnormality,130,0,2.0,flat,1
-43,female,atypical angina,150,186,0,normal,154,0,0.0,upsloping,0
-32,male,atypical angina,125,254,0,normal,155,0,0.0,upsloping,0
+38,male,asymptomatic,110,196,0,normal,166,0,0,flat,1
+43,female,atypical angina,120,201,0,normal,165,0,0,upsloping,0
+60,male,asymptomatic,100,248,0,normal,125,0,1,flat,1
+36,male,atypical angina,120,267,0,normal,160,0,3,flat,1
+43,female,typical angina,100,223,0,normal,142,0,0,upsloping,0
+44,male,atypical angina,120,184,0,normal,142,0,1,flat,0
+49,female,atypical angina,124,201,0,normal,164,0,0,upsloping,0
+44,male,atypical angina,150,288,0,normal,150,1,3,flat,1
+40,male,non-anginal pain,130,215,0,normal,138,0,0,upsloping,0
+36,male,non-anginal pain,130,209,0,normal,178,0,0,upsloping,0
+53,male,asymptomatic,124,260,0,ST-T wave abnormality,112,1,3,flat,0
+52,male,atypical angina,120,284,0,normal,118,0,0,upsloping,0
+53,female,atypical angina,113,468,0,normal,127,0,0,upsloping,0
+51,male,atypical angina,125,188,0,normal,145,0,0,upsloping,0
+53,male,non-anginal pain,145,518,0,normal,130,0,0,flat,1
+56,male,non-anginal pain,130,167,0,normal,114,0,0,upsloping,0
+54,male,asymptomatic,125,224,0,normal,122,0,2,flat,1
+41,male,asymptomatic,130,172,0,ST-T wave abnormality,130,0,2,flat,1
+43,female,atypical angina,150,186,0,normal,154,0,0,upsloping,0
+32,male,atypical angina,125,254,0,normal,155,0,0,upsloping,0
 65,male,asymptomatic,140,306,1,normal,87,1,1.5,flat,1
-41,female,atypical angina,110,250,0,ST-T wave abnormality,142,0,0.0,upsloping,0
-48,female,atypical angina,120,177,1,ST-T wave abnormality,148,0,0.0,upsloping,0
-48,female,asymptomatic,150,227,0,normal,130,1,1.0,flat,0
-54,female,atypical angina,150,230,0,normal,130,0,0.0,upsloping,0
-54,female,non-anginal pain,130,294,0,ST-T wave abnormality,100,1,0.0,flat,1
-35,male,atypical angina,150,264,0,normal,168,0,0.0,upsloping,0
-52,male,non-anginal pain,140,259,0,ST-T wave abnormality,170,0,0.0,upsloping,0
-43,male,asymptomatic,120,175,0,normal,120,1,1.0,flat,1
-59,male,non-anginal pain,130,318,0,normal,120,1,1.0,flat,0
-37,male,asymptomatic,120,223,0,normal,168,0,0.0,upsloping,0
-50,male,atypical angina,140,216,0,normal,170,0,0.0,upsloping,0
-36,male,non-anginal pain,112,340,0,normal,184,0,1.0,flat,0
-41,male,asymptomatic,110,289,0,normal,170,0,0.0,flat,1
-50,male,asymptomatic,130,233,0,normal,121,1,2.0,flat,1
-47,female,asymptomatic,120,205,0,normal,98,1,2.0,flat,1
-45,male,atypical angina,140,224,1,normal,122,0,0.0,upsloping,0
-41,female,atypical angina,130,245,0,normal,150,0,0.0,upsloping,0
+41,female,atypical angina,110,250,0,ST-T wave abnormality,142,0,0,upsloping,0
+48,female,atypical angina,120,177,1,ST-T wave abnormality,148,0,0,upsloping,0
+48,female,asymptomatic,150,227,0,normal,130,1,1,flat,0
+54,female,atypical angina,150,230,0,normal,130,0,0,upsloping,0
+54,female,non-anginal pain,130,294,0,ST-T wave abnormality,100,1,0,flat,1
+35,male,atypical angina,150,264,0,normal,168,0,0,upsloping,0
+52,male,non-anginal pain,140,259,0,ST-T wave abnormality,170,0,0,upsloping,0
+43,male,asymptomatic,120,175,0,normal,120,1,1,flat,1
+59,male,non-anginal pain,130,318,0,normal,120,1,1,flat,0
+37,male,asymptomatic,120,223,0,normal,168,0,0,upsloping,0
+50,male,atypical angina,140,216,0,normal,170,0,0,upsloping,0
+36,male,non-anginal pain,112,340,0,normal,184,0,1,flat,0
+41,male,asymptomatic,110,289,0,normal,170,0,0,flat,1
+50,male,asymptomatic,130,233,0,normal,121,1,2,flat,1
+47,female,asymptomatic,120,205,0,normal,98,1,2,flat,1
+45,male,atypical angina,140,224,1,normal,122,0,0,upsloping,0
+41,female,atypical angina,130,245,0,normal,150,0,0,upsloping,0
 52,female,asymptomatic,130,180,0,normal,140,1,1.5,flat,0
-51,female,atypical angina,160,194,0,normal,170,0,0.0,upsloping,0
+51,female,atypical angina,160,194,0,normal,170,0,0,upsloping,0
 31,male,asymptomatic,120,270,0,normal,153,1,1.5,flat,1
-58,male,non-anginal pain,130,213,0,ST-T wave abnormality,140,0,0.0,flat,1
-54,male,asymptomatic,150,365,0,ST-T wave abnormality,134,0,1.0,upsloping,0
-52,male,asymptomatic,112,342,0,ST-T wave abnormality,96,1,1.0,flat,1
-49,male,atypical angina,100,253,0,normal,174,0,0.0,upsloping,0
-43,female,non-anginal pain,150,254,0,normal,175,0,0.0,upsloping,0
-45,male,asymptomatic,140,224,0,normal,144,0,0.0,upsloping,0
-46,male,asymptomatic,120,277,0,normal,125,1,1.0,flat,1
-50,female,atypical angina,110,202,0,normal,145,0,0.0,upsloping,0
-37,female,atypical angina,120,260,0,normal,130,0,0.0,upsloping,0
-45,female,asymptomatic,132,297,0,normal,144,0,0.0,upsloping,0
-32,male,atypical angina,110,225,0,normal,184,0,0.0,upsloping,0
-52,male,asymptomatic,160,246,0,ST-T wave abnormality,82,1,4.0,flat,1
-44,male,asymptomatic,150,412,0,normal,170,0,0.0,upsloping,0
-57,male,atypical angina,140,265,0,ST-T wave abnormality,145,1,1.0,flat,1
-44,male,atypical angina,130,215,0,normal,135,0,0.0,upsloping,0
-52,male,asymptomatic,120,182,0,normal,150,0,0.0,flat,1
-44,female,asymptomatic,120,218,0,ST-T wave abnormality,115,0,0.0,upsloping,0
+58,male,non-anginal pain,130,213,0,ST-T wave abnormality,140,0,0,flat,1
+54,male,asymptomatic,150,365,0,ST-T wave abnormality,134,0,1,upsloping,0
+52,male,asymptomatic,112,342,0,ST-T wave abnormality,96,1,1,flat,1
+49,male,atypical angina,100,253,0,normal,174,0,0,upsloping,0
+43,female,non-anginal pain,150,254,0,normal,175,0,0,upsloping,0
+45,male,asymptomatic,140,224,0,normal,144,0,0,upsloping,0
+46,male,asymptomatic,120,277,0,normal,125,1,1,flat,1
+50,female,atypical angina,110,202,0,normal,145,0,0,upsloping,0
+37,female,atypical angina,120,260,0,normal,130,0,0,upsloping,0
+45,female,asymptomatic,132,297,0,normal,144,0,0,upsloping,0
+32,male,atypical angina,110,225,0,normal,184,0,0,upsloping,0
+52,male,asymptomatic,160,246,0,ST-T wave abnormality,82,1,4,flat,1
+44,male,asymptomatic,150,412,0,normal,170,0,0,upsloping,0
+57,male,atypical angina,140,265,0,ST-T wave abnormality,145,1,1,flat,1
+44,male,atypical angina,130,215,0,normal,135,0,0,upsloping,0
+52,male,asymptomatic,120,182,0,normal,150,0,0,flat,1
+44,female,asymptomatic,120,218,0,ST-T wave abnormality,115,0,0,upsloping,0
 55,male,asymptomatic,140,268,0,normal,128,1,1.5,flat,1
-46,male,non-anginal pain,150,163,0,normal,116,0,0.0,upsloping,0
-32,male,asymptomatic,118,529,0,normal,130,0,0.0,flat,1
-35,female,asymptomatic,140,167,0,normal,150,0,0.0,upsloping,0
-52,male,atypical angina,140,100,0,normal,138,1,0.0,upsloping,0
-49,male,asymptomatic,130,206,0,normal,170,0,0.0,flat,1
-55,male,non-anginal pain,110,277,0,normal,160,0,0.0,upsloping,0
-54,male,atypical angina,120,238,0,normal,154,0,0.0,upsloping,0
-63,male,asymptomatic,150,223,0,normal,115,0,0.0,flat,1
-52,male,atypical angina,160,196,0,normal,165,0,0.0,upsloping,0
-56,male,asymptomatic,150,213,1,normal,125,1,1.0,flat,1
-66,male,asymptomatic,140,139,0,normal,94,1,1.0,flat,1
-65,male,asymptomatic,170,263,1,normal,112,1,2.0,flat,1
-53,female,atypical angina,140,216,0,normal,142,1,2.0,flat,0
-43,male,typical angina,120,291,0,ST-T wave abnormality,155,0,0.0,flat,1
+46,male,non-anginal pain,150,163,0,normal,116,0,0,upsloping,0
+32,male,asymptomatic,118,529,0,normal,130,0,0,flat,1
+35,female,asymptomatic,140,167,0,normal,150,0,0,upsloping,0
+52,male,atypical angina,140,100,0,normal,138,1,0,upsloping,0
+49,male,asymptomatic,130,206,0,normal,170,0,0,flat,1
+55,male,non-anginal pain,110,277,0,normal,160,0,0,upsloping,0
+54,male,atypical angina,120,238,0,normal,154,0,0,upsloping,0
+63,male,asymptomatic,150,223,0,normal,115,0,0,flat,1
+52,male,atypical angina,160,196,0,normal,165,0,0,upsloping,0
+56,male,asymptomatic,150,213,1,normal,125,1,1,flat,1
+66,male,asymptomatic,140,139,0,normal,94,1,1,flat,1
+65,male,asymptomatic,170,263,1,normal,112,1,2,flat,1
+53,female,atypical angina,140,216,0,normal,142,1,2,flat,0
+43,male,typical angina,120,291,0,ST-T wave abnormality,155,0,0,flat,1
 55,male,asymptomatic,140,229,0,normal,110,1,0.5,flat,0
-49,female,atypical angina,110,208,0,normal,160,0,0.0,upsloping,0
-39,male,asymptomatic,130,307,0,normal,140,0,0.0,upsloping,0
-52,female,atypical angina,120,210,0,normal,148,0,0.0,upsloping,0
+49,female,atypical angina,110,208,0,normal,160,0,0,upsloping,0
+39,male,asymptomatic,130,307,0,normal,140,0,0,upsloping,0
+52,female,atypical angina,120,210,0,normal,148,0,0,upsloping,0
 48,male,asymptomatic,160,329,0,normal,92,1,1.5,flat,1
-39,female,non-anginal pain,110,182,0,ST-T wave abnormality,180,0,0.0,upsloping,0
-58,male,asymptomatic,130,263,0,normal,140,1,2.0,flat,1
-43,male,atypical angina,142,207,0,normal,138,0,0.0,upsloping,0
-39,male,non-anginal pain,160,147,1,normal,160,0,0.0,upsloping,0
-56,male,asymptomatic,120,85,0,normal,140,0,0.0,upsloping,0
-41,male,atypical angina,125,269,0,normal,144,0,0.0,upsloping,0
-65,male,asymptomatic,130,275,0,ST-T wave abnormality,115,1,1.0,flat,1
-51,male,asymptomatic,130,179,0,normal,100,0,0.0,upsloping,0
-40,female,asymptomatic,150,392,0,normal,130,0,2.0,flat,1
-40,male,asymptomatic,120,466,1,normal,152,1,1.0,flat,1
-46,male,asymptomatic,118,186,0,normal,124,0,0.0,flat,1
-57,male,atypical angina,140,260,1,normal,140,0,0.0,upsloping,0
-48,female,asymptomatic,120,254,0,ST-T wave abnormality,110,0,0.0,upsloping,0
-34,male,atypical angina,150,214,0,ST-T wave abnormality,168,0,0.0,upsloping,0
-50,male,asymptomatic,140,129,0,normal,135,0,0.0,upsloping,0
-39,male,atypical angina,190,241,0,normal,106,0,0.0,upsloping,0
-59,female,atypical angina,130,188,0,normal,124,0,1.0,flat,0
-57,male,asymptomatic,150,255,0,normal,92,1,3.0,flat,1
-47,male,asymptomatic,140,276,1,normal,125,1,0.0,upsloping,0
-38,male,atypical angina,140,297,0,normal,150,0,0.0,upsloping,0
-49,female,non-anginal pain,130,207,0,ST-T wave abnormality,135,0,0.0,upsloping,0
-33,female,asymptomatic,100,246,0,normal,150,1,1.0,flat,1
-38,male,asymptomatic,120,282,0,normal,170,0,0.0,flat,1
+39,female,non-anginal pain,110,182,0,ST-T wave abnormality,180,0,0,upsloping,0
+58,male,asymptomatic,130,263,0,normal,140,1,2,flat,1
+43,male,atypical angina,142,207,0,normal,138,0,0,upsloping,0
+39,male,non-anginal pain,160,147,1,normal,160,0,0,upsloping,0
+56,male,asymptomatic,120,85,0,normal,140,0,0,upsloping,0
+41,male,atypical angina,125,269,0,normal,144,0,0,upsloping,0
+65,male,asymptomatic,130,275,0,ST-T wave abnormality,115,1,1,flat,1
+51,male,asymptomatic,130,179,0,normal,100,0,0,upsloping,0
+40,female,asymptomatic,150,392,0,normal,130,0,2,flat,1
+40,male,asymptomatic,120,466,1,normal,152,1,1,flat,1
+46,male,asymptomatic,118,186,0,normal,124,0,0,flat,1
+57,male,atypical angina,140,260,1,normal,140,0,0,upsloping,0
+48,female,asymptomatic,120,254,0,ST-T wave abnormality,110,0,0,upsloping,0
+34,male,atypical angina,150,214,0,ST-T wave abnormality,168,0,0,upsloping,0
+50,male,asymptomatic,140,129,0,normal,135,0,0,upsloping,0
+39,male,atypical angina,190,241,0,normal,106,0,0,upsloping,0
+59,female,atypical angina,130,188,0,normal,124,0,1,flat,0
+57,male,asymptomatic,150,255,0,normal,92,1,3,flat,1
+47,male,asymptomatic,140,276,1,normal,125,1,0,upsloping,0
+38,male,atypical angina,140,297,0,normal,150,0,0,upsloping,0
+49,female,non-anginal pain,130,207,0,ST-T wave abnormality,135,0,0,upsloping,0
+33,female,asymptomatic,100,246,0,normal,150,1,1,flat,1
+38,male,asymptomatic,120,282,0,normal,170,0,0,flat,1
 59,female,asymptomatic,130,338,1,ST-T wave abnormality,130,1,1.5,flat,1
-35,female,typical angina,120,160,0,ST-T wave abnormality,185,0,0.0,upsloping,0
-34,male,typical angina,140,156,0,normal,180,0,0.0,flat,1
-47,female,non-anginal pain,135,248,1,normal,170,0,0.0,flat,1
-52,female,non-anginal pain,125,272,0,normal,139,0,0.0,upsloping,0
-46,male,asymptomatic,110,240,0,ST-T wave abnormality,140,0,0.0,upsloping,0
-58,female,atypical angina,180,393,0,normal,110,1,1.0,flat,1
-58,male,atypical angina,130,230,0,normal,150,0,0.0,upsloping,0
-54,male,atypical angina,120,246,0,normal,110,0,0.0,upsloping,0
-34,female,atypical angina,130,161,0,normal,190,0,0.0,upsloping,0
-48,female,asymptomatic,108,163,0,normal,175,0,2.0,upsloping,0
-54,female,atypical angina,120,230,1,normal,140,0,0.0,upsloping,0
+35,female,typical angina,120,160,0,ST-T wave abnormality,185,0,0,upsloping,0
+34,male,typical angina,140,156,0,normal,180,0,0,flat,1
+47,female,non-anginal pain,135,248,1,normal,170,0,0,flat,1
+52,female,non-anginal pain,125,272,0,normal,139,0,0,upsloping,0
+46,male,asymptomatic,110,240,0,ST-T wave abnormality,140,0,0,upsloping,0
+58,female,atypical angina,180,393,0,normal,110,1,1,flat,1
+58,male,atypical angina,130,230,0,normal,150,0,0,upsloping,0
+54,male,atypical angina,120,246,0,normal,110,0,0,upsloping,0
+34,female,atypical angina,130,161,0,normal,190,0,0,upsloping,0
+48,female,asymptomatic,108,163,0,normal,175,0,2,upsloping,0
+54,female,atypical angina,120,230,1,normal,140,0,0,upsloping,0
 42,male,non-anginal pain,120,228,0,normal,152,1,1.5,flat,0
-38,male,non-anginal pain,145,292,0,normal,130,0,0.0,upsloping,0
-46,male,asymptomatic,110,202,0,normal,150,1,0.0,flat,1
-56,male,asymptomatic,170,388,0,ST-T wave abnormality,122,1,2.0,flat,1
+38,male,non-anginal pain,145,292,0,normal,130,0,0,upsloping,0
+46,male,asymptomatic,110,202,0,normal,150,1,0,flat,1
+56,male,asymptomatic,170,388,0,ST-T wave abnormality,122,1,2,flat,1
 56,male,asymptomatic,150,230,0,ST-T wave abnormality,124,1,1.5,flat,1
-61,female,asymptomatic,130,294,0,ST-T wave abnormality,120,1,1.0,flat,0
-49,male,non-anginal pain,115,265,0,normal,175,0,0.0,flat,1
-43,female,atypical angina,120,215,0,ST-T wave abnormality,175,0,0.0,upsloping,0
-39,male,atypical angina,120,241,0,ST-T wave abnormality,146,0,2.0,upsloping,0
-54,male,asymptomatic,140,166,0,normal,118,1,0.0,flat,1
-43,male,asymptomatic,150,247,0,normal,130,1,2.0,flat,1
+61,female,asymptomatic,130,294,0,ST-T wave abnormality,120,1,1,flat,0
+49,male,non-anginal pain,115,265,0,normal,175,0,0,flat,1
+43,female,atypical angina,120,215,0,ST-T wave abnormality,175,0,0,upsloping,0
+39,male,atypical angina,120,241,0,ST-T wave abnormality,146,0,2,upsloping,0
+54,male,asymptomatic,140,166,0,normal,118,1,0,flat,1
+43,male,asymptomatic,150,247,0,normal,130,1,2,flat,1
 52,male,asymptomatic,160,331,0,normal,94,1,2.5,flat,1
 50,male,asymptomatic,140,341,0,ST-T wave abnormality,125,1,2.5,flat,1
-47,male,asymptomatic,160,291,0,ST-T wave abnormality,158,1,3.0,flat,1
-53,male,asymptomatic,140,243,0,normal,155,0,0.0,upsloping,0
-56,female,atypical angina,120,279,0,normal,150,0,1.0,flat,1
-39,male,asymptomatic,110,273,0,normal,132,0,0.0,upsloping,0
-42,male,atypical angina,120,198,0,normal,155,0,0.0,upsloping,0
-43,female,atypical angina,120,249,0,ST-T wave abnormality,176,0,0.0,upsloping,0
-50,male,atypical angina,120,168,0,normal,160,0,0.0,upsloping,0
-54,male,asymptomatic,130,603,1,normal,125,1,1.0,flat,1
-39,male,atypical angina,130,215,0,normal,120,0,0.0,upsloping,0
-48,male,atypical angina,100,159,0,normal,100,0,0.0,upsloping,0
-40,male,atypical angina,130,275,0,normal,150,0,0.0,upsloping,0
-55,male,asymptomatic,120,270,0,normal,140,0,0.0,upsloping,0
-41,male,atypical angina,120,291,0,ST-T wave abnormality,160,0,0.0,upsloping,0
-56,male,asymptomatic,155,342,1,normal,150,1,3.0,flat,1
-38,male,asymptomatic,110,190,0,normal,150,1,1.0,flat,1
-49,male,asymptomatic,140,185,0,normal,130,0,0.0,upsloping,0
-44,male,asymptomatic,130,290,0,normal,100,1,2.0,flat,1
-54,male,atypical angina,160,195,0,ST-T wave abnormality,130,0,1.0,upsloping,0
-59,male,asymptomatic,140,264,1,left ventricular hypertrophy,119,1,0.0,flat,1
-49,male,asymptomatic,128,212,0,normal,96,1,0.0,flat,1
-47,male,atypical angina,160,263,0,normal,174,0,0.0,upsloping,0
-49,female,atypical angina,110,208,0,normal,160,0,0.0,upsloping,0
-42,male,atypical angina,120,196,0,normal,150,0,0.0,upsloping,0
-52,female,atypical angina,140,225,0,normal,140,0,0.0,upsloping,0
-46,male,typical angina,140,272,1,normal,175,0,2.0,flat,1
-50,male,asymptomatic,140,231,0,ST-T wave abnormality,140,1,5.0,flat,1
-48,male,atypical angina,140,238,0,normal,118,0,0.0,upsloping,0
-58,male,asymptomatic,135,222,0,normal,100,0,0.0,upsloping,0
-58,male,non-anginal pain,140,179,0,normal,160,0,0.0,upsloping,0
-29,male,atypical angina,120,243,0,normal,160,0,0.0,upsloping,0
-40,male,non-anginal pain,140,235,0,normal,188,0,0.0,upsloping,0
-53,male,atypical angina,140,320,0,normal,162,0,0.0,upsloping,0
-49,male,non-anginal pain,140,187,0,normal,172,0,0.0,upsloping,0
-52,male,asymptomatic,140,266,0,normal,134,1,2.0,flat,1
-43,male,asymptomatic,140,288,0,normal,135,1,2.0,flat,1
+47,male,asymptomatic,160,291,0,ST-T wave abnormality,158,1,3,flat,1
+53,male,asymptomatic,140,243,0,normal,155,0,0,upsloping,0
+56,female,atypical angina,120,279,0,normal,150,0,1,flat,1
+39,male,asymptomatic,110,273,0,normal,132,0,0,upsloping,0
+42,male,atypical angina,120,198,0,normal,155,0,0,upsloping,0
+43,female,atypical angina,120,249,0,ST-T wave abnormality,176,0,0,upsloping,0
+50,male,atypical angina,120,168,0,normal,160,0,0,upsloping,0
+54,male,asymptomatic,130,603,1,normal,125,1,1,flat,1
+39,male,atypical angina,130,215,0,normal,120,0,0,upsloping,0
+48,male,atypical angina,100,159,0,normal,100,0,0,upsloping,0
+40,male,atypical angina,130,275,0,normal,150,0,0,upsloping,0
+55,male,asymptomatic,120,270,0,normal,140,0,0,upsloping,0
+41,male,atypical angina,120,291,0,ST-T wave abnormality,160,0,0,upsloping,0
+56,male,asymptomatic,155,342,1,normal,150,1,3,flat,1
+38,male,asymptomatic,110,190,0,normal,150,1,1,flat,1
+49,male,asymptomatic,140,185,0,normal,130,0,0,upsloping,0
+44,male,asymptomatic,130,290,0,normal,100,1,2,flat,1
+54,male,atypical angina,160,195,0,ST-T wave abnormality,130,0,1,upsloping,0
+59,male,asymptomatic,140,264,1,left ventricular hypertrophy,119,1,0,flat,1
+49,male,asymptomatic,128,212,0,normal,96,1,0,flat,1
+47,male,atypical angina,160,263,0,normal,174,0,0,upsloping,0
+49,female,atypical angina,110,208,0,normal,160,0,0,upsloping,0
+42,male,atypical angina,120,196,0,normal,150,0,0,upsloping,0
+52,female,atypical angina,140,225,0,normal,140,0,0,upsloping,0
+46,male,typical angina,140,272,1,normal,175,0,2,flat,1
+50,male,asymptomatic,140,231,0,ST-T wave abnormality,140,1,5,flat,1
+48,male,atypical angina,140,238,0,normal,118,0,0,upsloping,0
+58,male,asymptomatic,135,222,0,normal,100,0,0,upsloping,0
+58,male,non-anginal pain,140,179,0,normal,160,0,0,upsloping,0
+29,male,atypical angina,120,243,0,normal,160,0,0,upsloping,0
+40,male,non-anginal pain,140,235,0,normal,188,0,0,upsloping,0
+53,male,atypical angina,140,320,0,normal,162,0,0,upsloping,0
+49,male,non-anginal pain,140,187,0,normal,172,0,0,upsloping,0
+52,male,asymptomatic,140,266,0,normal,134,1,2,flat,1
+43,male,asymptomatic,140,288,0,normal,135,1,2,flat,1
 54,male,asymptomatic,140,216,0,normal,105,0,1.5,flat,1
-59,male,atypical angina,140,287,0,normal,150,0,0.0,upsloping,0
-37,male,non-anginal pain,130,194,0,normal,150,0,0.0,upsloping,0
-46,female,asymptomatic,130,238,0,normal,90,0,0.0,upsloping,0
-52,male,asymptomatic,130,225,0,normal,120,1,2.0,flat,1
-51,male,atypical angina,130,224,0,normal,150,0,0.0,upsloping,0
-52,male,asymptomatic,140,404,0,normal,124,1,2.0,flat,1
-46,male,asymptomatic,110,238,0,ST-T wave abnormality,140,1,1.0,flat,0
-54,female,atypical angina,160,312,0,normal,130,0,0.0,upsloping,0
-58,male,non-anginal pain,160,211,1,ST-T wave abnormality,92,0,0.0,flat,1
-58,male,atypical angina,130,251,0,normal,110,0,0.0,upsloping,0
-41,male,asymptomatic,120,237,1,normal,138,1,1.0,flat,1
-50,female,asymptomatic,120,328,0,normal,110,1,1.0,flat,0
+59,male,atypical angina,140,287,0,normal,150,0,0,upsloping,0
+37,male,non-anginal pain,130,194,0,normal,150,0,0,upsloping,0
+46,female,asymptomatic,130,238,0,normal,90,0,0,upsloping,0
+52,male,asymptomatic,130,225,0,normal,120,1,2,flat,1
+51,male,atypical angina,130,224,0,normal,150,0,0,upsloping,0
+52,male,asymptomatic,140,404,0,normal,124,1,2,flat,1
+46,male,asymptomatic,110,238,0,ST-T wave abnormality,140,1,1,flat,0
+54,female,atypical angina,160,312,0,normal,130,0,0,upsloping,0
+58,male,non-anginal pain,160,211,1,ST-T wave abnormality,92,0,0,flat,1
+58,male,atypical angina,130,251,0,normal,110,0,0,upsloping,0
+41,male,asymptomatic,120,237,1,normal,138,1,1,flat,1
+50,female,asymptomatic,120,328,0,normal,110,1,1,flat,0
 53,male,asymptomatic,180,285,0,ST-T wave abnormality,120,1,1.5,flat,1
-46,male,asymptomatic,180,280,0,ST-T wave abnormality,120,0,0.0,upsloping,0
-50,male,atypical angina,170,209,0,ST-T wave abnormality,116,0,0.0,upsloping,0
-48,male,atypical angina,130,245,0,normal,160,0,0.0,upsloping,0
-45,male,non-anginal pain,135,192,0,normal,110,0,0.0,upsloping,0
-41,female,atypical angina,125,184,0,normal,180,0,0.0,upsloping,0
-62,female,typical angina,160,193,0,normal,116,0,0.0,upsloping,0
-49,male,asymptomatic,120,297,0,normal,132,0,1.0,flat,0
-42,male,atypical angina,150,268,0,normal,136,0,0.0,upsloping,0
-53,male,asymptomatic,120,246,0,normal,116,1,0.0,flat,1
-57,female,typical angina,130,308,0,normal,98,0,1.0,flat,0
-47,male,typical angina,110,249,0,normal,150,0,0.0,upsloping,0
-46,male,non-anginal pain,120,230,0,normal,150,0,0.0,upsloping,0
-42,male,non-anginal pain,160,147,0,normal,146,0,0.0,upsloping,0
-31,female,atypical angina,100,219,0,ST-T wave abnormality,150,0,0.0,upsloping,0
-56,male,atypical angina,130,184,0,normal,100,0,0.0,upsloping,0
-50,male,asymptomatic,150,215,0,normal,140,1,0.0,upsloping,0
-35,male,atypical angina,120,308,0,left ventricular hypertrophy,180,0,0.0,upsloping,0
-35,male,atypical angina,110,257,0,normal,140,0,0.0,flat,1
-28,male,atypical angina,130,132,0,left ventricular hypertrophy,185,0,0.0,upsloping,0
-54,male,asymptomatic,125,216,0,normal,140,0,0.0,flat,1
-48,male,asymptomatic,106,263,1,normal,110,0,0.0,flat,1
-50,female,non-anginal pain,140,288,0,normal,140,1,0.0,flat,1
-56,male,non-anginal pain,130,276,0,normal,128,1,1.0,upsloping,0
-56,female,non-anginal pain,130,219,0,ST-T wave abnormality,164,0,0.0,upsloping,0
+46,male,asymptomatic,180,280,0,ST-T wave abnormality,120,0,0,upsloping,0
+50,male,atypical angina,170,209,0,ST-T wave abnormality,116,0,0,upsloping,0
+48,male,atypical angina,130,245,0,normal,160,0,0,upsloping,0
+45,male,non-anginal pain,135,192,0,normal,110,0,0,upsloping,0
+41,female,atypical angina,125,184,0,normal,180,0,0,upsloping,0
+62,female,typical angina,160,193,0,normal,116,0,0,upsloping,0
+49,male,asymptomatic,120,297,0,normal,132,0,1,flat,0
+42,male,atypical angina,150,268,0,normal,136,0,0,upsloping,0
+53,male,asymptomatic,120,246,0,normal,116,1,0,flat,1
+57,female,typical angina,130,308,0,normal,98,0,1,flat,0
+47,male,typical angina,110,249,0,normal,150,0,0,upsloping,0
+46,male,non-anginal pain,120,230,0,normal,150,0,0,upsloping,0
+42,male,non-anginal pain,160,147,0,normal,146,0,0,upsloping,0
+31,female,atypical angina,100,219,0,ST-T wave abnormality,150,0,0,upsloping,0
+56,male,atypical angina,130,184,0,normal,100,0,0,upsloping,0
+50,male,asymptomatic,150,215,0,normal,140,1,0,upsloping,0
+35,male,atypical angina,120,308,0,left ventricular hypertrophy,180,0,0,upsloping,0
+35,male,atypical angina,110,257,0,normal,140,0,0,flat,1
+28,male,atypical angina,130,132,0,left ventricular hypertrophy,185,0,0,upsloping,0
+54,male,asymptomatic,125,216,0,normal,140,0,0,flat,1
+48,male,asymptomatic,106,263,1,normal,110,0,0,flat,1
+50,female,non-anginal pain,140,288,0,normal,140,1,0,flat,1
+56,male,non-anginal pain,130,276,0,normal,128,1,1,upsloping,0
+56,female,non-anginal pain,130,219,0,ST-T wave abnormality,164,0,0,upsloping,0
 47,male,asymptomatic,150,226,0,normal,98,1,1.5,flat,1
-30,female,typical angina,170,237,0,ST-T wave abnormality,170,0,0.0,upsloping,0
-39,male,asymptomatic,110,280,0,normal,150,0,0.0,flat,1
-54,male,non-anginal pain,120,217,0,normal,137,0,0.0,upsloping,0
-55,male,atypical angina,140,196,0,normal,150,0,0.0,upsloping,0
-29,male,atypical angina,140,263,0,normal,170,0,0.0,upsloping,0
-46,male,asymptomatic,130,222,0,normal,112,0,0.0,flat,1
-51,female,asymptomatic,160,303,0,normal,150,1,1.0,flat,1
-48,female,non-anginal pain,120,195,0,normal,125,0,0.0,upsloping,0
-33,male,non-anginal pain,120,298,0,normal,185,0,0.0,upsloping,0
-55,male,atypical angina,120,256,1,normal,137,0,0.0,upsloping,0
-50,male,asymptomatic,145,264,0,normal,150,0,0.0,flat,1
-53,male,non-anginal pain,120,195,0,normal,140,0,0.0,upsloping,0
+30,female,typical angina,170,237,0,ST-T wave abnormality,170,0,0,upsloping,0
+39,male,asymptomatic,110,280,0,normal,150,0,0,flat,1
+54,male,non-anginal pain,120,217,0,normal,137,0,0,upsloping,0
+55,male,atypical angina,140,196,0,normal,150,0,0,upsloping,0
+29,male,atypical angina,140,263,0,normal,170,0,0,upsloping,0
+46,male,asymptomatic,130,222,0,normal,112,0,0,flat,1
+51,female,asymptomatic,160,303,0,normal,150,1,1,flat,1
+48,female,non-anginal pain,120,195,0,normal,125,0,0,upsloping,0
+33,male,non-anginal pain,120,298,0,normal,185,0,0,upsloping,0
+55,male,atypical angina,120,256,1,normal,137,0,0,upsloping,0
+50,male,asymptomatic,145,264,0,normal,150,0,0,flat,1
+53,male,non-anginal pain,120,195,0,normal,140,0,0,upsloping,0
 38,male,asymptomatic,92,117,0,normal,134,1,2.5,flat,1
-41,male,atypical angina,120,295,0,normal,170,0,0.0,upsloping,0
-37,female,asymptomatic,130,173,0,ST-T wave abnormality,184,0,0.0,upsloping,0
-37,male,asymptomatic,130,315,0,normal,158,0,0.0,upsloping,0
-40,male,non-anginal pain,130,281,0,normal,167,0,0.0,upsloping,0
-38,female,atypical angina,120,275,0,normal,129,0,0.0,upsloping,0
-41,male,asymptomatic,112,250,0,normal,142,0,0.0,upsloping,0
-54,female,atypical angina,140,309,0,ST-T wave abnormality,140,0,0.0,upsloping,0
-39,male,atypical angina,120,200,0,normal,160,1,1.0,flat,0
-41,male,asymptomatic,120,336,0,normal,118,1,3.0,flat,1
-55,male,typical angina,140,295,0,normal,136,0,0.0,flat,1
-48,male,asymptomatic,160,355,0,normal,99,1,2.0,flat,1
-48,male,asymptomatic,160,193,0,normal,102,1,3.0,flat,1
-55,male,atypical angina,145,326,0,normal,155,0,0.0,upsloping,0
-54,male,asymptomatic,200,198,0,normal,142,1,2.0,flat,1
-55,male,atypical angina,160,292,1,normal,143,1,2.0,flat,1
-43,female,atypical angina,120,266,0,normal,118,0,0.0,upsloping,0
-48,male,asymptomatic,160,268,0,normal,103,1,1.0,flat,1
-54,male,typical angina,120,171,0,normal,137,0,2.0,upsloping,0
+41,male,atypical angina,120,295,0,normal,170,0,0,upsloping,0
+37,female,asymptomatic,130,173,0,ST-T wave abnormality,184,0,0,upsloping,0
+37,male,asymptomatic,130,315,0,normal,158,0,0,upsloping,0
+40,male,non-anginal pain,130,281,0,normal,167,0,0,upsloping,0
+38,female,atypical angina,120,275,0,normal,129,0,0,upsloping,0
+41,male,asymptomatic,112,250,0,normal,142,0,0,upsloping,0
+54,female,atypical angina,140,309,0,ST-T wave abnormality,140,0,0,upsloping,0
+39,male,atypical angina,120,200,0,normal,160,1,1,flat,0
+41,male,asymptomatic,120,336,0,normal,118,1,3,flat,1
+55,male,typical angina,140,295,0,normal,136,0,0,flat,1
+48,male,asymptomatic,160,355,0,normal,99,1,2,flat,1
+48,male,asymptomatic,160,193,0,normal,102,1,3,flat,1
+55,male,atypical angina,145,326,0,normal,155,0,0,upsloping,0
+54,male,asymptomatic,200,198,0,normal,142,1,2,flat,1
+55,male,atypical angina,160,292,1,normal,143,1,2,flat,1
+43,female,atypical angina,120,266,0,normal,118,0,0,upsloping,0
+48,male,asymptomatic,160,268,0,normal,103,1,1,flat,1
+54,male,typical angina,120,171,0,normal,137,0,2,upsloping,0
 54,male,non-anginal pain,120,237,0,normal,150,1,1.5,flat,1
-48,male,asymptomatic,122,275,1,ST-T wave abnormality,150,1,2.0,downsloping,1
-45,male,asymptomatic,130,219,0,ST-T wave abnormality,130,1,1.0,flat,1
-49,male,asymptomatic,130,341,0,normal,120,1,1.0,flat,1
-44,male,asymptomatic,135,491,0,normal,135,0,0.0,flat,1
-48,male,asymptomatic,120,260,0,normal,115,0,2.0,flat,1
-61,male,asymptomatic,125,292,0,ST-T wave abnormality,115,1,0.0,upsloping,0
-62,male,atypical angina,140,271,0,normal,152,0,1.0,upsloping,0
-55,male,asymptomatic,145,248,0,normal,96,1,2.0,flat,1
-53,female,non-anginal pain,120,274,0,normal,130,0,0.0,upsloping,0
-55,female,atypical angina,130,394,0,left ventricular hypertrophy,150,0,0.0,upsloping,0
-36,male,non-anginal pain,150,160,0,normal,172,0,0.0,upsloping,0
+48,male,asymptomatic,122,275,1,ST-T wave abnormality,150,1,2,downsloping,1
+45,male,asymptomatic,130,219,0,ST-T wave abnormality,130,1,1,flat,1
+49,male,asymptomatic,130,341,0,normal,120,1,1,flat,1
+44,male,asymptomatic,135,491,0,normal,135,0,0,flat,1
+48,male,asymptomatic,120,260,0,normal,115,0,2,flat,1
+61,male,asymptomatic,125,292,0,ST-T wave abnormality,115,1,0,upsloping,0
+62,male,atypical angina,140,271,0,normal,152,0,1,upsloping,0
+55,male,asymptomatic,145,248,0,normal,96,1,2,flat,1
+53,female,non-anginal pain,120,274,0,normal,130,0,0,upsloping,0
+55,female,atypical angina,130,394,0,left ventricular hypertrophy,150,0,0,upsloping,0
+36,male,non-anginal pain,150,160,0,normal,172,0,0,upsloping,0
 51,female,non-anginal pain,150,200,0,normal,120,0,0.5,upsloping,0
-55,female,atypical angina,122,320,0,normal,155,0,0.0,upsloping,0
-46,male,atypical angina,140,275,0,normal,165,1,0.0,upsloping,0
-54,female,atypical angina,120,221,0,normal,138,0,1.0,upsloping,0
-46,male,asymptomatic,120,231,0,normal,115,1,0.0,flat,1
-59,male,asymptomatic,130,126,0,normal,125,0,0.0,flat,1
-47,male,non-anginal pain,140,193,0,normal,145,1,1.0,flat,1
-54,male,atypical angina,160,305,0,normal,175,0,0.0,upsloping,0
-52,male,asymptomatic,130,298,0,normal,110,1,1.0,flat,1
-34,male,atypical angina,98,220,0,normal,150,0,0.0,upsloping,0
-54,male,asymptomatic,130,242,0,normal,91,1,1.0,flat,1
-47,female,non-anginal pain,130,235,0,normal,145,0,2.0,flat,0
-45,male,asymptomatic,120,225,0,normal,140,0,0.0,upsloping,0
-32,female,atypical angina,105,198,0,normal,165,0,0.0,upsloping,0
-55,male,asymptomatic,140,201,0,normal,130,1,3.0,flat,1
-55,male,non-anginal pain,120,220,0,left ventricular hypertrophy,134,0,0.0,upsloping,0
-45,female,atypical angina,180,295,0,normal,180,0,0.0,upsloping,0
-59,male,non-anginal pain,180,213,0,normal,100,0,0.0,upsloping,0
-51,male,non-anginal pain,135,160,0,normal,150,0,2.0,flat,1
+55,female,atypical angina,122,320,0,normal,155,0,0,upsloping,0
+46,male,atypical angina,140,275,0,normal,165,1,0,upsloping,0
+54,female,atypical angina,120,221,0,normal,138,0,1,upsloping,0
+46,male,asymptomatic,120,231,0,normal,115,1,0,flat,1
+59,male,asymptomatic,130,126,0,normal,125,0,0,flat,1
+47,male,non-anginal pain,140,193,0,normal,145,1,1,flat,1
+54,male,atypical angina,160,305,0,normal,175,0,0,upsloping,0
+52,male,asymptomatic,130,298,0,normal,110,1,1,flat,1
+34,male,atypical angina,98,220,0,normal,150,0,0,upsloping,0
+54,male,asymptomatic,130,242,0,normal,91,1,1,flat,1
+47,female,non-anginal pain,130,235,0,normal,145,0,2,flat,0
+45,male,asymptomatic,120,225,0,normal,140,0,0,upsloping,0
+32,female,atypical angina,105,198,0,normal,165,0,0,upsloping,0
+55,male,asymptomatic,140,201,0,normal,130,1,3,flat,1
+55,male,non-anginal pain,120,220,0,left ventricular hypertrophy,134,0,0,upsloping,0
+45,female,atypical angina,180,295,0,normal,180,0,0,upsloping,0
+59,male,non-anginal pain,180,213,0,normal,100,0,0,upsloping,0
+51,male,non-anginal pain,135,160,0,normal,150,0,2,flat,1
 52,male,asymptomatic,170,223,0,normal,126,1,1.5,flat,1
 57,female,asymptomatic,180,347,0,ST-T wave abnormality,126,1,0.8,flat,0
-54,female,atypical angina,130,253,0,ST-T wave abnormality,155,0,0.0,upsloping,0
-60,male,non-anginal pain,120,246,0,left ventricular hypertrophy,135,0,0.0,upsloping,0
-49,male,asymptomatic,150,222,0,normal,122,0,2.0,flat,1
-51,female,non-anginal pain,130,220,0,normal,160,1,2.0,upsloping,0
-55,female,atypical angina,110,344,0,ST-T wave abnormality,160,0,0.0,upsloping,0
-42,male,asymptomatic,140,358,0,normal,170,0,0.0,upsloping,0
-51,female,non-anginal pain,110,190,0,normal,120,0,0.0,upsloping,0
-59,male,asymptomatic,140,169,0,normal,140,0,0.0,upsloping,0
-53,male,atypical angina,120,181,0,normal,132,0,0.0,upsloping,0
-48,female,atypical angina,133,308,0,ST-T wave abnormality,156,0,2.0,upsloping,0
-36,male,atypical angina,120,166,0,normal,180,0,0.0,upsloping,0
-48,male,non-anginal pain,110,211,0,normal,138,0,0.0,upsloping,0
-47,female,atypical angina,140,257,0,normal,135,0,1.0,upsloping,0
-53,male,asymptomatic,130,182,0,normal,148,0,0.0,upsloping,0
-65,male,asymptomatic,115,0,0,normal,93,1,0.0,flat,1
+54,female,atypical angina,130,253,0,ST-T wave abnormality,155,0,0,upsloping,0
+60,male,non-anginal pain,120,246,0,left ventricular hypertrophy,135,0,0,upsloping,0
+49,male,asymptomatic,150,222,0,normal,122,0,2,flat,1
+51,female,non-anginal pain,130,220,0,normal,160,1,2,upsloping,0
+55,female,atypical angina,110,344,0,ST-T wave abnormality,160,0,0,upsloping,0
+42,male,asymptomatic,140,358,0,normal,170,0,0,upsloping,0
+51,female,non-anginal pain,110,190,0,normal,120,0,0,upsloping,0
+59,male,asymptomatic,140,169,0,normal,140,0,0,upsloping,0
+53,male,atypical angina,120,181,0,normal,132,0,0,upsloping,0
+48,female,atypical angina,133,308,0,ST-T wave abnormality,156,0,2,upsloping,0
+36,male,atypical angina,120,166,0,normal,180,0,0,upsloping,0
+48,male,non-anginal pain,110,211,0,normal,138,0,0,upsloping,0
+47,female,atypical angina,140,257,0,normal,135,0,1,upsloping,0
+53,male,asymptomatic,130,182,0,normal,148,0,0,upsloping,0
+65,male,asymptomatic,115,0,0,normal,93,1,0,flat,1
 32,male,typical angina,95,0,1,normal,127,0,0.7,upsloping,1
 61,male,asymptomatic,105,0,1,normal,110,1,1.5,upsloping,1
 50,male,asymptomatic,145,0,1,normal,139,1,0.7,flat,1
 57,male,asymptomatic,110,0,1,ST-T wave abnormality,131,1,1.4,upsloping,1
-51,male,asymptomatic,110,0,1,normal,92,0,0.0,flat,1
+51,male,asymptomatic,110,0,1,normal,92,0,0,flat,1
 47,male,asymptomatic,110,0,1,ST-T wave abnormality,149,0,2.1,upsloping,1
 60,male,asymptomatic,160,0,1,normal,149,0,0.4,flat,1
 55,male,atypical angina,140,0,0,ST-T wave abnormality,150,0,0.2,upsloping,0
@@ -310,11 +310,11 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 53,male,atypical angina,130,0,0,ST-T wave abnormality,120,0,0.7,downsloping,0
 58,male,asymptomatic,115,0,1,normal,138,0,0.5,upsloping,1
 57,male,asymptomatic,95,0,1,normal,182,0,0.7,downsloping,1
-65,male,asymptomatic,155,0,0,normal,154,0,1.0,upsloping,0
+65,male,asymptomatic,155,0,0,normal,154,0,1,upsloping,0
 60,male,asymptomatic,125,0,1,normal,110,0,0.1,upsloping,1
 41,male,asymptomatic,125,0,1,normal,176,0,1.6,upsloping,1
 34,male,asymptomatic,115,0,1,normal,154,0,0.2,upsloping,1
-53,male,asymptomatic,80,0,0,normal,141,1,2.0,downsloping,0
+53,male,asymptomatic,80,0,0,normal,141,1,2,downsloping,0
 74,male,atypical angina,145,0,1,ST-T wave abnormality,123,0,1.3,upsloping,1
 57,male,non-anginal pain,105,0,1,normal,148,0,0.3,flat,1
 56,male,asymptomatic,140,0,1,normal,121,1,1.8,upsloping,1
@@ -331,199 +331,199 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 52,male,asymptomatic,95,0,1,normal,82,1,0.8,flat,1
 60,male,asymptomatic,130,0,1,ST-T wave abnormality,130,1,1.1,downsloping,1
 60,male,non-anginal pain,115,0,1,normal,143,0,2.4,upsloping,1
-56,male,asymptomatic,115,0,1,ST-T wave abnormality,82,0,-1.0,upsloping,1
+56,male,asymptomatic,115,0,1,ST-T wave abnormality,82,0,-1,upsloping,1
 38,male,non-anginal pain,100,0,0,normal,179,0,-1.1,upsloping,0
-40,male,asymptomatic,95,0,1,ST-T wave abnormality,144,0,0.0,upsloping,1
+40,male,asymptomatic,95,0,1,ST-T wave abnormality,144,0,0,upsloping,1
 51,male,asymptomatic,130,0,1,normal,170,0,-0.7,upsloping,1
 62,male,typical angina,120,0,1,left ventricular hypertrophy,134,0,-0.8,flat,1
 72,male,non-anginal pain,160,0,0,left ventricular hypertrophy,114,0,1.6,flat,0
 63,male,asymptomatic,150,0,1,ST-T wave abnormality,154,0,3.7,upsloping,1
-63,male,asymptomatic,140,0,1,left ventricular hypertrophy,149,0,2.0,upsloping,1
+63,male,asymptomatic,140,0,1,left ventricular hypertrophy,149,0,2,upsloping,1
 64,female,asymptomatic,95,0,1,normal,145,0,1.1,downsloping,1
 43,male,asymptomatic,100,0,1,normal,122,0,1.5,downsloping,1
 64,male,asymptomatic,110,0,1,normal,114,1,1.3,downsloping,1
 61,male,asymptomatic,110,0,1,normal,113,0,1.4,flat,1
-52,male,asymptomatic,130,0,1,normal,120,0,0.0,flat,1
-51,male,asymptomatic,120,0,1,normal,104,0,0.0,flat,1
-69,male,asymptomatic,135,0,0,normal,130,0,0.0,flat,1
-59,male,asymptomatic,120,0,0,normal,115,0,0.0,flat,1
-48,male,asymptomatic,115,0,1,normal,128,0,0.0,flat,1
+52,male,asymptomatic,130,0,1,normal,120,0,0,flat,1
+51,male,asymptomatic,120,0,1,normal,104,0,0,flat,1
+69,male,asymptomatic,135,0,0,normal,130,0,0,flat,1
+59,male,asymptomatic,120,0,0,normal,115,0,0,flat,1
+48,male,asymptomatic,115,0,1,normal,128,0,0,flat,1
 69,male,asymptomatic,137,0,0,ST-T wave abnormality,104,1,1.6,flat,1
-36,male,asymptomatic,110,0,1,normal,125,1,1.0,flat,1
-53,male,asymptomatic,120,0,1,normal,120,0,0.0,flat,1
+36,male,asymptomatic,110,0,1,normal,125,1,1,flat,1
+53,male,asymptomatic,120,0,1,normal,120,0,0,flat,1
 43,male,asymptomatic,140,0,0,ST-T wave abnormality,140,1,0.5,upsloping,1
-56,male,asymptomatic,120,0,0,ST-T wave abnormality,100,1,-1.0,downsloping,1
-58,male,asymptomatic,130,0,0,ST-T wave abnormality,100,1,1.0,flat,1
+56,male,asymptomatic,120,0,0,ST-T wave abnormality,100,1,-1,downsloping,1
+58,male,asymptomatic,130,0,0,ST-T wave abnormality,100,1,1,flat,1
 55,male,asymptomatic,120,0,0,ST-T wave abnormality,92,0,0.3,upsloping,1
-67,male,typical angina,145,0,0,left ventricular hypertrophy,125,0,0.0,flat,1
+67,male,typical angina,145,0,0,left ventricular hypertrophy,125,0,0,flat,1
 46,male,asymptomatic,115,0,0,normal,113,1,1.5,flat,1
-53,male,atypical angina,120,0,0,normal,95,0,0.0,flat,1
-38,male,non-anginal pain,115,0,0,normal,128,1,0.0,flat,1
-53,male,non-anginal pain,105,0,0,normal,115,0,0.0,flat,1
-62,male,non-anginal pain,160,0,0,normal,72,1,0.0,flat,1
-47,male,asymptomatic,160,0,0,normal,124,1,0.0,flat,1
-56,male,non-anginal pain,155,0,0,ST-T wave abnormality,99,0,0.0,flat,1
-56,male,asymptomatic,120,0,0,ST-T wave abnormality,148,0,0.0,flat,1
-56,male,non-anginal pain,120,0,0,normal,97,0,0.0,flat,0
-64,female,asymptomatic,200,0,0,normal,140,1,1.0,flat,1
-61,male,asymptomatic,150,0,0,normal,117,1,2.0,flat,1
-68,male,asymptomatic,135,0,0,ST-T wave abnormality,120,1,0.0,upsloping,1
-57,male,asymptomatic,140,0,0,normal,120,1,2.0,flat,1
-63,male,asymptomatic,150,0,0,normal,86,1,2.0,flat,1
+53,male,atypical angina,120,0,0,normal,95,0,0,flat,1
+38,male,non-anginal pain,115,0,0,normal,128,1,0,flat,1
+53,male,non-anginal pain,105,0,0,normal,115,0,0,flat,1
+62,male,non-anginal pain,160,0,0,normal,72,1,0,flat,1
+47,male,asymptomatic,160,0,0,normal,124,1,0,flat,1
+56,male,non-anginal pain,155,0,0,ST-T wave abnormality,99,0,0,flat,1
+56,male,asymptomatic,120,0,0,ST-T wave abnormality,148,0,0,flat,1
+56,male,non-anginal pain,120,0,0,normal,97,0,0,flat,0
+64,female,asymptomatic,200,0,0,normal,140,1,1,flat,1
+61,male,asymptomatic,150,0,0,normal,117,1,2,flat,1
+68,male,asymptomatic,135,0,0,ST-T wave abnormality,120,1,0,upsloping,1
+57,male,asymptomatic,140,0,0,normal,120,1,2,flat,1
+63,male,asymptomatic,150,0,0,normal,86,1,2,flat,1
 60,male,asymptomatic,135,0,0,normal,63,1,0.5,upsloping,1
-66,male,asymptomatic,150,0,0,normal,108,1,2.0,flat,1
-63,male,asymptomatic,185,0,0,normal,98,1,0.0,upsloping,1
-59,male,asymptomatic,135,0,0,normal,115,1,1.0,flat,1
-61,male,asymptomatic,125,0,0,normal,105,1,0.0,downsloping,1
-73,female,non-anginal pain,160,0,0,ST-T wave abnormality,121,0,0.0,upsloping,1
-47,male,non-anginal pain,155,0,0,normal,118,1,1.0,flat,1
+66,male,asymptomatic,150,0,0,normal,108,1,2,flat,1
+63,male,asymptomatic,185,0,0,normal,98,1,0,upsloping,1
+59,male,asymptomatic,135,0,0,normal,115,1,1,flat,1
+61,male,asymptomatic,125,0,0,normal,105,1,0,downsloping,1
+73,female,non-anginal pain,160,0,0,ST-T wave abnormality,121,0,0,upsloping,1
+47,male,non-anginal pain,155,0,0,normal,118,1,1,flat,1
 65,male,asymptomatic,160,0,1,ST-T wave abnormality,122,0,1.2,flat,1
-70,male,asymptomatic,140,0,1,normal,157,1,2.0,flat,1
-50,male,asymptomatic,120,0,0,ST-T wave abnormality,156,1,0.0,upsloping,1
+70,male,asymptomatic,140,0,1,normal,157,1,2,flat,1
+50,male,asymptomatic,120,0,0,ST-T wave abnormality,156,1,0,upsloping,1
 60,male,asymptomatic,160,0,0,ST-T wave abnormality,99,1,0.5,flat,1
 50,male,asymptomatic,115,0,0,normal,120,1,0.5,flat,1
-43,male,asymptomatic,115,0,0,normal,145,1,2.0,flat,1
-38,female,asymptomatic,110,0,0,normal,156,0,0.0,flat,1
-54,male,asymptomatic,120,0,0,normal,155,0,0.0,flat,1
-61,male,asymptomatic,150,0,0,normal,105,1,0.0,flat,1
-42,male,asymptomatic,145,0,0,normal,99,1,0.0,flat,1
-53,male,asymptomatic,130,0,0,left ventricular hypertrophy,135,1,1.0,flat,1
-55,male,asymptomatic,140,0,0,normal,83,0,0.0,flat,1
-61,male,asymptomatic,160,0,1,ST-T wave abnormality,145,0,1.0,flat,1
-51,male,asymptomatic,140,0,0,normal,60,0,0.0,flat,1
-70,male,asymptomatic,115,0,0,ST-T wave abnormality,92,1,0.0,flat,1
-61,male,asymptomatic,130,0,0,left ventricular hypertrophy,115,0,0.0,flat,1
+43,male,asymptomatic,115,0,0,normal,145,1,2,flat,1
+38,female,asymptomatic,110,0,0,normal,156,0,0,flat,1
+54,male,asymptomatic,120,0,0,normal,155,0,0,flat,1
+61,male,asymptomatic,150,0,0,normal,105,1,0,flat,1
+42,male,asymptomatic,145,0,0,normal,99,1,0,flat,1
+53,male,asymptomatic,130,0,0,left ventricular hypertrophy,135,1,1,flat,1
+55,male,asymptomatic,140,0,0,normal,83,0,0,flat,1
+61,male,asymptomatic,160,0,1,ST-T wave abnormality,145,0,1,flat,1
+51,male,asymptomatic,140,0,0,normal,60,0,0,flat,1
+70,male,asymptomatic,115,0,0,ST-T wave abnormality,92,1,0,flat,1
+61,male,asymptomatic,130,0,0,left ventricular hypertrophy,115,0,0,flat,1
 38,male,asymptomatic,150,0,1,normal,120,1,0.7,flat,1
-57,male,asymptomatic,160,0,1,normal,98,1,2.0,flat,1
-38,male,asymptomatic,135,0,1,normal,150,0,0.0,flat,1
-62,female,typical angina,140,0,1,normal,143,0,0.0,flat,1
-58,male,asymptomatic,170,0,1,ST-T wave abnormality,105,1,0.0,flat,1
-52,male,asymptomatic,165,0,1,normal,122,1,1.0,upsloping,1
-61,male,non-anginal pain,200,0,1,ST-T wave abnormality,70,0,0.0,flat,1
-50,female,asymptomatic,160,0,1,normal,110,0,0.0,flat,1
-51,male,asymptomatic,130,0,1,ST-T wave abnormality,163,0,0.0,flat,1
+57,male,asymptomatic,160,0,1,normal,98,1,2,flat,1
+38,male,asymptomatic,135,0,1,normal,150,0,0,flat,1
+62,female,typical angina,140,0,1,normal,143,0,0,flat,1
+58,male,asymptomatic,170,0,1,ST-T wave abnormality,105,1,0,flat,1
+52,male,asymptomatic,165,0,1,normal,122,1,1,upsloping,1
+61,male,non-anginal pain,200,0,1,ST-T wave abnormality,70,0,0,flat,1
+50,female,asymptomatic,160,0,1,normal,110,0,0,flat,1
+51,male,asymptomatic,130,0,1,ST-T wave abnormality,163,0,0,flat,1
 65,male,asymptomatic,145,0,1,ST-T wave abnormality,67,0,0.7,flat,1
-52,male,asymptomatic,135,0,1,normal,128,1,2.0,flat,1
-47,male,non-anginal pain,110,0,1,normal,120,1,0.0,flat,1
+52,male,asymptomatic,135,0,1,normal,128,1,2,flat,1
+47,male,non-anginal pain,110,0,1,normal,120,1,0,flat,1
 35,male,asymptomatic,120,0,1,normal,130,1,1.2,flat,1
-57,male,asymptomatic,140,0,1,normal,100,1,0.0,flat,1
+57,male,asymptomatic,140,0,1,normal,100,1,0,flat,1
 62,male,asymptomatic,115,0,1,normal,72,1,-0.5,flat,1
-59,male,asymptomatic,110,0,1,normal,94,0,0.0,flat,1
-53,male,non-anginal pain,160,0,1,left ventricular hypertrophy,122,1,0.0,flat,1
-62,male,asymptomatic,150,0,1,ST-T wave abnormality,78,0,2.0,flat,1
+59,male,asymptomatic,110,0,1,normal,94,0,0,flat,1
+53,male,non-anginal pain,160,0,1,left ventricular hypertrophy,122,1,0,flat,1
+62,male,asymptomatic,150,0,1,ST-T wave abnormality,78,0,2,flat,1
 54,male,asymptomatic,180,0,1,normal,150,0,1.5,flat,1
-56,male,asymptomatic,125,0,1,normal,103,1,1.0,flat,1
-56,male,non-anginal pain,125,0,1,normal,98,0,-2.0,flat,1
-54,male,asymptomatic,130,0,1,normal,110,1,3.0,flat,1
-66,female,asymptomatic,155,0,1,normal,90,0,0.0,flat,1
-63,male,asymptomatic,140,260,0,ST-T wave abnormality,112,1,3.0,flat,1
-44,male,asymptomatic,130,209,0,ST-T wave abnormality,127,0,0.0,upsloping,0
+56,male,asymptomatic,125,0,1,normal,103,1,1,flat,1
+56,male,non-anginal pain,125,0,1,normal,98,0,-2,flat,1
+54,male,asymptomatic,130,0,1,normal,110,1,3,flat,1
+66,female,asymptomatic,155,0,1,normal,90,0,0,flat,1
+63,male,asymptomatic,140,260,0,ST-T wave abnormality,112,1,3,flat,1
+44,male,asymptomatic,130,209,0,ST-T wave abnormality,127,0,0,upsloping,0
 60,male,asymptomatic,132,218,0,ST-T wave abnormality,140,1,1.5,downsloping,1
 55,male,asymptomatic,142,228,0,ST-T wave abnormality,149,1,2.5,upsloping,1
 66,male,non-anginal pain,110,213,1,left ventricular hypertrophy,99,1,1.3,flat,0
 66,male,non-anginal pain,120,0,0,ST-T wave abnormality,120,0,-0.5,upsloping,0
-65,male,asymptomatic,150,236,1,ST-T wave abnormality,105,1,0.0,flat,1
+65,male,asymptomatic,150,236,1,ST-T wave abnormality,105,1,0,flat,1
 60,male,non-anginal pain,180,0,0,ST-T wave abnormality,140,1,1.5,flat,0
-60,male,non-anginal pain,120,0,1,normal,141,1,2.0,upsloping,1
+60,male,non-anginal pain,120,0,1,normal,141,1,2,upsloping,1
 60,male,atypical angina,160,267,1,ST-T wave abnormality,157,0,0.5,flat,1
-56,male,atypical angina,126,166,0,ST-T wave abnormality,140,0,0.0,upsloping,0
-59,male,asymptomatic,140,0,0,ST-T wave abnormality,117,1,1.0,flat,1
+56,male,atypical angina,126,166,0,ST-T wave abnormality,140,0,0,upsloping,0
+59,male,asymptomatic,140,0,0,ST-T wave abnormality,117,1,1,flat,1
 62,male,asymptomatic,110,0,0,normal,120,1,0.5,flat,1
-63,male,non-anginal pain,133,0,0,left ventricular hypertrophy,120,1,1.0,flat,1
-57,male,asymptomatic,128,0,1,ST-T wave abnormality,148,1,1.0,flat,1
-62,male,asymptomatic,120,220,0,ST-T wave abnormality,86,0,0.0,upsloping,0
+63,male,non-anginal pain,133,0,0,left ventricular hypertrophy,120,1,1,flat,1
+57,male,asymptomatic,128,0,1,ST-T wave abnormality,148,1,1,flat,1
+62,male,asymptomatic,120,220,0,ST-T wave abnormality,86,0,0,upsloping,0
 63,male,asymptomatic,170,177,0,normal,84,1,2.5,downsloping,1
-46,male,asymptomatic,110,236,0,normal,125,1,2.0,flat,1
+46,male,asymptomatic,110,236,0,normal,125,1,2,flat,1
 63,male,asymptomatic,126,0,0,ST-T wave abnormality,120,0,1.5,downsloping,0
-60,male,asymptomatic,152,0,0,ST-T wave abnormality,118,1,0.0,upsloping,0
-58,male,asymptomatic,116,0,0,normal,124,0,1.0,upsloping,1
-64,male,asymptomatic,120,0,1,ST-T wave abnormality,106,0,2.0,flat,1
-63,male,non-anginal pain,130,0,0,ST-T wave abnormality,111,1,0.0,flat,1
+60,male,asymptomatic,152,0,0,ST-T wave abnormality,118,1,0,upsloping,0
+58,male,asymptomatic,116,0,0,normal,124,0,1,upsloping,1
+64,male,asymptomatic,120,0,1,ST-T wave abnormality,106,0,2,flat,1
+63,male,non-anginal pain,130,0,0,ST-T wave abnormality,111,1,0,flat,1
 74,male,non-anginal pain,138,0,0,normal,116,0,0.2,upsloping,0
-52,male,non-anginal pain,128,0,0,ST-T wave abnormality,180,0,3.0,upsloping,1
-69,male,asymptomatic,130,0,1,ST-T wave abnormality,129,0,1.0,flat,1
+52,male,non-anginal pain,128,0,0,ST-T wave abnormality,180,0,3,upsloping,1
+69,male,asymptomatic,130,0,1,ST-T wave abnormality,129,0,1,flat,1
 51,male,asymptomatic,128,0,1,ST-T wave abnormality,125,1,1.2,flat,1
 60,male,asymptomatic,130,186,1,ST-T wave abnormality,140,1,0.5,flat,1
 56,male,asymptomatic,120,100,0,normal,120,1,1.5,flat,1
 55,male,non-anginal pain,136,228,0,ST-T wave abnormality,124,1,1.6,flat,1
 54,male,asymptomatic,130,0,0,ST-T wave abnormality,117,1,1.4,flat,1
-77,male,asymptomatic,124,171,0,ST-T wave abnormality,110,1,2.0,upsloping,1
-63,male,asymptomatic,160,230,1,normal,105,1,1.0,flat,1
+77,male,asymptomatic,124,171,0,ST-T wave abnormality,110,1,2,upsloping,1
+63,male,asymptomatic,160,230,1,normal,105,1,1,flat,1
 55,male,non-anginal pain,0,0,0,normal,155,0,1.5,flat,1
-52,male,non-anginal pain,122,0,0,normal,110,1,2.0,downsloping,1
-64,male,asymptomatic,144,0,0,ST-T wave abnormality,122,1,1.0,flat,1
+52,male,non-anginal pain,122,0,0,normal,110,1,2,downsloping,1
+64,male,asymptomatic,144,0,0,ST-T wave abnormality,122,1,1,flat,1
 60,male,asymptomatic,140,281,0,ST-T wave abnormality,118,1,1.5,flat,1
-60,male,asymptomatic,120,0,0,normal,133,1,2.0,upsloping,0
+60,male,asymptomatic,120,0,0,normal,133,1,2,upsloping,0
 58,male,asymptomatic,136,203,1,normal,123,1,1.2,flat,1
 59,male,asymptomatic,154,0,0,ST-T wave abnormality,131,1,1.5,upsloping,0
-61,male,non-anginal pain,120,0,0,normal,80,1,0.0,flat,1
-40,male,asymptomatic,125,0,1,normal,165,0,0.0,flat,1
+61,male,non-anginal pain,120,0,0,normal,80,1,0,flat,1
+40,male,asymptomatic,125,0,1,normal,165,0,0,flat,1
 61,male,asymptomatic,134,0,1,ST-T wave abnormality,86,0,1.5,flat,1
-41,male,asymptomatic,104,0,0,ST-T wave abnormality,111,0,0.0,upsloping,0
+41,male,asymptomatic,104,0,0,ST-T wave abnormality,111,0,0,upsloping,0
 57,male,asymptomatic,139,277,1,ST-T wave abnormality,118,1,1.9,flat,1
-63,male,asymptomatic,136,0,0,normal,84,1,0.0,flat,1
+63,male,asymptomatic,136,0,0,normal,84,1,0,flat,1
 59,male,asymptomatic,122,233,0,normal,117,1,1.3,downsloping,1
-51,male,asymptomatic,128,0,0,normal,107,0,0.0,upsloping,0
-59,male,non-anginal pain,131,0,0,normal,128,1,2.0,downsloping,1
-42,male,non-anginal pain,134,240,0,normal,160,0,0.0,upsloping,0
+51,male,asymptomatic,128,0,0,normal,107,0,0,upsloping,0
+59,male,non-anginal pain,131,0,0,normal,128,1,2,downsloping,1
+42,male,non-anginal pain,134,240,0,normal,160,0,0,upsloping,0
 55,male,non-anginal pain,120,0,0,ST-T wave abnormality,125,1,2.5,flat,1
 63,female,atypical angina,132,0,0,normal,130,0,0.1,upsloping,0
 62,male,asymptomatic,152,153,0,ST-T wave abnormality,97,1,1.6,upsloping,1
-56,male,atypical angina,124,224,1,normal,161,0,2.0,flat,0
-53,male,asymptomatic,126,0,0,normal,106,0,0.0,flat,1
-68,male,asymptomatic,138,0,0,normal,130,1,3.0,flat,1
+56,male,atypical angina,124,224,1,normal,161,0,2,flat,0
+53,male,asymptomatic,126,0,0,normal,106,0,0,flat,1
+68,male,asymptomatic,138,0,0,normal,130,1,3,flat,1
 53,male,asymptomatic,154,0,1,ST-T wave abnormality,140,1,1.5,flat,1
 60,male,non-anginal pain,141,316,1,ST-T wave abnormality,122,1,1.7,flat,1
 62,male,atypical angina,131,0,0,normal,130,0,0.1,upsloping,0
-59,male,asymptomatic,178,0,1,left ventricular hypertrophy,120,1,0.0,flat,1
+59,male,asymptomatic,178,0,1,left ventricular hypertrophy,120,1,0,flat,1
 51,male,asymptomatic,132,218,1,left ventricular hypertrophy,139,0,0.1,upsloping,0
-61,male,asymptomatic,110,0,1,normal,108,1,2.0,downsloping,1
-57,male,asymptomatic,130,311,1,ST-T wave abnormality,148,1,2.0,flat,1
+61,male,asymptomatic,110,0,1,normal,108,1,2,downsloping,1
+57,male,asymptomatic,130,311,1,ST-T wave abnormality,148,1,2,flat,1
 56,male,non-anginal pain,170,0,0,left ventricular hypertrophy,123,1,2.5,flat,1
-58,male,atypical angina,126,0,1,normal,110,1,2.0,flat,1
+58,male,atypical angina,126,0,1,normal,110,1,2,flat,1
 69,male,non-anginal pain,140,0,1,ST-T wave abnormality,118,0,2.5,downsloping,1
 67,male,typical angina,142,270,1,normal,125,0,2.5,upsloping,1
 58,male,asymptomatic,120,0,0,left ventricular hypertrophy,106,1,1.5,downsloping,1
 65,male,asymptomatic,134,0,0,normal,112,1,1.1,flat,1
 63,male,atypical angina,139,217,1,ST-T wave abnormality,128,1,1.2,flat,1
 55,male,atypical angina,110,214,1,ST-T wave abnormality,180,0,0.4,upsloping,0
-57,male,asymptomatic,140,214,0,ST-T wave abnormality,144,1,2.0,flat,1
+57,male,asymptomatic,140,214,0,ST-T wave abnormality,144,1,2,flat,1
 65,male,typical angina,140,252,0,normal,135,0,0.3,upsloping,0
-54,male,asymptomatic,136,220,0,normal,140,1,3.0,flat,1
-72,male,non-anginal pain,120,214,0,normal,102,1,1.0,flat,1
-75,male,asymptomatic,170,203,1,ST-T wave abnormality,108,0,0.0,flat,1
-49,male,typical angina,130,0,0,ST-T wave abnormality,145,0,3.0,flat,1
+54,male,asymptomatic,136,220,0,normal,140,1,3,flat,1
+72,male,non-anginal pain,120,214,0,normal,102,1,1,flat,1
+75,male,asymptomatic,170,203,1,ST-T wave abnormality,108,0,0,flat,1
+49,male,typical angina,130,0,0,ST-T wave abnormality,145,0,3,flat,1
 51,male,non-anginal pain,137,339,0,normal,127,1,1.7,flat,1
 60,male,asymptomatic,142,216,0,normal,110,1,2.5,flat,1
-64,female,asymptomatic,142,276,0,normal,140,1,1.0,flat,1
-58,male,asymptomatic,132,458,1,normal,69,0,1.0,downsloping,0
-61,male,asymptomatic,146,241,0,normal,148,1,3.0,downsloping,1
-67,male,asymptomatic,160,384,1,ST-T wave abnormality,130,1,0.0,flat,1
-62,male,asymptomatic,135,297,0,normal,130,1,1.0,flat,1
-65,male,asymptomatic,136,248,0,normal,140,1,4.0,downsloping,1
-63,male,asymptomatic,130,308,0,normal,138,1,2.0,flat,1
-69,male,asymptomatic,140,208,0,ST-T wave abnormality,140,1,2.0,flat,1
+64,female,asymptomatic,142,276,0,normal,140,1,1,flat,1
+58,male,asymptomatic,132,458,1,normal,69,0,1,downsloping,0
+61,male,asymptomatic,146,241,0,normal,148,1,3,downsloping,1
+67,male,asymptomatic,160,384,1,ST-T wave abnormality,130,1,0,flat,1
+62,male,asymptomatic,135,297,0,normal,130,1,1,flat,1
+65,male,asymptomatic,136,248,0,normal,140,1,4,downsloping,1
+63,male,asymptomatic,130,308,0,normal,138,1,2,flat,1
+69,male,asymptomatic,140,208,0,ST-T wave abnormality,140,1,2,flat,1
 51,male,asymptomatic,132,227,1,ST-T wave abnormality,138,0,0.2,upsloping,0
-62,male,asymptomatic,158,210,1,normal,112,1,3.0,downsloping,1
+62,male,asymptomatic,158,210,1,normal,112,1,3,downsloping,1
 55,male,non-anginal pain,136,245,1,ST-T wave abnormality,131,1,1.2,flat,1
-75,male,asymptomatic,136,225,0,normal,112,1,3.0,flat,1
-40,male,non-anginal pain,106,240,0,normal,80,1,0.0,upsloping,0
+75,male,asymptomatic,136,225,0,normal,112,1,3,flat,1
+40,male,non-anginal pain,106,240,0,normal,80,1,0,upsloping,0
 67,male,asymptomatic,120,0,1,normal,150,0,1.5,downsloping,1
-58,male,asymptomatic,110,198,0,normal,110,0,0.0,flat,1
+58,male,asymptomatic,110,198,0,normal,110,0,0,flat,1
 60,male,asymptomatic,136,195,0,normal,126,0,0.3,upsloping,0
-63,male,asymptomatic,160,267,1,ST-T wave abnormality,88,1,2.0,flat,1
+63,male,asymptomatic,160,267,1,ST-T wave abnormality,88,1,2,flat,1
 35,male,non-anginal pain,123,161,0,ST-T wave abnormality,153,0,-0.1,upsloping,0
 62,male,typical angina,112,258,0,ST-T wave abnormality,150,1,1.3,flat,1
 43,male,asymptomatic,122,0,0,normal,120,0,0.5,upsloping,1
-63,male,non-anginal pain,130,0,1,ST-T wave abnormality,160,0,3.0,flat,0
+63,male,non-anginal pain,130,0,1,ST-T wave abnormality,160,0,3,flat,0
 65,male,asymptomatic,150,235,0,normal,120,1,1.5,flat,1
-48,male,non-anginal pain,102,0,1,ST-T wave abnormality,110,1,1.0,downsloping,1
-63,male,asymptomatic,96,305,0,ST-T wave abnormality,121,1,1.0,upsloping,1
+48,male,non-anginal pain,102,0,1,ST-T wave abnormality,110,1,1,downsloping,1
+63,male,asymptomatic,96,305,0,ST-T wave abnormality,121,1,1,upsloping,1
 64,male,asymptomatic,130,223,0,ST-T wave abnormality,128,0,0.5,flat,0
-61,male,asymptomatic,120,282,0,ST-T wave abnormality,135,1,4.0,downsloping,1
-50,male,asymptomatic,144,349,0,left ventricular hypertrophy,120,1,1.0,upsloping,1
-59,male,asymptomatic,124,160,0,normal,117,1,1.0,flat,1
-55,male,asymptomatic,150,160,0,ST-T wave abnormality,150,0,0.0,upsloping,0
+61,male,asymptomatic,120,282,0,ST-T wave abnormality,135,1,4,downsloping,1
+50,male,asymptomatic,144,349,0,left ventricular hypertrophy,120,1,1,upsloping,1
+59,male,asymptomatic,124,160,0,normal,117,1,1,flat,1
+55,male,asymptomatic,150,160,0,ST-T wave abnormality,150,0,0,upsloping,0
 45,male,non-anginal pain,130,236,0,normal,144,0,0.1,upsloping,0
 65,male,asymptomatic,144,312,0,left ventricular hypertrophy,113,1,1.7,flat,1
 61,male,atypical angina,139,283,0,normal,135,0,0.3,upsloping,0
@@ -531,90 +531,90 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 72,male,asymptomatic,143,211,0,normal,109,1,1.4,flat,1
 50,male,asymptomatic,133,218,0,normal,128,1,1.1,flat,1
 64,male,asymptomatic,143,306,1,ST-T wave abnormality,115,1,1.8,flat,1
-55,male,asymptomatic,116,186,1,ST-T wave abnormality,102,0,0.0,flat,1
-63,male,asymptomatic,110,252,0,ST-T wave abnormality,140,1,2.0,flat,1
+55,male,asymptomatic,116,186,1,ST-T wave abnormality,102,0,0,flat,1
+63,male,asymptomatic,110,252,0,ST-T wave abnormality,140,1,2,flat,1
 59,male,asymptomatic,125,222,0,normal,135,1,2.5,downsloping,1
-56,male,asymptomatic,130,0,0,left ventricular hypertrophy,122,1,1.0,flat,1
+56,male,asymptomatic,130,0,0,left ventricular hypertrophy,122,1,1,flat,1
 62,male,non-anginal pain,133,0,1,ST-T wave abnormality,119,1,1.2,flat,1
-74,male,asymptomatic,150,258,1,ST-T wave abnormality,130,1,4.0,downsloping,1
-54,male,asymptomatic,130,202,1,normal,112,1,2.0,flat,1
-57,male,asymptomatic,110,197,0,left ventricular hypertrophy,100,0,0.0,upsloping,0
+74,male,asymptomatic,150,258,1,ST-T wave abnormality,130,1,4,downsloping,1
+54,male,asymptomatic,130,202,1,normal,112,1,2,flat,1
+57,male,asymptomatic,110,197,0,left ventricular hypertrophy,100,0,0,upsloping,0
 62,male,non-anginal pain,138,204,0,ST-T wave abnormality,122,1,1.2,flat,1
 76,male,non-anginal pain,104,113,0,left ventricular hypertrophy,120,0,3.5,downsloping,1
 54,female,asymptomatic,138,274,0,normal,105,1,1.5,flat,1
-70,male,asymptomatic,170,192,0,ST-T wave abnormality,129,1,3.0,downsloping,1
-61,female,atypical angina,140,298,1,normal,120,1,0.0,upsloping,0
+70,male,asymptomatic,170,192,0,ST-T wave abnormality,129,1,3,downsloping,1
+61,female,atypical angina,140,298,1,normal,120,1,0,upsloping,0
 48,male,asymptomatic,132,272,0,ST-T wave abnormality,139,0,0.2,upsloping,0
-48,male,non-anginal pain,132,220,1,ST-T wave abnormality,162,0,0.0,flat,1
+48,male,non-anginal pain,132,220,1,ST-T wave abnormality,162,0,0,flat,1
 61,male,typical angina,142,200,1,ST-T wave abnormality,100,0,1.5,downsloping,1
 66,male,asymptomatic,112,261,0,normal,140,0,1.5,upsloping,1
 68,male,typical angina,139,181,1,ST-T wave abnormality,135,0,0.2,upsloping,0
-55,male,asymptomatic,172,260,0,normal,73,0,2.0,flat,1
-62,male,non-anginal pain,120,220,0,left ventricular hypertrophy,86,0,0.0,upsloping,0
+55,male,asymptomatic,172,260,0,normal,73,0,2,flat,1
+62,male,non-anginal pain,120,220,0,left ventricular hypertrophy,86,0,0,upsloping,0
 71,male,non-anginal pain,144,221,0,normal,108,1,1.8,flat,1
 74,male,typical angina,145,216,1,normal,116,1,1.8,flat,1
 53,male,non-anginal pain,155,175,1,ST-T wave abnormality,160,0,0.3,upsloping,0
-58,male,non-anginal pain,150,219,0,ST-T wave abnormality,118,1,0.0,flat,1
-75,male,asymptomatic,160,310,1,normal,112,1,2.0,downsloping,0
+58,male,non-anginal pain,150,219,0,ST-T wave abnormality,118,1,0,flat,1
+75,male,asymptomatic,160,310,1,normal,112,1,2,downsloping,0
 56,male,non-anginal pain,137,208,1,ST-T wave abnormality,122,1,1.8,flat,1
 58,male,non-anginal pain,137,232,0,ST-T wave abnormality,124,1,1.4,flat,1
-64,male,asymptomatic,134,273,0,normal,102,1,4.0,downsloping,1
+64,male,asymptomatic,134,273,0,normal,102,1,4,downsloping,1
 54,male,non-anginal pain,133,203,0,ST-T wave abnormality,137,0,0.2,upsloping,0
 54,male,atypical angina,132,182,0,ST-T wave abnormality,141,0,0.1,upsloping,0
-59,male,asymptomatic,140,274,0,normal,154,1,2.0,flat,0
+59,male,asymptomatic,140,274,0,normal,154,1,2,flat,0
 55,male,asymptomatic,135,204,1,ST-T wave abnormality,126,1,1.1,flat,1
-57,male,asymptomatic,144,270,1,ST-T wave abnormality,160,1,2.0,flat,1
+57,male,asymptomatic,144,270,1,ST-T wave abnormality,160,1,2,flat,1
 61,male,asymptomatic,141,292,0,ST-T wave abnormality,115,1,1.7,flat,1
 41,male,asymptomatic,150,171,0,normal,128,1,1.5,flat,0
-71,male,asymptomatic,130,221,0,ST-T wave abnormality,115,1,0.0,flat,1
+71,male,asymptomatic,130,221,0,ST-T wave abnormality,115,1,0,flat,1
 38,male,asymptomatic,110,289,0,normal,105,1,1.5,downsloping,1
 55,male,asymptomatic,158,217,0,normal,110,1,2.5,flat,1
-56,male,asymptomatic,128,223,0,ST-T wave abnormality,119,1,2.0,downsloping,1
+56,male,asymptomatic,128,223,0,ST-T wave abnormality,119,1,2,downsloping,1
 69,male,asymptomatic,140,110,1,normal,109,1,1.5,flat,1
 64,male,asymptomatic,150,193,0,ST-T wave abnormality,135,1,0.5,flat,1
 72,male,asymptomatic,160,123,1,left ventricular hypertrophy,130,0,1.5,flat,1
 69,male,asymptomatic,142,210,1,ST-T wave abnormality,112,1,1.5,flat,1
 56,male,asymptomatic,137,282,1,normal,126,1,1.2,flat,1
-62,male,asymptomatic,139,170,0,ST-T wave abnormality,120,1,3.0,flat,1
+62,male,asymptomatic,139,170,0,ST-T wave abnormality,120,1,3,flat,1
 67,male,asymptomatic,146,369,0,normal,110,1,1.9,flat,1
-57,male,asymptomatic,156,173,0,left ventricular hypertrophy,119,1,3.0,downsloping,1
+57,male,asymptomatic,156,173,0,left ventricular hypertrophy,119,1,3,downsloping,1
 69,male,asymptomatic,145,289,1,ST-T wave abnormality,110,1,1.8,flat,1
-51,male,asymptomatic,131,152,1,left ventricular hypertrophy,130,1,1.0,flat,1
+51,male,asymptomatic,131,152,1,left ventricular hypertrophy,130,1,1,flat,1
 48,male,asymptomatic,140,208,0,normal,159,1,1.5,upsloping,1
-69,male,asymptomatic,122,216,1,left ventricular hypertrophy,84,1,0.0,flat,1
+69,male,asymptomatic,122,216,1,left ventricular hypertrophy,84,1,0,flat,1
 69,male,non-anginal pain,142,271,0,left ventricular hypertrophy,126,0,0.3,upsloping,0
 64,male,asymptomatic,141,244,1,ST-T wave abnormality,116,1,1.5,flat,1
 57,male,atypical angina,180,285,1,ST-T wave abnormality,120,0,0.8,flat,1
-53,male,asymptomatic,124,243,0,normal,122,1,2.0,flat,1
-37,male,non-anginal pain,118,240,0,left ventricular hypertrophy,165,0,1.0,flat,0
-67,male,asymptomatic,140,219,0,ST-T wave abnormality,122,1,2.0,flat,1
-74,male,non-anginal pain,140,237,1,normal,94,0,0.0,flat,1
+53,male,asymptomatic,124,243,0,normal,122,1,2,flat,1
+37,male,non-anginal pain,118,240,0,left ventricular hypertrophy,165,0,1,flat,0
+67,male,asymptomatic,140,219,0,ST-T wave abnormality,122,1,2,flat,1
+74,male,non-anginal pain,140,237,1,normal,94,0,0,flat,1
 63,male,atypical angina,136,165,0,ST-T wave abnormality,133,0,0.2,upsloping,0
-58,male,asymptomatic,100,213,0,ST-T wave abnormality,110,0,0.0,upsloping,0
-61,male,asymptomatic,190,287,1,left ventricular hypertrophy,150,1,2.0,downsloping,1
-64,male,asymptomatic,130,258,1,left ventricular hypertrophy,130,0,0.0,flat,1
-58,male,asymptomatic,160,256,1,left ventricular hypertrophy,113,1,1.0,upsloping,1
+58,male,asymptomatic,100,213,0,ST-T wave abnormality,110,0,0,upsloping,0
+61,male,asymptomatic,190,287,1,left ventricular hypertrophy,150,1,2,downsloping,1
+64,male,asymptomatic,130,258,1,left ventricular hypertrophy,130,0,0,flat,1
+58,male,asymptomatic,160,256,1,left ventricular hypertrophy,113,1,1,upsloping,1
 60,male,asymptomatic,130,186,1,left ventricular hypertrophy,140,1,0.5,flat,1
-57,male,asymptomatic,122,264,0,left ventricular hypertrophy,100,0,0.0,flat,1
+57,male,asymptomatic,122,264,0,left ventricular hypertrophy,100,0,0,flat,1
 55,male,non-anginal pain,133,185,0,ST-T wave abnormality,136,0,0.2,upsloping,0
 55,male,asymptomatic,120,226,0,left ventricular hypertrophy,127,1,1.7,downsloping,1
 56,male,asymptomatic,130,203,1,normal,98,0,1.5,flat,1
-57,male,asymptomatic,130,207,0,ST-T wave abnormality,96,1,1.0,flat,0
+57,male,asymptomatic,130,207,0,ST-T wave abnormality,96,1,1,flat,0
 61,male,non-anginal pain,140,284,0,normal,123,1,1.3,flat,1
-61,male,non-anginal pain,120,337,0,normal,98,1,0.0,flat,1
-58,male,non-anginal pain,150,219,0,ST-T wave abnormality,118,1,0.0,flat,1
+61,male,non-anginal pain,120,337,0,normal,98,1,0,flat,1
+58,male,non-anginal pain,150,219,0,ST-T wave abnormality,118,1,0,flat,1
 74,male,asymptomatic,155,310,0,normal,112,1,1.5,downsloping,1
-68,male,non-anginal pain,134,254,1,normal,151,1,0.0,upsloping,0
-51,female,asymptomatic,114,258,1,left ventricular hypertrophy,96,0,1.0,upsloping,0
-62,male,asymptomatic,160,254,1,ST-T wave abnormality,108,1,3.0,flat,1
+68,male,non-anginal pain,134,254,1,normal,151,1,0,upsloping,0
+51,female,asymptomatic,114,258,1,left ventricular hypertrophy,96,0,1,upsloping,0
+62,male,asymptomatic,160,254,1,ST-T wave abnormality,108,1,3,flat,1
 53,male,asymptomatic,144,300,1,ST-T wave abnormality,128,1,1.5,flat,1
-62,male,asymptomatic,158,170,0,ST-T wave abnormality,138,1,0.0,flat,1
-46,male,asymptomatic,134,310,0,normal,126,0,0.0,flat,1
-54,female,asymptomatic,127,333,1,ST-T wave abnormality,154,0,0.0,flat,1
+62,male,asymptomatic,158,170,0,ST-T wave abnormality,138,1,0,flat,1
+46,male,asymptomatic,134,310,0,normal,126,0,0,flat,1
+54,female,asymptomatic,127,333,1,ST-T wave abnormality,154,0,0,flat,1
 62,male,typical angina,135,139,0,ST-T wave abnormality,137,0,0.2,upsloping,0
-55,male,asymptomatic,122,223,1,ST-T wave abnormality,100,0,0.0,flat,1
+55,male,asymptomatic,122,223,1,ST-T wave abnormality,100,0,0,flat,1
 58,male,asymptomatic,140,385,1,left ventricular hypertrophy,135,0,0.3,upsloping,0
-62,male,atypical angina,120,254,0,left ventricular hypertrophy,93,1,0.0,flat,1
+62,male,atypical angina,120,254,0,left ventricular hypertrophy,93,1,0,flat,1
 70,male,asymptomatic,130,322,0,left ventricular hypertrophy,109,0,2.4,flat,1
 67,female,non-anginal pain,115,564,0,left ventricular hypertrophy,160,0,1.6,flat,0
 57,male,atypical angina,124,261,0,normal,141,0,0.3,upsloping,1
@@ -624,12 +624,12 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 56,male,non-anginal pain,130,256,1,left ventricular hypertrophy,142,1,0.6,flat,1
 59,male,asymptomatic,110,239,0,left ventricular hypertrophy,142,1,1.2,flat,1
 60,male,asymptomatic,140,293,0,left ventricular hypertrophy,170,0,1.2,flat,1
-63,female,asymptomatic,150,407,0,left ventricular hypertrophy,154,0,4.0,flat,1
+63,female,asymptomatic,150,407,0,left ventricular hypertrophy,154,0,4,flat,1
 59,male,asymptomatic,135,234,0,normal,161,0,0.5,flat,0
-53,male,asymptomatic,142,226,0,left ventricular hypertrophy,111,1,0.0,upsloping,0
-44,male,non-anginal pain,140,235,0,left ventricular hypertrophy,180,0,0.0,upsloping,0
+53,male,asymptomatic,142,226,0,left ventricular hypertrophy,111,1,0,upsloping,0
+44,male,non-anginal pain,140,235,0,left ventricular hypertrophy,180,0,0,upsloping,0
 61,male,typical angina,134,234,0,normal,145,0,2.6,flat,1
-57,female,asymptomatic,128,303,0,left ventricular hypertrophy,159,0,0.0,upsloping,0
+57,female,asymptomatic,128,303,0,left ventricular hypertrophy,159,0,0,upsloping,0
 71,female,asymptomatic,112,149,0,normal,125,0,1.6,flat,0
 46,male,asymptomatic,140,311,0,normal,120,1,1.8,flat,1
 53,male,asymptomatic,140,203,1,left ventricular hypertrophy,155,1,3.1,downsloping,1
@@ -639,167 +639,167 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 48,male,atypical angina,130,245,0,left ventricular hypertrophy,180,0,0.2,flat,0
 43,male,asymptomatic,115,303,0,normal,181,0,1.2,flat,0
 47,male,asymptomatic,112,204,0,normal,143,0,0.1,upsloping,0
-54,female,atypical angina,132,288,1,left ventricular hypertrophy,159,1,0.0,upsloping,0
+54,female,atypical angina,132,288,1,left ventricular hypertrophy,159,1,0,upsloping,0
 48,female,non-anginal pain,130,275,0,normal,139,0,0.2,upsloping,0
-46,female,asymptomatic,138,243,0,left ventricular hypertrophy,152,1,0.0,flat,0
+46,female,asymptomatic,138,243,0,left ventricular hypertrophy,152,1,0,flat,0
 51,female,non-anginal pain,120,295,0,left ventricular hypertrophy,157,0,0.6,upsloping,0
 58,male,non-anginal pain,112,230,0,left ventricular hypertrophy,165,0,2.5,flat,1
-71,female,non-anginal pain,110,265,1,left ventricular hypertrophy,130,0,0.0,upsloping,0
+71,female,non-anginal pain,110,265,1,left ventricular hypertrophy,130,0,0,upsloping,0
 57,male,non-anginal pain,128,229,0,left ventricular hypertrophy,150,0,0.4,flat,1
 66,male,asymptomatic,160,228,0,left ventricular hypertrophy,138,0,2.3,upsloping,0
-37,female,non-anginal pain,120,215,0,normal,170,0,0.0,upsloping,0
+37,female,non-anginal pain,120,215,0,normal,170,0,0,upsloping,0
 59,male,asymptomatic,170,326,0,left ventricular hypertrophy,140,1,3.4,downsloping,1
 50,male,asymptomatic,144,200,0,left ventricular hypertrophy,126,1,0.9,flat,1
-48,male,asymptomatic,130,256,1,left ventricular hypertrophy,150,1,0.0,upsloping,1
+48,male,asymptomatic,130,256,1,left ventricular hypertrophy,150,1,0,upsloping,1
 61,male,asymptomatic,140,207,0,left ventricular hypertrophy,138,1,1.9,upsloping,1
-59,male,typical angina,160,273,0,left ventricular hypertrophy,125,0,0.0,upsloping,1
-42,male,non-anginal pain,130,180,0,normal,150,0,0.0,upsloping,0
-48,male,asymptomatic,122,222,0,left ventricular hypertrophy,186,0,0.0,upsloping,0
-40,male,asymptomatic,152,223,0,normal,181,0,0.0,upsloping,1
-62,female,asymptomatic,124,209,0,normal,163,0,0.0,upsloping,0
+59,male,typical angina,160,273,0,left ventricular hypertrophy,125,0,0,upsloping,1
+42,male,non-anginal pain,130,180,0,normal,150,0,0,upsloping,0
+48,male,asymptomatic,122,222,0,left ventricular hypertrophy,186,0,0,upsloping,0
+40,male,asymptomatic,152,223,0,normal,181,0,0,upsloping,1
+62,female,asymptomatic,124,209,0,normal,163,0,0,upsloping,0
 44,male,non-anginal pain,130,233,0,normal,179,1,0.4,upsloping,0
-46,male,atypical angina,101,197,1,normal,156,0,0.0,upsloping,0
+46,male,atypical angina,101,197,1,normal,156,0,0,upsloping,0
 59,male,non-anginal pain,126,218,1,normal,134,0,2.2,flat,1
-58,male,non-anginal pain,140,211,1,left ventricular hypertrophy,165,0,0.0,upsloping,0
+58,male,non-anginal pain,140,211,1,left ventricular hypertrophy,165,0,0,upsloping,0
 49,male,non-anginal pain,118,149,0,left ventricular hypertrophy,126,0,0.8,upsloping,1
-44,male,asymptomatic,110,197,0,left ventricular hypertrophy,177,0,0.0,upsloping,1
-66,male,atypical angina,160,246,0,normal,120,1,0.0,flat,1
-65,female,asymptomatic,150,225,0,left ventricular hypertrophy,114,0,1.0,flat,1
+44,male,asymptomatic,110,197,0,left ventricular hypertrophy,177,0,0,upsloping,1
+66,male,atypical angina,160,246,0,normal,120,1,0,flat,1
+65,female,asymptomatic,150,225,0,left ventricular hypertrophy,114,0,1,flat,1
 42,male,asymptomatic,136,315,0,normal,125,1,1.8,flat,1
-52,male,atypical angina,128,205,1,normal,184,0,0.0,upsloping,0
+52,male,atypical angina,128,205,1,normal,184,0,0,upsloping,0
 65,female,non-anginal pain,140,417,1,left ventricular hypertrophy,157,0,0.8,upsloping,0
-63,female,atypical angina,140,195,0,normal,179,0,0.0,upsloping,0
+63,female,atypical angina,140,195,0,normal,179,0,0,upsloping,0
 45,female,atypical angina,130,234,0,left ventricular hypertrophy,175,0,0.6,flat,0
-41,female,atypical angina,105,198,0,normal,168,0,0.0,upsloping,0
+41,female,atypical angina,105,198,0,normal,168,0,0,upsloping,0
 61,male,asymptomatic,138,166,0,left ventricular hypertrophy,125,1,3.6,flat,1
-60,female,non-anginal pain,120,178,1,normal,96,0,0.0,upsloping,0
-59,female,asymptomatic,174,249,0,normal,143,1,0.0,flat,1
+60,female,non-anginal pain,120,178,1,normal,96,0,0,upsloping,0
+59,female,asymptomatic,174,249,0,normal,143,1,0,flat,1
 62,male,atypical angina,120,281,0,left ventricular hypertrophy,103,0,1.4,flat,1
 57,male,non-anginal pain,150,126,1,normal,173,0,0.2,upsloping,0
 51,female,asymptomatic,130,305,0,normal,142,1,1.2,flat,1
-44,male,non-anginal pain,120,226,0,normal,169,0,0.0,upsloping,0
+44,male,non-anginal pain,120,226,0,normal,169,0,0,upsloping,0
 60,female,typical angina,150,240,0,normal,171,0,0.9,upsloping,0
 63,male,typical angina,145,233,1,left ventricular hypertrophy,150,0,2.3,downsloping,0
 57,male,asymptomatic,150,276,0,left ventricular hypertrophy,112,1,0.6,flat,1
-51,male,asymptomatic,140,261,0,left ventricular hypertrophy,186,1,0.0,upsloping,0
-58,female,atypical angina,136,319,1,left ventricular hypertrophy,152,0,0.0,upsloping,1
+51,male,asymptomatic,140,261,0,left ventricular hypertrophy,186,1,0,upsloping,0
+58,female,atypical angina,136,319,1,left ventricular hypertrophy,152,0,0,upsloping,1
 44,female,non-anginal pain,118,242,0,normal,149,0,0.3,flat,0
-47,male,non-anginal pain,108,243,0,normal,152,0,0.0,upsloping,1
+47,male,non-anginal pain,108,243,0,normal,152,0,0,upsloping,1
 61,male,asymptomatic,120,260,0,normal,140,1,3.6,flat,1
 57,female,asymptomatic,120,354,0,normal,163,1,0.6,upsloping,0
-70,male,atypical angina,156,245,0,left ventricular hypertrophy,143,0,0.0,upsloping,0
+70,male,atypical angina,156,245,0,left ventricular hypertrophy,143,0,0,upsloping,0
 76,female,non-anginal pain,140,197,0,ST-T wave abnormality,116,0,1.1,flat,0
 67,female,asymptomatic,106,223,0,normal,142,0,0.3,upsloping,0
-45,male,asymptomatic,142,309,0,left ventricular hypertrophy,147,1,0.0,flat,1
-45,male,asymptomatic,104,208,0,left ventricular hypertrophy,148,1,3.0,flat,0
-39,female,non-anginal pain,94,199,0,normal,179,0,0.0,upsloping,0
-42,female,non-anginal pain,120,209,0,normal,173,0,0.0,flat,0
+45,male,asymptomatic,142,309,0,left ventricular hypertrophy,147,1,0,flat,1
+45,male,asymptomatic,104,208,0,left ventricular hypertrophy,148,1,3,flat,0
+39,female,non-anginal pain,94,199,0,normal,179,0,0,upsloping,0
+42,female,non-anginal pain,120,209,0,normal,173,0,0,flat,0
 56,male,atypical angina,120,236,0,normal,178,0,0.8,upsloping,0
-58,male,asymptomatic,146,218,0,normal,105,0,2.0,flat,1
+58,male,asymptomatic,146,218,0,normal,105,0,2,flat,1
 35,male,asymptomatic,120,198,0,normal,130,1,1.6,flat,1
 58,male,asymptomatic,150,270,0,left ventricular hypertrophy,111,1,0.8,upsloping,1
-41,male,non-anginal pain,130,214,0,left ventricular hypertrophy,168,0,2.0,flat,0
+41,male,non-anginal pain,130,214,0,left ventricular hypertrophy,168,0,2,flat,0
 57,male,asymptomatic,110,201,0,normal,126,1,1.5,flat,0
 42,male,typical angina,148,244,0,left ventricular hypertrophy,178,0,0.8,upsloping,0
-62,male,atypical angina,128,208,1,left ventricular hypertrophy,140,0,0.0,upsloping,0
+62,male,atypical angina,128,208,1,left ventricular hypertrophy,140,0,0,upsloping,0
 59,male,typical angina,178,270,0,left ventricular hypertrophy,145,0,4.2,downsloping,0
-41,female,atypical angina,126,306,0,normal,163,0,0.0,upsloping,0
+41,female,atypical angina,126,306,0,normal,163,0,0,upsloping,0
 50,male,asymptomatic,150,243,0,left ventricular hypertrophy,128,0,2.6,flat,1
-59,male,atypical angina,140,221,0,normal,164,1,0.0,upsloping,0
-61,female,asymptomatic,130,330,0,left ventricular hypertrophy,169,0,0.0,upsloping,1
+59,male,atypical angina,140,221,0,normal,164,1,0,upsloping,0
+61,female,asymptomatic,130,330,0,left ventricular hypertrophy,169,0,0,upsloping,1
 54,male,asymptomatic,124,266,0,left ventricular hypertrophy,109,1,2.2,flat,1
-54,male,asymptomatic,110,206,0,left ventricular hypertrophy,108,1,0.0,flat,1
-52,male,asymptomatic,125,212,0,normal,168,0,1.0,upsloping,1
-47,male,asymptomatic,110,275,0,left ventricular hypertrophy,118,1,1.0,flat,1
+54,male,asymptomatic,110,206,0,left ventricular hypertrophy,108,1,0,flat,1
+52,male,asymptomatic,125,212,0,normal,168,0,1,upsloping,1
+47,male,asymptomatic,110,275,0,left ventricular hypertrophy,118,1,1,flat,1
 66,male,asymptomatic,120,302,0,left ventricular hypertrophy,151,0,0.4,flat,0
 58,male,asymptomatic,100,234,0,normal,156,0,0.1,upsloping,1
 64,female,non-anginal pain,140,313,0,normal,133,0,0.2,upsloping,0
 50,female,atypical angina,120,244,0,normal,162,0,1.1,upsloping,0
 44,female,non-anginal pain,108,141,0,normal,175,0,0.6,flat,0
-67,male,asymptomatic,120,237,0,normal,71,0,1.0,flat,1
-49,female,asymptomatic,130,269,0,normal,163,0,0.0,upsloping,0
-57,male,asymptomatic,165,289,1,left ventricular hypertrophy,124,0,1.0,flat,1
+67,male,asymptomatic,120,237,0,normal,71,0,1,flat,1
+49,female,asymptomatic,130,269,0,normal,163,0,0,upsloping,0
+57,male,asymptomatic,165,289,1,left ventricular hypertrophy,124,0,1,flat,1
 63,male,asymptomatic,130,254,0,left ventricular hypertrophy,147,0,1.4,flat,1
 48,male,asymptomatic,124,274,0,left ventricular hypertrophy,166,0,0.5,flat,1
 51,male,non-anginal pain,100,222,0,normal,143,1,1.2,flat,0
 60,female,asymptomatic,150,258,0,left ventricular hypertrophy,157,0,2.6,flat,1
-59,male,asymptomatic,140,177,0,normal,162,1,0.0,upsloping,1
-45,female,atypical angina,112,160,0,normal,138,0,0.0,flat,0
+59,male,asymptomatic,140,177,0,normal,162,1,0,upsloping,1
+45,female,atypical angina,112,160,0,normal,138,0,0,flat,0
 55,female,asymptomatic,180,327,0,ST-T wave abnormality,117,1,3.4,flat,1
-41,male,atypical angina,110,235,0,normal,153,0,0.0,upsloping,0
-60,female,asymptomatic,158,305,0,left ventricular hypertrophy,161,0,0.0,upsloping,1
-54,female,non-anginal pain,135,304,1,normal,170,0,0.0,upsloping,0
-42,male,atypical angina,120,295,0,normal,162,0,0.0,upsloping,0
-49,female,atypical angina,134,271,0,normal,162,0,0.0,flat,0
+41,male,atypical angina,110,235,0,normal,153,0,0,upsloping,0
+60,female,asymptomatic,158,305,0,left ventricular hypertrophy,161,0,0,upsloping,1
+54,female,non-anginal pain,135,304,1,normal,170,0,0,upsloping,0
+42,male,atypical angina,120,295,0,normal,162,0,0,upsloping,0
+49,female,atypical angina,134,271,0,normal,162,0,0,flat,0
 46,male,asymptomatic,120,249,0,left ventricular hypertrophy,144,0,0.8,upsloping,1
-56,female,asymptomatic,200,288,1,left ventricular hypertrophy,133,1,4.0,downsloping,1
+56,female,asymptomatic,200,288,1,left ventricular hypertrophy,133,1,4,downsloping,1
 66,female,typical angina,150,226,0,normal,114,0,2.6,downsloping,0
 56,male,asymptomatic,130,283,1,left ventricular hypertrophy,103,1,1.6,downsloping,1
-49,male,non-anginal pain,120,188,0,normal,139,0,2.0,flat,1
+49,male,non-anginal pain,120,188,0,normal,139,0,2,flat,1
 54,male,asymptomatic,122,286,0,left ventricular hypertrophy,116,1,3.2,flat,1
 57,male,asymptomatic,152,274,0,normal,88,1,1.2,flat,1
 65,female,non-anginal pain,160,360,0,left ventricular hypertrophy,151,0,0.8,upsloping,0
 54,male,non-anginal pain,125,273,0,left ventricular hypertrophy,152,0,0.5,downsloping,0
-54,female,non-anginal pain,160,201,0,normal,163,0,0.0,upsloping,0
+54,female,non-anginal pain,160,201,0,normal,163,0,0,upsloping,0
 62,male,asymptomatic,120,267,0,normal,99,1,1.8,flat,1
 52,female,non-anginal pain,136,196,0,left ventricular hypertrophy,169,0,0.1,flat,0
 52,male,atypical angina,134,201,0,normal,158,0,0.8,upsloping,0
 60,male,asymptomatic,117,230,1,normal,160,1,1.4,upsloping,1
 63,female,asymptomatic,108,269,0,normal,169,1,1.8,flat,1
 66,male,asymptomatic,112,212,0,left ventricular hypertrophy,132,1,0.1,upsloping,1
-42,male,asymptomatic,140,226,0,normal,178,0,0.0,upsloping,0
+42,male,asymptomatic,140,226,0,normal,178,0,0,upsloping,0
 64,male,asymptomatic,120,246,0,left ventricular hypertrophy,96,1,2.2,downsloping,1
 54,male,non-anginal pain,150,232,0,left ventricular hypertrophy,165,0,1.6,upsloping,0
 46,female,non-anginal pain,142,177,0,left ventricular hypertrophy,160,1,1.4,downsloping,0
-67,female,non-anginal pain,152,277,0,normal,172,0,0.0,upsloping,0
+67,female,non-anginal pain,152,277,0,normal,172,0,0,upsloping,0
 56,male,asymptomatic,125,249,1,left ventricular hypertrophy,144,1,1.2,flat,1
 34,female,atypical angina,118,210,0,normal,192,0,0.7,upsloping,0
-57,male,asymptomatic,132,207,0,normal,168,1,0.0,upsloping,0
-64,male,asymptomatic,145,212,0,left ventricular hypertrophy,132,0,2.0,flat,1
-59,male,asymptomatic,138,271,0,left ventricular hypertrophy,182,0,0.0,upsloping,0
+57,male,asymptomatic,132,207,0,normal,168,1,0,upsloping,0
+64,male,asymptomatic,145,212,0,left ventricular hypertrophy,132,0,2,flat,1
+59,male,asymptomatic,138,271,0,left ventricular hypertrophy,182,0,0,upsloping,0
 50,male,non-anginal pain,140,233,0,normal,163,0,0.6,flat,1
 51,male,typical angina,125,213,0,left ventricular hypertrophy,125,1,1.4,upsloping,0
-54,male,atypical angina,192,283,0,left ventricular hypertrophy,195,0,0.0,upsloping,1
-53,male,asymptomatic,123,282,0,normal,95,1,2.0,flat,1
-52,male,asymptomatic,112,230,0,normal,160,0,0.0,upsloping,1
-40,male,asymptomatic,110,167,0,left ventricular hypertrophy,114,1,2.0,flat,1
+54,male,atypical angina,192,283,0,left ventricular hypertrophy,195,0,0,upsloping,1
+53,male,asymptomatic,123,282,0,normal,95,1,2,flat,1
+52,male,asymptomatic,112,230,0,normal,160,0,0,upsloping,1
+40,male,asymptomatic,110,167,0,left ventricular hypertrophy,114,1,2,flat,1
 58,male,non-anginal pain,132,224,0,left ventricular hypertrophy,173,0,3.2,upsloping,1
-41,female,non-anginal pain,112,268,0,left ventricular hypertrophy,172,1,0.0,upsloping,0
-41,male,non-anginal pain,112,250,0,normal,179,0,0.0,upsloping,0
+41,female,non-anginal pain,112,268,0,left ventricular hypertrophy,172,1,0,upsloping,0
+41,male,non-anginal pain,112,250,0,normal,179,0,0,upsloping,0
 50,female,non-anginal pain,120,219,0,normal,158,0,1.6,flat,0
-54,female,non-anginal pain,108,267,0,left ventricular hypertrophy,167,0,0.0,upsloping,0
-64,female,asymptomatic,130,303,0,normal,122,0,2.0,flat,0
+54,female,non-anginal pain,108,267,0,left ventricular hypertrophy,167,0,0,upsloping,0
+64,female,asymptomatic,130,303,0,normal,122,0,2,flat,0
 51,female,non-anginal pain,130,256,0,left ventricular hypertrophy,149,0,0.5,upsloping,0
-46,female,atypical angina,105,204,0,normal,172,0,0.0,upsloping,0
+46,female,atypical angina,105,204,0,normal,172,0,0,upsloping,0
 55,male,asymptomatic,140,217,0,normal,111,1,5.6,downsloping,1
-45,male,atypical angina,128,308,0,left ventricular hypertrophy,170,0,0.0,upsloping,0
+45,male,atypical angina,128,308,0,left ventricular hypertrophy,170,0,0,upsloping,0
 56,male,typical angina,120,193,0,left ventricular hypertrophy,162,0,1.9,flat,0
-66,female,asymptomatic,178,228,1,normal,165,1,1.0,flat,1
+66,female,asymptomatic,178,228,1,normal,165,1,1,flat,1
 38,male,typical angina,120,231,0,normal,182,1,3.8,flat,1
 62,female,asymptomatic,150,244,0,normal,154,1,1.4,flat,1
-55,male,atypical angina,130,262,0,normal,155,0,0.0,upsloping,0
-58,male,asymptomatic,128,259,0,left ventricular hypertrophy,130,1,3.0,flat,1
-43,male,asymptomatic,110,211,0,normal,161,0,0.0,upsloping,0
-64,female,asymptomatic,180,325,0,normal,154,1,0.0,upsloping,0
-50,female,asymptomatic,110,254,0,left ventricular hypertrophy,159,0,0.0,upsloping,0
+55,male,atypical angina,130,262,0,normal,155,0,0,upsloping,0
+58,male,asymptomatic,128,259,0,left ventricular hypertrophy,130,1,3,flat,1
+43,male,asymptomatic,110,211,0,normal,161,0,0,upsloping,0
+64,female,asymptomatic,180,325,0,normal,154,1,0,upsloping,0
+50,female,asymptomatic,110,254,0,left ventricular hypertrophy,159,0,0,upsloping,0
 53,male,non-anginal pain,130,197,1,left ventricular hypertrophy,152,0,1.2,downsloping,0
 45,female,asymptomatic,138,236,0,left ventricular hypertrophy,152,1,0.2,flat,0
 65,male,typical angina,138,282,1,left ventricular hypertrophy,174,0,1.4,flat,1
 69,male,typical angina,160,234,1,left ventricular hypertrophy,131,0,0.1,flat,0
-69,male,non-anginal pain,140,254,0,left ventricular hypertrophy,146,0,2.0,flat,1
+69,male,non-anginal pain,140,254,0,left ventricular hypertrophy,146,0,2,flat,1
 67,male,asymptomatic,100,299,0,left ventricular hypertrophy,125,1,0.9,flat,1
 68,female,non-anginal pain,120,211,0,left ventricular hypertrophy,115,0,1.5,flat,0
-34,male,typical angina,118,182,0,left ventricular hypertrophy,174,0,0.0,upsloping,0
+34,male,typical angina,118,182,0,left ventricular hypertrophy,174,0,0,upsloping,0
 62,female,asymptomatic,138,294,1,normal,106,0,1.9,flat,1
 51,male,asymptomatic,140,298,0,normal,122,1,4.2,flat,1
 46,male,non-anginal pain,150,231,0,normal,147,0,3.6,flat,1
 67,male,asymptomatic,125,254,1,normal,163,0,0.2,flat,1
-50,male,non-anginal pain,129,196,0,normal,163,0,0.0,upsloping,0
+50,male,non-anginal pain,129,196,0,normal,163,0,0,upsloping,0
 42,male,non-anginal pain,120,240,1,normal,194,0,0.8,downsloping,0
 56,female,asymptomatic,134,409,0,left ventricular hypertrophy,150,1,1.9,flat,1
-41,male,asymptomatic,110,172,0,left ventricular hypertrophy,158,0,0.0,upsloping,1
+41,male,asymptomatic,110,172,0,left ventricular hypertrophy,158,0,0,upsloping,1
 42,female,asymptomatic,102,265,0,left ventricular hypertrophy,122,0,0.6,flat,0
-53,male,non-anginal pain,130,246,1,left ventricular hypertrophy,173,0,0.0,upsloping,0
+53,male,non-anginal pain,130,246,1,left ventricular hypertrophy,173,0,0,upsloping,0
 43,male,non-anginal pain,130,315,0,normal,162,0,1.9,upsloping,0
 56,male,asymptomatic,132,184,0,left ventricular hypertrophy,105,1,2.1,flat,1
 52,male,asymptomatic,108,233,1,normal,147,0,0.1,upsloping,0
@@ -807,21 +807,21 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 70,male,non-anginal pain,160,269,0,normal,112,1,2.9,flat,1
 54,male,asymptomatic,140,239,0,normal,160,0,1.2,upsloping,0
 70,male,asymptomatic,145,174,0,normal,125,1,2.6,downsloping,1
-54,male,atypical angina,108,309,0,normal,156,0,0.0,upsloping,0
-35,male,asymptomatic,126,282,0,left ventricular hypertrophy,156,1,0.0,upsloping,1
-48,male,non-anginal pain,124,255,1,normal,175,0,0.0,upsloping,0
+54,male,atypical angina,108,309,0,normal,156,0,0,upsloping,0
+35,male,asymptomatic,126,282,0,left ventricular hypertrophy,156,1,0,upsloping,1
+48,male,non-anginal pain,124,255,1,normal,175,0,0,upsloping,0
 55,female,atypical angina,135,250,0,left ventricular hypertrophy,161,0,1.4,flat,0
-58,female,asymptomatic,100,248,0,left ventricular hypertrophy,122,0,1.0,flat,0
+58,female,asymptomatic,100,248,0,left ventricular hypertrophy,122,0,1,flat,0
 54,female,non-anginal pain,110,214,0,normal,158,0,1.6,flat,0
 69,female,typical angina,140,239,0,normal,151,0,1.8,upsloping,0
-77,male,asymptomatic,125,304,0,left ventricular hypertrophy,162,1,0.0,upsloping,1
-68,male,non-anginal pain,118,277,0,normal,151,0,1.0,upsloping,0
-58,male,asymptomatic,125,300,0,left ventricular hypertrophy,171,0,0.0,upsloping,1
+77,male,asymptomatic,125,304,0,left ventricular hypertrophy,162,1,0,upsloping,1
+68,male,non-anginal pain,118,277,0,normal,151,0,1,upsloping,0
+58,male,asymptomatic,125,300,0,left ventricular hypertrophy,171,0,0,upsloping,1
 60,male,asymptomatic,125,258,0,left ventricular hypertrophy,141,1,2.8,flat,1
 51,male,asymptomatic,140,299,0,normal,173,1,1.6,upsloping,1
 55,male,asymptomatic,160,289,0,left ventricular hypertrophy,145,1,0.8,flat,1
 52,male,typical angina,152,298,1,normal,178,0,1.2,flat,0
-60,female,non-anginal pain,102,318,0,normal,160,0,0.0,upsloping,0
+60,female,non-anginal pain,102,318,0,normal,160,0,0,upsloping,0
 58,male,non-anginal pain,105,240,0,left ventricular hypertrophy,154,1,0.6,flat,0
 64,male,non-anginal pain,125,309,0,normal,131,1,1.8,flat,1
 37,male,non-anginal pain,130,250,0,normal,187,0,3.5,downsloping,0
@@ -829,59 +829,59 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 51,male,non-anginal pain,125,245,1,left ventricular hypertrophy,166,0,2.4,flat,0
 43,female,non-anginal pain,122,213,0,normal,165,0,0.2,flat,0
 58,male,asymptomatic,128,216,0,left ventricular hypertrophy,131,1,2.2,flat,1
-29,male,atypical angina,130,204,0,left ventricular hypertrophy,202,0,0.0,upsloping,0
+29,male,atypical angina,130,204,0,left ventricular hypertrophy,202,0,0,upsloping,0
 41,female,atypical angina,130,204,0,left ventricular hypertrophy,172,0,1.4,upsloping,0
-63,female,non-anginal pain,135,252,0,left ventricular hypertrophy,172,0,0.0,upsloping,0
-51,male,non-anginal pain,94,227,0,normal,154,1,0.0,upsloping,0
+63,female,non-anginal pain,135,252,0,left ventricular hypertrophy,172,0,0,upsloping,0
+51,male,non-anginal pain,94,227,0,normal,154,1,0,upsloping,0
 54,male,non-anginal pain,120,258,0,left ventricular hypertrophy,147,0,0.4,flat,0
-44,male,atypical angina,120,220,0,normal,170,0,0.0,upsloping,0
+44,male,atypical angina,120,220,0,normal,170,0,0,upsloping,0
 54,male,asymptomatic,110,239,0,normal,126,1,2.8,flat,1
 65,male,asymptomatic,135,254,0,left ventricular hypertrophy,127,0,2.8,flat,1
 57,male,non-anginal pain,150,168,0,normal,174,0,1.6,upsloping,0
 63,male,asymptomatic,130,330,1,left ventricular hypertrophy,132,1,1.8,upsloping,1
 35,female,asymptomatic,138,183,0,normal,182,0,1.4,upsloping,0
-41,male,atypical angina,135,203,0,normal,132,0,0.0,flat,0
+41,male,atypical angina,135,203,0,normal,132,0,0,flat,0
 62,female,non-anginal pain,130,263,0,normal,97,0,1.2,flat,1
-43,female,asymptomatic,132,341,1,left ventricular hypertrophy,136,1,3.0,flat,1
-58,female,typical angina,150,283,1,left ventricular hypertrophy,162,0,1.0,upsloping,0
-52,male,typical angina,118,186,0,left ventricular hypertrophy,190,0,0.0,flat,0
-61,female,asymptomatic,145,307,0,left ventricular hypertrophy,146,1,1.0,flat,1
+43,female,asymptomatic,132,341,1,left ventricular hypertrophy,136,1,3,flat,1
+58,female,typical angina,150,283,1,left ventricular hypertrophy,162,0,1,upsloping,0
+52,male,typical angina,118,186,0,left ventricular hypertrophy,190,0,0,flat,0
+61,female,asymptomatic,145,307,0,left ventricular hypertrophy,146,1,1,flat,1
 39,male,asymptomatic,118,219,0,normal,140,0,1.2,flat,1
-45,male,asymptomatic,115,260,0,left ventricular hypertrophy,185,0,0.0,upsloping,0
-52,male,asymptomatic,128,255,0,normal,161,1,0.0,upsloping,1
+45,male,asymptomatic,115,260,0,left ventricular hypertrophy,185,0,0,upsloping,0
+52,male,asymptomatic,128,255,0,normal,161,1,0,upsloping,1
 62,male,non-anginal pain,130,231,0,normal,146,0,1.8,flat,0
 62,female,asymptomatic,160,164,0,left ventricular hypertrophy,145,0,6.2,downsloping,1
-53,female,asymptomatic,138,234,0,left ventricular hypertrophy,160,0,0.0,upsloping,0
+53,female,asymptomatic,138,234,0,left ventricular hypertrophy,160,0,0,upsloping,0
 43,male,asymptomatic,120,177,0,left ventricular hypertrophy,120,1,2.5,flat,1
-47,male,non-anginal pain,138,257,0,left ventricular hypertrophy,156,0,0.0,upsloping,0
+47,male,non-anginal pain,138,257,0,left ventricular hypertrophy,156,0,0,upsloping,0
 52,male,atypical angina,120,325,0,normal,172,0,0.2,upsloping,0
 68,male,non-anginal pain,180,274,1,left ventricular hypertrophy,150,1,1.6,flat,1
-39,male,non-anginal pain,140,321,0,left ventricular hypertrophy,182,0,0.0,upsloping,0
+39,male,non-anginal pain,140,321,0,left ventricular hypertrophy,182,0,0,upsloping,0
 53,female,asymptomatic,130,264,0,left ventricular hypertrophy,143,0,0.4,flat,0
 62,female,asymptomatic,140,268,0,left ventricular hypertrophy,160,0,3.6,downsloping,1
 51,female,non-anginal pain,140,308,0,left ventricular hypertrophy,142,0,1.5,upsloping,0
 60,male,asymptomatic,130,253,0,normal,144,1,1.4,upsloping,1
 65,male,asymptomatic,110,248,0,left ventricular hypertrophy,158,0,0.6,upsloping,1
 65,female,non-anginal pain,155,269,0,normal,148,0,0.8,upsloping,0
-60,male,non-anginal pain,140,185,0,left ventricular hypertrophy,155,0,3.0,flat,1
+60,male,non-anginal pain,140,185,0,left ventricular hypertrophy,155,0,3,flat,1
 60,male,asymptomatic,145,282,0,left ventricular hypertrophy,142,1,2.8,flat,1
 54,male,asymptomatic,120,188,0,normal,113,0,1.4,flat,1
-44,male,atypical angina,130,219,0,left ventricular hypertrophy,188,0,0.0,upsloping,0
-44,male,asymptomatic,112,290,0,left ventricular hypertrophy,153,0,0.0,upsloping,1
+44,male,atypical angina,130,219,0,left ventricular hypertrophy,188,0,0,upsloping,0
+44,male,asymptomatic,112,290,0,left ventricular hypertrophy,153,0,0,upsloping,1
 51,male,non-anginal pain,110,175,0,normal,123,0,0.6,upsloping,0
 59,male,non-anginal pain,150,212,1,normal,157,0,1.6,upsloping,0
 71,female,atypical angina,160,302,0,normal,162,0,0.4,upsloping,0
-61,male,non-anginal pain,150,243,1,normal,137,1,1.0,flat,0
+61,male,non-anginal pain,150,243,1,normal,137,1,1,flat,0
 55,male,asymptomatic,132,353,0,normal,132,1,1.2,flat,1
-64,male,non-anginal pain,140,335,0,normal,158,0,0.0,upsloping,1
+64,male,non-anginal pain,140,335,0,normal,158,0,0,upsloping,1
 43,male,asymptomatic,150,247,0,normal,171,0,1.5,upsloping,0
-58,female,non-anginal pain,120,340,0,normal,172,0,0.0,upsloping,0
+58,female,non-anginal pain,120,340,0,normal,172,0,0,upsloping,0
 60,male,asymptomatic,130,206,0,left ventricular hypertrophy,132,1,2.4,flat,1
 58,male,atypical angina,120,284,0,left ventricular hypertrophy,160,0,1.8,flat,1
 49,male,atypical angina,130,266,0,normal,171,0,0.6,upsloping,0
-48,male,atypical angina,110,229,0,normal,168,0,1.0,downsloping,1
+48,male,atypical angina,110,229,0,normal,168,0,1,downsloping,1
 52,male,non-anginal pain,172,199,1,normal,162,0,0.5,upsloping,0
-44,male,atypical angina,120,263,0,normal,173,0,0.0,upsloping,0
+44,male,atypical angina,120,263,0,normal,173,0,0,upsloping,0
 56,female,atypical angina,140,294,0,left ventricular hypertrophy,153,0,1.3,flat,0
 57,male,asymptomatic,140,192,0,normal,148,0,0.4,flat,0
 67,male,asymptomatic,160,286,0,left ventricular hypertrophy,108,1,1.5,flat,1
@@ -898,60 +898,60 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 57,male,asymptomatic,140,192,0,normal,148,0,0.4,flat,0
 56,female,atypical angina,140,294,0,left ventricular hypertrophy,153,0,1.3,flat,0
 56,male,non-anginal pain,130,256,1,left ventricular hypertrophy,142,1,0.6,flat,1
-44,male,atypical angina,120,263,0,normal,173,0,0.0,upsloping,0
+44,male,atypical angina,120,263,0,normal,173,0,0,upsloping,0
 52,male,non-anginal pain,172,199,1,normal,162,0,0.5,upsloping,0
 57,male,non-anginal pain,150,168,0,normal,174,0,1.6,upsloping,0
-48,male,atypical angina,110,229,0,normal,168,0,1.0,downsloping,1
+48,male,atypical angina,110,229,0,normal,168,0,1,downsloping,1
 54,male,asymptomatic,140,239,0,normal,160,0,1.2,upsloping,0
 48,female,non-anginal pain,130,275,0,normal,139,0,0.2,upsloping,0
 49,male,atypical angina,130,266,0,normal,171,0,0.6,upsloping,0
 64,male,typical angina,110,211,0,left ventricular hypertrophy,144,1,1.8,flat,0
-58,female,typical angina,150,283,1,left ventricular hypertrophy,162,0,1.0,upsloping,0
+58,female,typical angina,150,283,1,left ventricular hypertrophy,162,0,1,upsloping,0
 58,male,atypical angina,120,284,0,left ventricular hypertrophy,160,0,1.8,flat,1
 58,male,non-anginal pain,132,224,0,left ventricular hypertrophy,173,0,3.2,upsloping,1
 60,male,asymptomatic,130,206,0,left ventricular hypertrophy,132,1,2.4,flat,1
 50,female,non-anginal pain,120,219,0,normal,158,0,1.6,flat,0
-58,female,non-anginal pain,120,340,0,normal,172,0,0.0,upsloping,0
+58,female,non-anginal pain,120,340,0,normal,172,0,0,upsloping,0
 66,female,typical angina,150,226,0,normal,114,0,2.6,downsloping,0
 43,male,asymptomatic,150,247,0,normal,171,0,1.5,upsloping,0
-40,male,asymptomatic,110,167,0,left ventricular hypertrophy,114,1,2.0,flat,1
+40,male,asymptomatic,110,167,0,left ventricular hypertrophy,114,1,2,flat,1
 69,female,typical angina,140,239,0,normal,151,0,1.8,upsloping,0
 60,male,asymptomatic,117,230,1,normal,160,1,1.4,upsloping,1
-64,male,non-anginal pain,140,335,0,normal,158,0,0.0,upsloping,1
+64,male,non-anginal pain,140,335,0,normal,158,0,0,upsloping,1
 59,male,asymptomatic,135,234,0,normal,161,0,0.5,flat,0
 44,male,non-anginal pain,130,233,0,normal,179,1,0.4,upsloping,0
-42,male,asymptomatic,140,226,0,normal,178,0,0.0,upsloping,0
+42,male,asymptomatic,140,226,0,normal,178,0,0,upsloping,0
 43,male,asymptomatic,120,177,0,left ventricular hypertrophy,120,1,2.5,flat,1
 57,male,asymptomatic,150,276,0,left ventricular hypertrophy,112,1,0.6,flat,1
 55,male,asymptomatic,132,353,0,normal,132,1,1.2,flat,1
-61,male,non-anginal pain,150,243,1,normal,137,1,1.0,flat,0
-65,female,asymptomatic,150,225,0,left ventricular hypertrophy,114,0,1.0,flat,1
+61,male,non-anginal pain,150,243,1,normal,137,1,1,flat,0
+65,female,asymptomatic,150,225,0,left ventricular hypertrophy,114,0,1,flat,1
 40,male,typical angina,140,199,0,normal,178,1,1.4,upsloping,0
 71,female,atypical angina,160,302,0,normal,162,0,0.4,upsloping,0
 59,male,non-anginal pain,150,212,1,normal,157,0,1.6,upsloping,0
-61,female,asymptomatic,130,330,0,left ventricular hypertrophy,169,0,0.0,upsloping,1
+61,female,asymptomatic,130,330,0,left ventricular hypertrophy,169,0,0,upsloping,1
 58,male,non-anginal pain,112,230,0,left ventricular hypertrophy,165,0,2.5,flat,1
 51,male,non-anginal pain,110,175,0,normal,123,0,0.6,upsloping,0
 50,male,asymptomatic,150,243,0,left ventricular hypertrophy,128,0,2.6,flat,1
 65,female,non-anginal pain,140,417,1,left ventricular hypertrophy,157,0,0.8,upsloping,0
 53,male,non-anginal pain,130,197,1,left ventricular hypertrophy,152,0,1.2,downsloping,0
-41,female,atypical angina,105,198,0,normal,168,0,0.0,upsloping,0
+41,female,atypical angina,105,198,0,normal,168,0,0,upsloping,0
 65,male,asymptomatic,120,177,0,normal,140,0,0.4,upsloping,0
-44,male,asymptomatic,112,290,0,left ventricular hypertrophy,153,0,0.0,upsloping,1
-44,male,atypical angina,130,219,0,left ventricular hypertrophy,188,0,0.0,upsloping,0
+44,male,asymptomatic,112,290,0,left ventricular hypertrophy,153,0,0,upsloping,1
+44,male,atypical angina,130,219,0,left ventricular hypertrophy,188,0,0,upsloping,0
 60,male,asymptomatic,130,253,0,normal,144,1,1.4,upsloping,1
 54,male,asymptomatic,124,266,0,left ventricular hypertrophy,109,1,2.2,flat,1
 50,male,non-anginal pain,140,233,0,normal,163,0,0.6,flat,1
-41,male,asymptomatic,110,172,0,left ventricular hypertrophy,158,0,0.0,upsloping,1
+41,male,asymptomatic,110,172,0,left ventricular hypertrophy,158,0,0,upsloping,1
 54,male,non-anginal pain,125,273,0,left ventricular hypertrophy,152,0,0.5,downsloping,0
 51,male,typical angina,125,213,0,left ventricular hypertrophy,125,1,1.4,upsloping,0
 51,female,asymptomatic,130,305,0,normal,142,1,1.2,flat,1
 46,female,non-anginal pain,142,177,0,left ventricular hypertrophy,160,1,1.4,downsloping,0
 58,male,asymptomatic,128,216,0,left ventricular hypertrophy,131,1,2.2,flat,1
-54,female,non-anginal pain,135,304,1,normal,170,0,0.0,upsloping,0
+54,female,non-anginal pain,135,304,1,normal,170,0,0,upsloping,0
 54,male,asymptomatic,120,188,0,normal,113,0,1.4,flat,1
 60,male,asymptomatic,145,282,0,left ventricular hypertrophy,142,1,2.8,flat,1
-60,male,non-anginal pain,140,185,0,left ventricular hypertrophy,155,0,3.0,flat,1
+60,male,non-anginal pain,140,185,0,left ventricular hypertrophy,155,0,3,flat,1
 54,male,non-anginal pain,150,232,0,left ventricular hypertrophy,165,0,1.6,upsloping,0
 59,male,asymptomatic,170,326,0,left ventricular hypertrophy,140,1,3.4,downsloping,1
 46,male,non-anginal pain,150,231,0,normal,147,0,3.6,flat,1
@@ -959,82 +959,82 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 67,male,asymptomatic,125,254,1,normal,163,0,0.2,flat,1
 62,male,asymptomatic,120,267,0,normal,99,1,1.8,flat,1
 65,male,asymptomatic,110,248,0,left ventricular hypertrophy,158,0,0.6,upsloping,1
-44,male,asymptomatic,110,197,0,left ventricular hypertrophy,177,0,0.0,upsloping,1
+44,male,asymptomatic,110,197,0,left ventricular hypertrophy,177,0,0,upsloping,1
 65,female,non-anginal pain,160,360,0,left ventricular hypertrophy,151,0,0.8,upsloping,0
 60,male,asymptomatic,125,258,0,left ventricular hypertrophy,141,1,2.8,flat,1
 51,female,non-anginal pain,140,308,0,left ventricular hypertrophy,142,0,1.5,upsloping,0
 48,male,atypical angina,130,245,0,left ventricular hypertrophy,180,0,0.2,flat,0
 58,male,asymptomatic,150,270,0,left ventricular hypertrophy,111,1,0.8,upsloping,1
-45,male,asymptomatic,104,208,0,left ventricular hypertrophy,148,1,3.0,flat,0
+45,male,asymptomatic,104,208,0,left ventricular hypertrophy,148,1,3,flat,0
 53,female,asymptomatic,130,264,0,left ventricular hypertrophy,143,0,0.4,flat,0
-39,male,non-anginal pain,140,321,0,left ventricular hypertrophy,182,0,0.0,upsloping,0
+39,male,non-anginal pain,140,321,0,left ventricular hypertrophy,182,0,0,upsloping,0
 68,male,non-anginal pain,180,274,1,left ventricular hypertrophy,150,1,1.6,flat,1
 52,male,atypical angina,120,325,0,normal,172,0,0.2,upsloping,0
-44,male,non-anginal pain,140,235,0,left ventricular hypertrophy,180,0,0.0,upsloping,0
-47,male,non-anginal pain,138,257,0,left ventricular hypertrophy,156,0,0.0,upsloping,0
-53,female,non-anginal pain,128,216,0,left ventricular hypertrophy,115,0,0.0,upsloping,0
-53,female,asymptomatic,138,234,0,left ventricular hypertrophy,160,0,0.0,upsloping,0
+44,male,non-anginal pain,140,235,0,left ventricular hypertrophy,180,0,0,upsloping,0
+47,male,non-anginal pain,138,257,0,left ventricular hypertrophy,156,0,0,upsloping,0
+53,female,non-anginal pain,128,216,0,left ventricular hypertrophy,115,0,0,upsloping,0
+53,female,asymptomatic,138,234,0,left ventricular hypertrophy,160,0,0,upsloping,0
 51,female,non-anginal pain,130,256,0,left ventricular hypertrophy,149,0,0.5,upsloping,0
 66,male,asymptomatic,120,302,0,left ventricular hypertrophy,151,0,0.4,flat,0
 62,female,asymptomatic,160,164,0,left ventricular hypertrophy,145,0,6.2,downsloping,1
 62,male,non-anginal pain,130,231,0,normal,146,0,1.8,flat,0
 44,female,non-anginal pain,108,141,0,normal,175,0,0.6,flat,0
-63,female,non-anginal pain,135,252,0,left ventricular hypertrophy,172,0,0.0,upsloping,0
-52,male,asymptomatic,128,255,0,normal,161,1,0.0,upsloping,1
+63,female,non-anginal pain,135,252,0,left ventricular hypertrophy,172,0,0,upsloping,0
+52,male,asymptomatic,128,255,0,normal,161,1,0,upsloping,1
 59,male,asymptomatic,110,239,0,left ventricular hypertrophy,142,1,1.2,flat,1
 60,female,asymptomatic,150,258,0,left ventricular hypertrophy,157,0,2.6,flat,1
 52,male,atypical angina,134,201,0,normal,158,0,0.8,upsloping,0
-48,male,asymptomatic,122,222,0,left ventricular hypertrophy,186,0,0.0,upsloping,0
-45,male,asymptomatic,115,260,0,left ventricular hypertrophy,185,0,0.0,upsloping,0
-34,male,typical angina,118,182,0,left ventricular hypertrophy,174,0,0.0,upsloping,0
-57,female,asymptomatic,128,303,0,left ventricular hypertrophy,159,0,0.0,upsloping,0
-71,female,non-anginal pain,110,265,1,left ventricular hypertrophy,130,0,0.0,upsloping,0
-49,male,non-anginal pain,120,188,0,normal,139,0,2.0,flat,1
-54,male,atypical angina,108,309,0,normal,156,0,0.0,upsloping,0
-59,male,asymptomatic,140,177,0,normal,162,1,0.0,upsloping,1
+48,male,asymptomatic,122,222,0,left ventricular hypertrophy,186,0,0,upsloping,0
+45,male,asymptomatic,115,260,0,left ventricular hypertrophy,185,0,0,upsloping,0
+34,male,typical angina,118,182,0,left ventricular hypertrophy,174,0,0,upsloping,0
+57,female,asymptomatic,128,303,0,left ventricular hypertrophy,159,0,0,upsloping,0
+71,female,non-anginal pain,110,265,1,left ventricular hypertrophy,130,0,0,upsloping,0
+49,male,non-anginal pain,120,188,0,normal,139,0,2,flat,1
+54,male,atypical angina,108,309,0,normal,156,0,0,upsloping,0
+59,male,asymptomatic,140,177,0,normal,162,1,0,upsloping,1
 57,male,non-anginal pain,128,229,0,left ventricular hypertrophy,150,0,0.4,flat,1
 61,male,asymptomatic,120,260,0,normal,140,1,3.6,flat,1
 39,male,asymptomatic,118,219,0,normal,140,0,1.2,flat,1
-61,female,asymptomatic,145,307,0,left ventricular hypertrophy,146,1,1.0,flat,1
+61,female,asymptomatic,145,307,0,left ventricular hypertrophy,146,1,1,flat,1
 56,male,asymptomatic,125,249,1,left ventricular hypertrophy,144,1,1.2,flat,1
-52,male,typical angina,118,186,0,left ventricular hypertrophy,190,0,0.0,flat,0
-43,female,asymptomatic,132,341,1,left ventricular hypertrophy,136,1,3.0,flat,1
+52,male,typical angina,118,186,0,left ventricular hypertrophy,190,0,0,flat,0
+43,female,asymptomatic,132,341,1,left ventricular hypertrophy,136,1,3,flat,1
 62,female,non-anginal pain,130,263,0,normal,97,0,1.2,flat,1
-41,male,atypical angina,135,203,0,normal,132,0,0.0,flat,0
-58,male,non-anginal pain,140,211,1,left ventricular hypertrophy,165,0,0.0,upsloping,0
+41,male,atypical angina,135,203,0,normal,132,0,0,flat,0
+58,male,non-anginal pain,140,211,1,left ventricular hypertrophy,165,0,0,upsloping,0
 35,female,asymptomatic,138,183,0,normal,182,0,1.4,upsloping,0
 63,male,asymptomatic,130,330,1,left ventricular hypertrophy,132,1,1.8,upsloping,1
 65,male,asymptomatic,135,254,0,left ventricular hypertrophy,127,0,2.8,flat,1
-48,male,asymptomatic,130,256,1,left ventricular hypertrophy,150,1,0.0,upsloping,1
-63,female,asymptomatic,150,407,0,left ventricular hypertrophy,154,0,4.0,flat,1
+48,male,asymptomatic,130,256,1,left ventricular hypertrophy,150,1,0,upsloping,1
+63,female,asymptomatic,150,407,0,left ventricular hypertrophy,154,0,4,flat,1
 51,male,non-anginal pain,100,222,0,normal,143,1,1.2,flat,0
 55,male,asymptomatic,140,217,0,normal,111,1,5.6,downsloping,1
 65,male,typical angina,138,282,1,left ventricular hypertrophy,174,0,1.4,flat,1
 45,female,atypical angina,130,234,0,left ventricular hypertrophy,175,0,0.6,flat,0
-56,female,asymptomatic,200,288,1,left ventricular hypertrophy,133,1,4.0,downsloping,1
+56,female,asymptomatic,200,288,1,left ventricular hypertrophy,133,1,4,downsloping,1
 54,male,asymptomatic,110,239,0,normal,126,1,2.8,flat,1
-44,male,atypical angina,120,220,0,normal,170,0,0.0,upsloping,0
-62,female,asymptomatic,124,209,0,normal,163,0,0.0,upsloping,0
+44,male,atypical angina,120,220,0,normal,170,0,0,upsloping,0
+62,female,asymptomatic,124,209,0,normal,163,0,0,upsloping,0
 54,male,non-anginal pain,120,258,0,left ventricular hypertrophy,147,0,0.4,flat,0
-51,male,non-anginal pain,94,227,0,normal,154,1,0.0,upsloping,0
-29,male,atypical angina,130,204,0,left ventricular hypertrophy,202,0,0.0,upsloping,0
-51,male,asymptomatic,140,261,0,left ventricular hypertrophy,186,1,0.0,upsloping,0
+51,male,non-anginal pain,94,227,0,normal,154,1,0,upsloping,0
+29,male,atypical angina,130,204,0,left ventricular hypertrophy,202,0,0,upsloping,0
+51,male,asymptomatic,140,261,0,left ventricular hypertrophy,186,1,0,upsloping,0
 43,female,non-anginal pain,122,213,0,normal,165,0,0.2,flat,0
 55,female,atypical angina,135,250,0,left ventricular hypertrophy,161,0,1.4,flat,0
 70,male,asymptomatic,145,174,0,normal,125,1,2.6,downsloping,1
 62,male,atypical angina,120,281,0,left ventricular hypertrophy,103,0,1.4,flat,1
 35,male,asymptomatic,120,198,0,normal,130,1,1.6,flat,1
 51,male,non-anginal pain,125,245,1,left ventricular hypertrophy,166,0,2.4,flat,0
-59,male,atypical angina,140,221,0,normal,164,1,0.0,upsloping,0
+59,male,atypical angina,140,221,0,normal,164,1,0,upsloping,0
 59,male,typical angina,170,288,0,left ventricular hypertrophy,159,0,0.2,flat,1
-52,male,atypical angina,128,205,1,normal,184,0,0.0,upsloping,0
+52,male,atypical angina,128,205,1,normal,184,0,0,upsloping,0
 64,male,non-anginal pain,125,309,0,normal,131,1,1.8,flat,1
 58,male,non-anginal pain,105,240,0,left ventricular hypertrophy,154,1,0.6,flat,0
-47,male,non-anginal pain,108,243,0,normal,152,0,0.0,upsloping,1
-57,male,asymptomatic,165,289,1,left ventricular hypertrophy,124,0,1.0,flat,1
-41,male,non-anginal pain,112,250,0,normal,179,0,0.0,upsloping,0
-45,male,atypical angina,128,308,0,left ventricular hypertrophy,170,0,0.0,upsloping,0
-60,female,non-anginal pain,102,318,0,normal,160,0,0.0,upsloping,0
+47,male,non-anginal pain,108,243,0,normal,152,0,0,upsloping,1
+57,male,asymptomatic,165,289,1,left ventricular hypertrophy,124,0,1,flat,1
+41,male,non-anginal pain,112,250,0,normal,179,0,0,upsloping,0
+45,male,atypical angina,128,308,0,left ventricular hypertrophy,170,0,0,upsloping,0
+60,female,non-anginal pain,102,318,0,normal,160,0,0,upsloping,0
 52,male,typical angina,152,298,1,normal,178,0,1.2,flat,0
 42,female,asymptomatic,102,265,0,left ventricular hypertrophy,122,0,0.6,flat,0
 67,female,non-anginal pain,115,564,0,left ventricular hypertrophy,160,0,1.6,flat,0
@@ -1042,40 +1042,40 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 64,male,asymptomatic,120,246,0,left ventricular hypertrophy,96,1,2.2,downsloping,1
 70,male,asymptomatic,130,322,0,left ventricular hypertrophy,109,0,2.4,flat,1
 51,male,asymptomatic,140,299,0,normal,173,1,1.6,upsloping,1
-58,male,asymptomatic,125,300,0,left ventricular hypertrophy,171,0,0.0,upsloping,1
+58,male,asymptomatic,125,300,0,left ventricular hypertrophy,171,0,0,upsloping,1
 60,male,asymptomatic,140,293,0,left ventricular hypertrophy,170,0,1.2,flat,1
-68,male,non-anginal pain,118,277,0,normal,151,0,1.0,upsloping,0
-46,male,atypical angina,101,197,1,normal,156,0,0.0,upsloping,0
-77,male,asymptomatic,125,304,0,left ventricular hypertrophy,162,1,0.0,upsloping,1
+68,male,non-anginal pain,118,277,0,normal,151,0,1,upsloping,0
+46,male,atypical angina,101,197,1,normal,156,0,0,upsloping,0
+77,male,asymptomatic,125,304,0,left ventricular hypertrophy,162,1,0,upsloping,1
 54,female,non-anginal pain,110,214,0,normal,158,0,1.6,flat,0
-58,female,asymptomatic,100,248,0,left ventricular hypertrophy,122,0,1.0,flat,0
-48,male,non-anginal pain,124,255,1,normal,175,0,0.0,upsloping,0
-57,male,asymptomatic,132,207,0,normal,168,1,0.0,upsloping,0
-52,male,non-anginal pain,138,223,0,normal,169,0,0.0,upsloping,0
-54,female,atypical angina,132,288,1,left ventricular hypertrophy,159,1,0.0,upsloping,0
-35,male,asymptomatic,126,282,0,left ventricular hypertrophy,156,1,0.0,upsloping,1
-45,female,atypical angina,112,160,0,normal,138,0,0.0,flat,0
+58,female,asymptomatic,100,248,0,left ventricular hypertrophy,122,0,1,flat,0
+48,male,non-anginal pain,124,255,1,normal,175,0,0,upsloping,0
+57,male,asymptomatic,132,207,0,normal,168,1,0,upsloping,0
+52,male,non-anginal pain,138,223,0,normal,169,0,0,upsloping,0
+54,female,atypical angina,132,288,1,left ventricular hypertrophy,159,1,0,upsloping,0
+35,male,asymptomatic,126,282,0,left ventricular hypertrophy,156,1,0,upsloping,1
+45,female,atypical angina,112,160,0,normal,138,0,0,flat,0
 70,male,non-anginal pain,160,269,0,normal,112,1,2.9,flat,1
-53,male,asymptomatic,142,226,0,left ventricular hypertrophy,111,1,0.0,upsloping,0
-59,female,asymptomatic,174,249,0,normal,143,1,0.0,flat,1
+53,male,asymptomatic,142,226,0,left ventricular hypertrophy,111,1,0,upsloping,0
+59,female,asymptomatic,174,249,0,normal,143,1,0,flat,1
 62,female,asymptomatic,140,394,0,left ventricular hypertrophy,157,0,1.2,flat,0
-64,male,asymptomatic,145,212,0,left ventricular hypertrophy,132,0,2.0,flat,1
+64,male,asymptomatic,145,212,0,left ventricular hypertrophy,132,0,2,flat,1
 57,male,asymptomatic,152,274,0,normal,88,1,1.2,flat,1
 52,male,asymptomatic,108,233,1,normal,147,0,0.1,upsloping,0
 56,male,asymptomatic,132,184,0,left ventricular hypertrophy,105,1,2.1,flat,1
 43,male,non-anginal pain,130,315,0,normal,162,0,1.9,upsloping,0
-53,male,non-anginal pain,130,246,1,left ventricular hypertrophy,173,0,0.0,upsloping,0
+53,male,non-anginal pain,130,246,1,left ventricular hypertrophy,173,0,0,upsloping,0
 48,male,asymptomatic,124,274,0,left ventricular hypertrophy,166,0,0.5,flat,1
 56,female,asymptomatic,134,409,0,left ventricular hypertrophy,150,1,1.9,flat,1
 42,male,typical angina,148,244,0,left ventricular hypertrophy,178,0,0.8,upsloping,0
 59,male,typical angina,178,270,0,left ventricular hypertrophy,145,0,4.2,downsloping,0
-60,female,asymptomatic,158,305,0,left ventricular hypertrophy,161,0,0.0,upsloping,1
-63,female,atypical angina,140,195,0,normal,179,0,0.0,upsloping,0
+60,female,asymptomatic,158,305,0,left ventricular hypertrophy,161,0,0,upsloping,1
+63,female,atypical angina,140,195,0,normal,179,0,0,upsloping,0
 42,male,non-anginal pain,120,240,1,normal,194,0,0.8,downsloping,0
-66,male,atypical angina,160,246,0,normal,120,1,0.0,flat,1
-54,male,atypical angina,192,283,0,left ventricular hypertrophy,195,0,0.0,upsloping,1
-69,male,non-anginal pain,140,254,0,left ventricular hypertrophy,146,0,2.0,flat,1
-50,male,non-anginal pain,129,196,0,normal,163,0,0.0,upsloping,0
+66,male,atypical angina,160,246,0,normal,120,1,0,flat,1
+54,male,atypical angina,192,283,0,left ventricular hypertrophy,195,0,0,upsloping,1
+69,male,non-anginal pain,140,254,0,left ventricular hypertrophy,146,0,2,flat,1
+50,male,non-anginal pain,129,196,0,normal,163,0,0,upsloping,0
 51,male,asymptomatic,140,298,0,normal,122,1,4.2,flat,1
 43,male,asymptomatic,132,247,1,left ventricular hypertrophy,143,1,0.1,flat,1
 62,female,asymptomatic,138,294,1,normal,106,0,1.9,flat,1
@@ -1084,107 +1084,107 @@ age,sex,chest_pain_type,resting_blood_pressure,cholesterol,fasting_blood_sugar,r
 69,male,typical angina,160,234,1,left ventricular hypertrophy,131,0,0.1,flat,0
 45,female,asymptomatic,138,236,0,left ventricular hypertrophy,152,1,0.2,flat,0
 50,female,atypical angina,120,244,0,normal,162,0,1.1,upsloping,0
-59,male,typical angina,160,273,0,left ventricular hypertrophy,125,0,0.0,upsloping,1
-50,female,asymptomatic,110,254,0,left ventricular hypertrophy,159,0,0.0,upsloping,0
-64,female,asymptomatic,180,325,0,normal,154,1,0.0,upsloping,0
+59,male,typical angina,160,273,0,left ventricular hypertrophy,125,0,0,upsloping,1
+50,female,asymptomatic,110,254,0,left ventricular hypertrophy,159,0,0,upsloping,0
+64,female,asymptomatic,180,325,0,normal,154,1,0,upsloping,0
 57,male,non-anginal pain,150,126,1,normal,173,0,0.2,upsloping,0
 64,female,non-anginal pain,140,313,0,normal,133,0,0.2,upsloping,0
-43,male,asymptomatic,110,211,0,normal,161,0,0.0,upsloping,0
-45,male,asymptomatic,142,309,0,left ventricular hypertrophy,147,1,0.0,flat,1
-58,male,asymptomatic,128,259,0,left ventricular hypertrophy,130,1,3.0,flat,1
+43,male,asymptomatic,110,211,0,normal,161,0,0,upsloping,0
+45,male,asymptomatic,142,309,0,left ventricular hypertrophy,147,1,0,flat,1
+58,male,asymptomatic,128,259,0,left ventricular hypertrophy,130,1,3,flat,1
 50,male,asymptomatic,144,200,0,left ventricular hypertrophy,126,1,0.9,flat,1
-55,male,atypical angina,130,262,0,normal,155,0,0.0,upsloping,0
+55,male,atypical angina,130,262,0,normal,155,0,0,upsloping,0
 62,female,asymptomatic,150,244,0,normal,154,1,1.4,flat,1
-37,female,non-anginal pain,120,215,0,normal,170,0,0.0,upsloping,0
+37,female,non-anginal pain,120,215,0,normal,170,0,0,upsloping,0
 38,male,typical angina,120,231,0,normal,182,1,3.8,flat,1
-41,male,non-anginal pain,130,214,0,left ventricular hypertrophy,168,0,2.0,flat,0
-66,female,asymptomatic,178,228,1,normal,165,1,1.0,flat,1
-52,male,asymptomatic,112,230,0,normal,160,0,0.0,upsloping,1
+41,male,non-anginal pain,130,214,0,left ventricular hypertrophy,168,0,2,flat,0
+66,female,asymptomatic,178,228,1,normal,165,1,1,flat,1
+52,male,asymptomatic,112,230,0,normal,160,0,0,upsloping,1
 56,male,typical angina,120,193,0,left ventricular hypertrophy,162,0,1.9,flat,0
-46,female,atypical angina,105,204,0,normal,172,0,0.0,upsloping,0
-46,female,asymptomatic,138,243,0,left ventricular hypertrophy,152,1,0.0,flat,0
-64,female,asymptomatic,130,303,0,normal,122,0,2.0,flat,0
-59,male,asymptomatic,138,271,0,left ventricular hypertrophy,182,0,0.0,upsloping,0
-41,female,non-anginal pain,112,268,0,left ventricular hypertrophy,172,1,0.0,upsloping,0
-54,female,non-anginal pain,108,267,0,left ventricular hypertrophy,167,0,0.0,upsloping,0
-39,female,non-anginal pain,94,199,0,normal,179,0,0.0,upsloping,0
-53,male,asymptomatic,123,282,0,normal,95,1,2.0,flat,1
+46,female,atypical angina,105,204,0,normal,172,0,0,upsloping,0
+46,female,asymptomatic,138,243,0,left ventricular hypertrophy,152,1,0,flat,0
+64,female,asymptomatic,130,303,0,normal,122,0,2,flat,0
+59,male,asymptomatic,138,271,0,left ventricular hypertrophy,182,0,0,upsloping,0
+41,female,non-anginal pain,112,268,0,left ventricular hypertrophy,172,1,0,upsloping,0
+54,female,non-anginal pain,108,267,0,left ventricular hypertrophy,167,0,0,upsloping,0
+39,female,non-anginal pain,94,199,0,normal,179,0,0,upsloping,0
+53,male,asymptomatic,123,282,0,normal,95,1,2,flat,1
 63,female,asymptomatic,108,269,0,normal,169,1,1.8,flat,1
 34,female,atypical angina,118,210,0,normal,192,0,0.7,upsloping,0
 47,male,asymptomatic,112,204,0,normal,143,0,0.1,upsloping,0
-67,female,non-anginal pain,152,277,0,normal,172,0,0.0,upsloping,0
-54,male,asymptomatic,110,206,0,left ventricular hypertrophy,108,1,0.0,flat,1
+67,female,non-anginal pain,152,277,0,normal,172,0,0,upsloping,0
+54,male,asymptomatic,110,206,0,left ventricular hypertrophy,108,1,0,flat,1
 66,male,asymptomatic,112,212,0,left ventricular hypertrophy,132,1,0.1,upsloping,1
 52,female,non-anginal pain,136,196,0,left ventricular hypertrophy,169,0,0.1,flat,0
 55,female,asymptomatic,180,327,0,ST-T wave abnormality,117,1,3.4,flat,1
 49,male,non-anginal pain,118,149,0,left ventricular hypertrophy,126,0,0.8,upsloping,1
 74,female,atypical angina,120,269,0,left ventricular hypertrophy,121,1,0.2,upsloping,0
-54,female,non-anginal pain,160,201,0,normal,163,0,0.0,upsloping,0
+54,female,non-anginal pain,160,201,0,normal,163,0,0,upsloping,0
 54,male,asymptomatic,122,286,0,left ventricular hypertrophy,116,1,3.2,flat,1
 56,male,asymptomatic,130,283,1,left ventricular hypertrophy,103,1,1.6,downsloping,1
 46,male,asymptomatic,120,249,0,left ventricular hypertrophy,144,0,0.8,upsloping,1
-49,female,atypical angina,134,271,0,normal,162,0,0.0,flat,0
-42,male,atypical angina,120,295,0,normal,162,0,0.0,upsloping,0
-41,male,atypical angina,110,235,0,normal,153,0,0.0,upsloping,0
-41,female,atypical angina,126,306,0,normal,163,0,0.0,upsloping,0
-49,female,asymptomatic,130,269,0,normal,163,0,0.0,upsloping,0
+49,female,atypical angina,134,271,0,normal,162,0,0,flat,0
+42,male,atypical angina,120,295,0,normal,162,0,0,upsloping,0
+41,male,atypical angina,110,235,0,normal,153,0,0,upsloping,0
+41,female,atypical angina,126,306,0,normal,163,0,0,upsloping,0
+49,female,asymptomatic,130,269,0,normal,163,0,0,upsloping,0
 61,male,typical angina,134,234,0,normal,145,0,2.6,flat,1
-60,female,non-anginal pain,120,178,1,normal,96,0,0.0,upsloping,0
-67,male,asymptomatic,120,237,0,normal,71,0,1.0,flat,1
+60,female,non-anginal pain,120,178,1,normal,96,0,0,upsloping,0
+67,male,asymptomatic,120,237,0,normal,71,0,1,flat,1
 58,male,asymptomatic,100,234,0,normal,156,0,0.1,upsloping,1
-47,male,asymptomatic,110,275,0,left ventricular hypertrophy,118,1,1.0,flat,1
-52,male,asymptomatic,125,212,0,normal,168,0,1.0,upsloping,1
-62,male,atypical angina,128,208,1,left ventricular hypertrophy,140,0,0.0,upsloping,0
+47,male,asymptomatic,110,275,0,left ventricular hypertrophy,118,1,1,flat,1
+52,male,asymptomatic,125,212,0,normal,168,0,1,upsloping,1
+62,male,atypical angina,128,208,1,left ventricular hypertrophy,140,0,0,upsloping,0
 57,male,asymptomatic,110,201,0,normal,126,1,1.5,flat,0
-58,male,asymptomatic,146,218,0,normal,105,0,2.0,flat,1
+58,male,asymptomatic,146,218,0,normal,105,0,2,flat,1
 64,male,asymptomatic,128,263,0,normal,105,1,0.2,flat,0
 51,female,non-anginal pain,120,295,0,left ventricular hypertrophy,157,0,0.6,upsloping,0
 43,male,asymptomatic,115,303,0,normal,181,0,1.2,flat,0
-42,female,non-anginal pain,120,209,0,normal,173,0,0.0,flat,0
+42,female,non-anginal pain,120,209,0,normal,173,0,0,flat,0
 67,female,asymptomatic,106,223,0,normal,142,0,0.3,upsloping,0
 76,female,non-anginal pain,140,197,0,ST-T wave abnormality,116,0,1.1,flat,0
-70,male,atypical angina,156,245,0,left ventricular hypertrophy,143,0,0.0,upsloping,0
+70,male,atypical angina,156,245,0,left ventricular hypertrophy,143,0,0,upsloping,0
 57,male,atypical angina,124,261,0,normal,141,0,0.3,upsloping,1
 44,female,non-anginal pain,118,242,0,normal,149,0,0.3,flat,0
-58,female,atypical angina,136,319,1,left ventricular hypertrophy,152,0,0.0,upsloping,1
+58,female,atypical angina,136,319,1,left ventricular hypertrophy,152,0,0,upsloping,1
 60,female,typical angina,150,240,0,normal,171,0,0.9,upsloping,0
-44,male,non-anginal pain,120,226,0,normal,169,0,0.0,upsloping,0
+44,male,non-anginal pain,120,226,0,normal,169,0,0,upsloping,0
 61,male,asymptomatic,138,166,0,left ventricular hypertrophy,125,1,3.6,flat,1
 42,male,asymptomatic,136,315,0,normal,125,1,1.8,flat,1
-52,male,asymptomatic,128,204,1,normal,156,1,1.0,flat,1
+52,male,asymptomatic,128,204,1,normal,156,1,1,flat,1
 59,male,non-anginal pain,126,218,1,normal,134,0,2.2,flat,1
-40,male,asymptomatic,152,223,0,normal,181,0,0.0,upsloping,1
-42,male,non-anginal pain,130,180,0,normal,150,0,0.0,upsloping,0
+40,male,asymptomatic,152,223,0,normal,181,0,0,upsloping,1
+42,male,non-anginal pain,130,180,0,normal,150,0,0,upsloping,0
 61,male,asymptomatic,140,207,0,left ventricular hypertrophy,138,1,1.9,upsloping,1
 66,male,asymptomatic,160,228,0,left ventricular hypertrophy,138,0,2.3,upsloping,0
 46,male,asymptomatic,140,311,0,normal,120,1,1.8,flat,1
 71,female,asymptomatic,112,149,0,normal,125,0,1.6,flat,0
 59,male,typical angina,134,204,0,normal,162,0,0.8,upsloping,1
 64,male,typical angina,170,227,0,left ventricular hypertrophy,155,0,0.6,flat,0
-66,female,non-anginal pain,146,278,0,left ventricular hypertrophy,152,0,0.0,flat,0
-39,female,non-anginal pain,138,220,0,normal,152,0,0.0,flat,0
-57,male,atypical angina,154,232,0,left ventricular hypertrophy,164,0,0.0,upsloping,1
+66,female,non-anginal pain,146,278,0,left ventricular hypertrophy,152,0,0,flat,0
+39,female,non-anginal pain,138,220,0,normal,152,0,0,flat,0
+57,male,atypical angina,154,232,0,left ventricular hypertrophy,164,0,0,upsloping,1
 58,female,asymptomatic,130,197,0,normal,131,0,0.6,flat,0
-57,male,asymptomatic,110,335,0,normal,143,1,3.0,flat,1
-47,male,non-anginal pain,130,253,0,normal,179,0,0.0,upsloping,0
-55,female,asymptomatic,128,205,0,ST-T wave abnormality,130,1,2.0,flat,1
-35,male,atypical angina,122,192,0,normal,174,0,0.0,upsloping,0
-61,male,asymptomatic,148,203,0,normal,161,0,0.0,upsloping,1
+57,male,asymptomatic,110,335,0,normal,143,1,3,flat,1
+47,male,non-anginal pain,130,253,0,normal,179,0,0,upsloping,0
+55,female,asymptomatic,128,205,0,ST-T wave abnormality,130,1,2,flat,1
+35,male,atypical angina,122,192,0,normal,174,0,0,upsloping,0
+61,male,asymptomatic,148,203,0,normal,161,0,0,upsloping,1
 58,male,asymptomatic,114,318,0,ST-T wave abnormality,140,0,4.4,downsloping,1
 58,female,asymptomatic,170,225,1,left ventricular hypertrophy,146,1,2.8,flat,1
 58,male,atypical angina,125,220,0,normal,144,0,0.4,flat,0
-56,male,atypical angina,130,221,0,left ventricular hypertrophy,163,0,0.0,upsloping,0
-56,male,atypical angina,120,240,0,normal,169,0,0.0,downsloping,0
+56,male,atypical angina,130,221,0,left ventricular hypertrophy,163,0,0,upsloping,0
+56,male,atypical angina,120,240,0,normal,169,0,0,downsloping,0
 67,male,non-anginal pain,152,212,0,left ventricular hypertrophy,150,0,0.8,flat,1
 55,female,atypical angina,132,342,0,normal,166,0,1.2,upsloping,0
 44,male,asymptomatic,120,169,0,normal,144,1,2.8,downsloping,1
-63,male,asymptomatic,140,187,0,left ventricular hypertrophy,144,1,4.0,upsloping,1
-63,female,asymptomatic,124,197,0,normal,136,1,0.0,flat,1
-41,male,atypical angina,120,157,0,normal,182,0,0.0,upsloping,0
-59,male,asymptomatic,164,176,1,left ventricular hypertrophy,90,0,1.0,flat,1
+63,male,asymptomatic,140,187,0,left ventricular hypertrophy,144,1,4,upsloping,1
+63,female,asymptomatic,124,197,0,normal,136,1,0,flat,1
+41,male,atypical angina,120,157,0,normal,182,0,0,upsloping,0
+59,male,asymptomatic,164,176,1,left ventricular hypertrophy,90,0,1,flat,1
 57,female,asymptomatic,140,241,0,normal,123,1,0.2,flat,1
 45,male,typical angina,110,264,0,normal,132,0,1.2,flat,1
 68,male,asymptomatic,144,193,1,normal,141,0,3.4,flat,1
 57,male,asymptomatic,130,131,0,normal,115,1,1.2,flat,1
-57,female,atypical angina,130,236,0,left ventricular hypertrophy,174,0,0.0,flat,1
-38,male,non-anginal pain,138,175,0,normal,173,0,0.0,upsloping,0
+57,female,atypical angina,130,236,0,left ventricular hypertrophy,174,0,0,flat,1
+38,male,non-anginal pain,138,175,0,normal,173,0,0,upsloping,0

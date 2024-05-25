@@ -36,12 +36,66 @@ export const userAuthApi = createApi({
         };
       },
     }),
+    getUser: builder.query({
+      query: (access_token) => {
+        return {
+          url: `register/`,
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
+    getUser: builder.query({
+      query: (access_token) => {
+        return {
+          url: `register/`,
+          method: "GET",
+          headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
+    getOtp: builder.query({
+      query: (email) => {
+        return {
+          url: `otp/${email}`,
+          method: "GET",
+       
+        };
+      },
+    }),
+    getActivate: builder.query({
+      query: (email) => {
+        return {
+          url: `activate/${email}`,
+          method: "GET",
+       
+        };
+      },
+    }),
     getLoggedUser: builder.query({
       query: (access_token) => {
         return {
-          url: "profile/",
+          url: `profile/`,
           method: "GET",
           headers: {
+            authorization: `Bearer ${access_token}`,
+          },
+        };
+      },
+    }),
+    postProfile: builder.mutation({
+      query: ({access_token,data}) => {
+        console.log('profile',data);
+        return {
+          url: "profile/",
+          method: "PUT",
+          body: data,
+          headers: {
+            "Content-type": "application/json",
             authorization: `Bearer ${access_token}`,
           },
         };
@@ -75,14 +129,26 @@ export const userAuthApi = createApi({
       },
     }),
     getmedicineData: builder.query({
-      query: ({ id, access_token }) => {
+      query: () => {
+        return {
+          url: `medicines/`,
+          method: "GET",
+
+          // headers: {
+          //   authorization: `Bearer ${access_token}`,
+          // },
+        };
+      },
+    }),
+    getmedicineCustomData: builder.query({
+      query: (id) => {
         return {
           url: `medicines/${id}`,
           method: "GET",
 
-          headers: {
-            authorization: `Bearer ${access_token}`,
-          },
+          // headers: {
+          //   authorization: `Bearer ${access_token}`,
+          // },
         };
       },
     }),
@@ -109,7 +175,7 @@ export const userAuthApi = createApi({
           url: `addtocart/`,
           method: "PUT",
           body: {
-            cart_id:id,
+            cart_id: id,
             qty: qty,
           },
           headers: {
@@ -121,7 +187,7 @@ export const userAuthApi = createApi({
     }),
       orderData: builder.mutation({
       query: ({ cart_id, access_token, qty,medicine_id}) => {
-
+          console.log(qty,medicine_id);
         return {
           url: `orderlist/`,
           method: "POST",
@@ -172,6 +238,8 @@ export const {
   useRegisterUserMutation,
   useLoginUserMutation,
   useGetLoggedUserQuery,
+  useGetOtpQuery,
+  useGetActivateQuery,
   useAddToCartMutation,
   useGetCartDataQuery,
   useGetmedicineDataQuery,
@@ -179,5 +247,8 @@ export const {
   useUpdateCartDataMutation,
   useOrderDataMutation,
   useGetorderDataQuery,
-  useCancleOrderMutation
+  useCancleOrderMutation,
+  usePostProfileMutation,
+  useGetUserQuery,
+  useGetmedicineCustomDataQuery
 } = userAuthApi;

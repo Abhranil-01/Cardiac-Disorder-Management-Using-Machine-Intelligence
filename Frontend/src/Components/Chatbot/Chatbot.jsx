@@ -1,0 +1,146 @@
+  import React, { useEffect, useState } from 'react';
+  import './chatbot.css';
+  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+  import { faRobot, faUser,faXmark } from '@fortawesome/free-solid-svg-icons';
+
+  function Chatbot({close}) {
+    const handleClose = () => {
+      close(); // Call the close function passed from the parent component
+    };
+    const [chat,setChat]=useState([]);
+    const [addIcon, setAddIcon] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleChange = (e) => {
+      setAddIcon('/src/Images/icon/send.png');
+
+      setMessage(e.target.value)
+      console.log('ch',height);
+      if (e.target.value.length === 0) {
+        setAddIcon('');
+      }
+    };
+    
+    useEffect(()=>{
+   
+      console.log("called");
+      const objDiv = document.getElementById('messageArea');
+      objDiv.scrollTop = objDiv.scrollHeight;
+      
+  
+  },[chat])
+    
+    const handleSubmit=(e)=>{
+      e.preventDefault();
+      const request_temp = {sender:'user',msg : message};
+      
+      if(message !== ""){
+          
+          setChat(chat => [...chat, request_temp]);
+          setMessage('');
+          rasaAPI(message);
+      }
+      else{
+          window.alert("Please enter valid message");
+      }
+      
+  }
+
+
+  const rasaAPI = async function handleClick(msg) {
+  
+      //chatData.push({sender : "user", sender_id : name, msg : msg});
+      
+
+        await fetch('http://127.0.0.1:8000/api/chatbot/', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          credentials: "same-origin",
+          body: JSON.stringify({ "msg": msg }),
+      })
+      .then(response => response.json())
+      .then((response) => {
+          if(response){
+            console.log(response);
+            const response_temp = {sender: "bot",id:Date.now(),msg: response};
+              setChat(chat => [...chat, response_temp]);
+             // scrollBottom();
+          }
+      }).catch((error) => {
+        console.log(error);
+      }) 
+  }
+chat.map((chat) =>{
+  console.log(chat.sender);
+  if(chat.sender === "bot"){
+   console.log(chat.msg.response);
+  }else{
+    console.log(chat.msg);
+  }
+})
+
+    return (
+      <>
+        <div className="chatbot" >
+          <div className='head text-white d-flex align-items-center justify-content-between  bg-primary px-3'>
+            <h4>Chatbot</h4>
+            
+            <span className='fw-bold fs-3' data-bs-dismiss="modal" aria-label="Close" onClick={handleClose}>
+            <FontAwesomeIcon icon={faXmark} />
+            </span>
+          </div>
+          <div className="chatbox" id="messageArea">
+          <div className="incoming gap-2">
+              <span className='chat-robot bg-secondary text-white'> <FontAwesomeIcon icon={faRobot} /></span>
+              <div className='card bot-chat bg-secondary  '>
+              <div className=" fw-bold card-body">
+                <p className='text-white card-text  '>Hello How Can I Help You?</p>
+              </div>
+              </div>
+            </div>
+      {
+        chat.map((user,key)=>(
+          <>
+          {user.sender==='bot' ?(
+              <div className="incoming gap-2">
+              <span className='chat-robot bg-secondary text-white'> <FontAwesomeIcon icon={faRobot} /></span>
+              <div className='card bot-chat bg-secondary  '>
+              <div className=" fw-bold card-body">
+                <p className='text-white card-text  '>{user.msg.response}</p>
+              </div>
+              </div>
+            </div>
+          ):(
+            <div className='out-chat gap-2 ' >
+              <div className='card p-0 border-0 bg-primary outgoing  '>
+              <div className=' card-body'>
+                <p className=' card-text  text-white fw-bold ' >{user.msg}</p>
+              </div>
+              </div>
+           
+              <span className='chat-user bg-primary text-white'> <FontAwesomeIcon icon={faUser} /></span>
+            </div>
+          )}
+          
+            </>
+        )
+      )
+      }
+            
+          </div>
+          <div className='chat' >
+            <textarea  placeholder='Enter Message' value={message} onChange={handleChange} ></textarea>
+            <span className='send'>
+              <img src={addIcon} alt="" onClick={handleSubmit} />
+            </span>
+          </div>
+        </div>
+
+      </>
+    );
+  }
+
+  export default Chatbot;
