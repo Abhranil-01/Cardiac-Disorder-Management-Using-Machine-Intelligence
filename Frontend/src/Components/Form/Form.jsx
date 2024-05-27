@@ -47,7 +47,6 @@ function Form({ closeModal }) {
       console.log(data);
 
       if (data[0].predict === 0) {
-        console.log("ohawefuier");
         toast.info(
           "Your heart beats strong, free from worry, continue thriving"
         );

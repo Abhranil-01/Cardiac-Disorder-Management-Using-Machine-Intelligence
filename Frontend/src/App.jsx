@@ -32,7 +32,7 @@ function App() {
        <Route path='Data' element={<LoadData/>}/>
        <Route path='Analyzerlogin' element={<AnalyzerLogin/>}/>
        <Route path='profile' element={<ProfileForm/>}/>
-       <Route path='otp-verification/:name/:email' element={<Otp/>}/>
+       <Route path='otp-verification/:email' element={<Otp/>}/>
      </Route>
           <Route path="/" element={access_token ? <Home/> : <Navigate to="/login" />} />
           <Route path="*" element={<h1>Error 404 Page not found !!</h1>} />

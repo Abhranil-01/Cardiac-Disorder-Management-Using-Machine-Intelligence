@@ -12,7 +12,7 @@ function ShowHideNavbar({ children }) {
       location.pathname === "/Data" ||
       location.pathname === "/Analyzerlogin" ||
       location.pathname === "/profile" ||
-      location.pathname === `/otp-verification/${name}/${email}`
+      location.pathname === `/otp-verification/${email}`
     ) {
       setShowNavbar(false);
     } else {
