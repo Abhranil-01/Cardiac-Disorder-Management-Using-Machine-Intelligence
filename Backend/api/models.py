@@ -146,3 +146,10 @@ class OrderList(models.Model):
 	def __str__(self):
 		return f"{self.user.name}'s order: {self.medicine_id.name} ({self.status})"
 	
+	class Payment(models.Model):
+		cartid = models.ForeignKey(AddtoCart,on_delete=models.CASCADE)
+		rozorpay_order_id = models.CharField(null=True, blank=True,max_length=100)
+
+		def __str__(self):
+			return self.rozorpay_order_id
+	
