@@ -267,6 +267,7 @@ class OrderListAPIView(APIView):
 	def post(self, request):
 
 		cart_id = request.data.get('cart_id')
+		print(cart_id)
 		cart = AddtoCart.objects.get(id=cart_id, user=request.user)
 		pay = Payment.objects.filter(cartid=cart)
 		print(pay)
