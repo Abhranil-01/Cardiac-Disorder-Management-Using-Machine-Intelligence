@@ -60,7 +60,7 @@ function Otp() {
     }
   }, [activateData, name]);
   return (
-    <div class="container-fluid vh-100  border border-danger  d-flex justify-content-center align-items-center">
+    <div class="container-fluid vh-100    d-flex justify-content-center align-items-center">
       <div class="position-relative">
         <div class="card otp-card p-2 text-center ">
           <h6 className="text-primary">
@@ -68,7 +68,7 @@ function Otp() {
           </h6>
           <div>
             {" "}
-            <span>A code has been sent to</span> <small>*******9897</small>{" "}
+            <span>A code has been sent to</span> <small>{email.slice(0,5)}**********</small>{" "}
           </div>
           <div
             id="otp"

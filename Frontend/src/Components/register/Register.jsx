@@ -38,7 +38,7 @@ function Register({value}) {
      alert(res.error.data.errors.email[0])
     }
     if (res.data) {
-      navigate(`/otp-verification/home/${data.get('email')}`)
+      navigate(`/otp-verification/${data.get('email')}`)
     }
   }
 
